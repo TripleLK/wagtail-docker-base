@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
- 
+
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 APPS_DIR = os.path.join(BASE_DIR, "apps")
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
-# Loop through each directory inside the apps folder.
+# Loop through each directory inside the apps directory.
 # If the directory contains an __init__.py file (to mark it as a package)
 # and its name is not "base_site", add it to INSTALLED_APPS.
 
@@ -63,6 +63,19 @@ for app_name in os.listdir(APPS_DIR):
         and os.path.exists(os.path.join(app_path, "__init__.py"))
     ):
         INSTALLED_APPS.insert(0, f"apps.{app_name}")
+
+
+# If mounted with a shared apps directory, add all to the apps
+SHARED_APPS_DIR = os.path.join(APPS_DIR, "shared")
+if (os.path.isdir(SHARED_APPS_DIR)):
+    for app_name in os.listdir(SHARED_APPS_DIR):
+        app_path = os.path.join(SHARED_APPS_DIR, app_name)
+        if (
+            os.path.isdir(app_path)
+            and os.path.exists(os.path.join(app_path, "__init__.py"))
+        ):
+            INSTALLED_APPS.insert(0, f"apps.{app_name}")
+
 
 
 MIDDLEWARE = [
