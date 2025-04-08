@@ -6,6 +6,10 @@ from modelcluster.fields import ParentalKey
 from wagtail.fields import RichTextField
 from wagtail.search import index
 
+from taggit.models import TaggedItemBase
+
+from modelcluster.fields import ParentalKey, ParentalManyToManyField
+from modelcluster.contrib.taggit import ClusterTaggableManager
 
 class BasicPage(Page):
     intro = models.CharField(max_length=250)
@@ -18,6 +22,45 @@ class BasicPage(Page):
 
     content_panels = Page.content_panels + ["intro", "body"]
 
+class CartPage(Page):
+    pass
+
+class ContactPage(Page):
+    pass
+
+class MultiProductPage(Page):
+    pass
+
+
+
+class LabEquipmentTag(TaggedItemBase):
+    content_object = ParentalKey(
+        'LabEquipmentPage',
+        related_name='tagged_items',
+        on_delete=models.CASCADE
+    )
+
+
+class EquipmentSpecification(Orderable):
+    """
+    An orderable model for equipment specifications.
+    Each equipment page can have multiple specifications.
+    """
+    page = ParentalKey(
+        'LabEquipmentPage',
+        related_name='specifications'
+    )
+    specification = models.CharField(
+        max_length=255,
+        help_text="A single specification detail."
+    )
+
+    panels = [
+        FieldPanel('specification'),
+    ]
+
+    def __str__(self):
+        return self.specification
 
 class LabEquipmentPage(Page):
     """
@@ -47,12 +90,16 @@ class LabEquipmentPage(Page):
         help_text="Detailed description of the equipment."
     )
 
+    tags = ClusterTaggableManager(through=LabEquipmentTag, blank=True)
+
     content_panels = Page.content_panels + [
         FieldPanel('short_description', classname="full"),
         FieldPanel('main_image'),
         FieldPanel('price'),
+        FieldPanel('tags'),
         FieldPanel('description', classname="full"),
         InlinePanel('specifications', label="Specifications"),
+
     ]
 
     # Optionally limit what pages can host this one.
@@ -60,25 +107,3 @@ class LabEquipmentPage(Page):
 
     class Meta:
         verbose_name = "Lab Equipment Page"
-
-
-class EquipmentSpecification(Orderable):
-    """
-    An orderable model for equipment specifications.
-    Each equipment page can have multiple specifications.
-    """
-    page = ParentalKey(
-        'LabEquipmentPage',
-        related_name='specifications'
-    )
-    specification = models.CharField(
-        max_length=255,
-        help_text="A single specification detail."
-    )
-
-    panels = [
-        FieldPanel('specification'),
-    ]
-
-    def __str__(self):
-        return self.specification
