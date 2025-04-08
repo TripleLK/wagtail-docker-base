@@ -23,5 +23,3 @@ wagtail-docker-base
 ```
 
 This repo should contain all code that is necessary for the running of wagtail in our base web setup, but that is not needed by either the host computer or the running of grapes.js. Code required by both the wagtail container and either of those should be contained within lllk-web-base.
-
-Test
