@@ -1,10 +1,15 @@
 from django.db import models
 from wagtail.models import Page, Orderable, ClusterableModel
 from wagtail.admin.panels import FieldRowPanel, FieldPanel, InlinePanel
-from modelcluster.fields import ParentalKey, ParentalManyToManyField
+from modelcluster.fields import ParentalKey
+from django.forms.widgets import Media
+
 from wagtail.fields import RichTextField
 from wagtail.search import index
+
 from taggit.models import TaggedItemBase
+
+from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
 
 class BasicPage(Page):
@@ -16,10 +21,7 @@ class BasicPage(Page):
         index.SearchField('body')
     ]
 
-    content_panels = Page.content_panels + [
-        FieldPanel("intro"),
-        FieldPanel("body")
-    ]
+    content_panels = Page.content_panels + [FieldPanel("intro"), FieldPanel("body")]
 
 class CartPage(Page):
     pass
@@ -29,6 +31,8 @@ class ContactPage(Page):
 
 class MultiProductPage(Page):
     pass
+
+
 
 class Spec(ClusterableModel):
     SpecGroup = ParentalKey(
@@ -40,7 +44,7 @@ class Spec(ClusterableModel):
         help_text="What the specification is measuring (e.g. height)"
     )
     value = models.CharField(
-        max_length=256,
+        max_length=32,
         help_text="The value of the specification (e.g. 50in)"
     )
 
@@ -50,6 +54,7 @@ class Spec(ClusterableModel):
             FieldPanel('value'),
         ])
     ]
+
 
 class SpecGroup(ClusterableModel):
     name = models.CharField(
@@ -79,12 +84,15 @@ class LabEquipmentPageSpecGroup(SpecGroup):
         InlinePanel('specs', label="Specifications"),
     ]
 
+
 class LabEquipmentTag(TaggedItemBase):
     content_object = ParentalKey(
         'LabEquipmentPage',
         related_name='tagged_items',
         on_delete=models.CASCADE
     )
+
+
 
 class EquipmentFeature(Orderable):
     """
@@ -106,7 +114,7 @@ class EquipmentFeature(Orderable):
     ]
 
     def __str__(self):
-        return self.feature
+        return self.specification
 
 class EquipmentModel(ClusterableModel):
     page = ParentalKey(
@@ -115,7 +123,7 @@ class EquipmentModel(ClusterableModel):
     )
 
     name = models.CharField(
-        max_length=128,
+        max_length=32,
         help_text="The name of the model"
     )
 
@@ -128,16 +136,8 @@ class EquipmentModel(ClusterableModel):
         FieldPanel('name'),
         FieldPanel('model_number'),
         InlinePanel('spec_groups', label="Specification Groups"),
-    ]
+        ]
 
-    @property
-    def merged_spec_groups(self):
-        """
-        Returns the merged spec groups for this model (default specs overridden
-        by model-specific specs). This calls LabEquipmentPage.get_effective_spec_groups.
-        """
-        print(self.page.get_effective_spec_groups(self))
-        return self.page.get_effective_spec_groups(self)
 
 class LabEquipmentGalleryImage(Orderable):
     page = ParentalKey(
@@ -155,6 +155,8 @@ class LabEquipmentPage(Page):
     """
     A page model for a single lab equipment item.
     """
+    # Use the built-in title field for the equipment name.
+
     short_description = RichTextField(
         blank=True,
         help_text="A brief summary of the equipment."
@@ -167,25 +169,6 @@ class LabEquipmentPage(Page):
 
     tags = ClusterTaggableManager(through=LabEquipmentTag, blank=True)
 
-    content_panels = Page.content_panels + [
-        FieldPanel('short_description', classname="full"),
-        FieldPanel('full_description', classname="full"),
-        FieldPanel('tags'),
-        InlinePanel('gallery_images', label='Images'),
-        InlinePanel(
-            'spec_groups',
-            label="Specification Groups",
-            help_text="Technical specifications about the piece of equipment. "
-            "You can provide default specs here which may be overridden for a particular model."
-        ),
-        InlinePanel('models', label='Models'),
-    ]
-
-    subpage_types = []  # No subpages allowed for a detail page
-
-    class Meta:
-        verbose_name = "Lab Equipment Page"
-
     def main_image(self):
         gallery_item = self.gallery_images.first()
         if gallery_item:
@@ -193,56 +176,28 @@ class LabEquipmentPage(Page):
         else:
             return None
 
-    @property
-    def spec_group_names(self):
-        print("getting spec_group_names")
-        spec_group_names = set()
-        for model in self.models.all():
-            print("a model")
-            spec_groups = self.get_effective_spec_groups(model)
-            for spec_group in spec_groups:
-                spec_group_names.add(spec_group['name'])
+    content_panels = Page.content_panels + [
+        FieldPanel('short_description', classname="full"),
+        FieldPanel('full_description', classname="full"),
+        FieldPanel('tags'),
+        InlinePanel('gallery_images', label='Images'),
+        InlinePanel('spec_groups', label="Specification Groups", help_text="Technical specifications about the piece of equipment. You can override these for a specific model by adding that model below and using the same names for Specification Group and Specification."),
+        InlinePanel('models', label='Models'),
 
-        print("returning: " + str(spec_group_names))
-        return sorted(list(spec_group_names))
+    ]
 
+    # Optionally limit what pages can host this one.
+    subpage_types = []  # No subpages allowed for a detail page
 
-
-    def get_effective_spec_groups(self, equipment_model=None):
-        """
-        Returns a list of merged spec groups (each a dict with a name and a list of specs)
-        If an equipment_model is passed, then any spec group in that model overrides the default.
-        Otherwise, just the page-level spec groups are returned.
-        """
-        effective = {}
-
-        # Gather all shared spec groups
-        for group in self.spec_groups.all():
-            effective[group.name] = {
-                'name': group.name,
-                'specs': list(group.specs.all())
-            }
-
-        # If a model is provided, override or add spec groups.
-        if equipment_model:
-            for group in equipment_model.spec_groups.all():
-                if group.name in effective:
-                    effective[group.name]['specs'] += list(group.specs.all())
-                else:
-                    effective[group.name] = {
-                        'name': group.name,
-                        'specs': list(group.specs.all())
-                       }
-
-        # Return as a list – you can sort by name or leave unsorted.
-        return sorted(effective.values(), key=lambda x: x['name'])
-
-
+    class Meta:
+        verbose_name = "Lab Equipment Page"
 
 class LabEquipmentAccessory(ClusterableModel):
     page = ParentalManyToManyField(
-        'LabEquipmentPage',related_name='accessories',
+        'LabEquipmentPage',
+        related_name='accessories',
     )
+
     image = models.ForeignKey(
         'wagtailimages.Image',
         related_name='+',
@@ -259,8 +214,5 @@ class LabEquipmentAccessory(ClusterableModel):
         help_text="The name of the accessory"
     )
 
-    panels = [
-        FieldPanel('name'),
-        FieldPanel('model_number'),
-        FieldPanel('image'),
-    ]
+    panels = [name, model_number, image]
+
