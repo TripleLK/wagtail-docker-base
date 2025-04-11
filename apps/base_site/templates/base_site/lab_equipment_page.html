@@ -1,132 +1,234 @@
 {% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags static %}
 
-{% load wagtailcore_tags wagtailimages_tags %}
-
-{% block body_class %}template-basicpage{% endblock %}
-
-{% load static %}
+{% block extra_head %}
+{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/lab_equipment_page.css' %}"  />
+<div class="lab-equipment-page">
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img class="logo-img" src="{% static 'Triad_Logo.png' %}" alt="Logo"/>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="See if we have it...">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    <div class="contact-quote">
+      <button class="quote-button">REQUEST QUOTE</button>
+      <div class="contact-details">
+        <span class="contact-item"><i class="fas fa-phone"></i> 1-732-292-1994</span>
+        <span class="contact-item"><i class="fas fa-envelope"></i> Email Us</span>
+      </div>
+    </div>
+  </header>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ page.title }} - Triad Scientific</title>
-        <!-- FontAwesome CDN for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="{% static 'css/lab_equipment_page.css' %}"  />
-    </head>
-    <body>
-        <!-- Announcement Bar -->
-        <div class="announcement-bar">
-            ANNOUNCEMENT
+  <!-- Gallery Splash Section -->
+  <section class="gallery-splash">
+    <div class="splash-overlay">
+      <h1 class="splash-title">{{ page.title }}</h1>
+      <div class="splash-content">
+        <!-- Gallery Column -->
+        <div class="gallery-column">
+          <div class="featured-image">
+            {% if page.gallery_images.first %}
+              {% image page.gallery_images.first.image scale-50 as feat_img %}
+              <img id="featured-img" src="{{ feat_img.url }}" alt="{{ page.title }}">
+            {% else %}
+              <img id="featured-img" src="{% static 'default-image.jpg' %}" alt="{{ page.title }}">
+            {% endif %}
+          </div>
+          <div class="thumbnails">
+            {% for gallery_item in page.gallery_images.all %}
+              {% image gallery_item.image scale-50 as thumb_img %}
+              <img class="thumbnail" src="{{ thumb_img.url }}" alt="Gallery Image"
+                   data-full="{{ thumb_img.url }}">
+            {% endfor %}
+          </div>
         </div>
+        <!-- Description Column -->
+        <div class="description-column">
+          <h2 class="overview-title">Overview</h2>
+         e  <div class="short-description">
+            {{ page.short_description|richtext }}
+          </div>
+        </div>
+      </div><!-- .splash-content -->
 
-        <!-- Main Header -->
-        <header class="main-header">
-            <!-- Logo and Branding -->
-            <div class="logo">
-                <img class="logo-img" src="{% static 'Triad_Logo.png' %}" alt="Logo"/>
-            </div>
+    </div><!-- .splash-overlay -->
+  </section>
 
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="See if we have it...">
-                <i class="fas fa-search search-icon"></i>
-            </div>
+  <!-- Unified Tabbed Detail Section -->
+  <section class="tabbed-detail">
+      {% if page.models.all %}
+      <div class="detail-container" id="detail-model">
+          {% include "spec_tabs_header.html" with spec_group_names=page.spec_group_names models=page.models.all %}
+      {% for model in page.models.all %}
+          {% include "spec_tabs_content.html" with full_description=page.full_description spec_groups=model.merged_spec_groups name=model.name %}
+      {% endfor %}
+      </div>
+      {% else %}
+      <div class="detail-container" id="detail-default">
+          {% include "spec_tabs_header.html" with spec_groups=page.get_effective_spec_groups %}
+          {% include "spec_tabs_content.html" with full_description=page.full_description spec_groups=page.get_effective_spec_groups %}
+      </div>
+      {% endif %}
+  </section>
+</div>
 
-            <!-- Contact & Request Quote -->
-            <div class="contact-quote">
-                <button class="quote-button">REQUEST QUOTE</button>
-                <div class="contact-details">
-                    <span class="contact-item"><i class="fas fa-phone"></i> 1-732-292-1994</span>
-                    <span class="contact-item"><i class="fas fa-envelope"></i> Email Us</span>
-                </div>
-            </div>
-        </header>
+<script>
+ // ---------- Gallery Thumbnail Behavior ----------
+ document.addEventListener('DOMContentLoaded', function() {
+     var model_mapping;
 
-        <!-- Navigation Icons -->
-        <nav class="icon-nav">
-            <div class="icon-item">
-                <i class="fas fa-flask"></i>
-                <span>Lab Equipment</span>
-            </div>
-            <div class="icon-item">
-                <i class="fas fa-cogs"></i>
-                <span>Processing Equipment</span>
-            </div>
-            <div class="icon-item">
-                <i class="fas fa-box"></i>
-                <span>Packaging Equipment</span>
-            </div>
-            <div class="icon-item">
-                <i class="fas fa-heartbeat"></i>
-                <span>Medical Equipment</span>
-            </div>
-            <div class="icon-item">
-                <i class="fas fa-sync-alt"></i>
-                <span>Refurbished Equipment</span>
-            </div>
-            <div class="icon-item">
-                <i class="fas fa-star"></i>
-                <span>New Arrivals</span>
-            </div>
-            <div class="icon-item">
-                <i class="fas fa-industry"></i>
-                <span>Manufacturers</span>
-            </div>
-        </nav>
+     var featuredImg = document.getElementById('featured-img');
+     document.querySelectorAll('.thumbnail').forEach(function(thumb) {
+         thumb.addEventListener('click', function() {
+             document.querySelectorAll('.thumbnail').forEach(function(t) {
+                 t.style.borderColor = 'transparent';
+             });
+             this.style.borderColor = '#02ADFF';
+             featuredImg.src = this.getAttribute('data-full');
+         });
+     });
 
-        <!-- Main Content Area -->
-        <main >
-            <!-- Hero Section for Equipment Detail -->
-            <div id="gjs">
-                <section class="hero-section">
-                    <div class="hero-text">
-                        <h1>{{ page.title }}</h1>
-                        <p>{{ page.short_description|richtext }}</p>
-                    </div>
-                    <div class="hero-image">
-                        {% image page.main_image scale-50 %}
-                    </div>
-                </section>
-            </div>
-            <div id="blocks"></div>
+     function selectTab(tabTarget) {
+         var tabContents = document.getElementsByClassName('detail-tab-content');
 
-                <!-- Breadcrumb Navigation -->
-                <div class="breadcrumb">
-                </div>
+         console.log("Tab target is " + tabTarget);
+         for (var tab of tabContents) {
+             if (tab.classList.contains(tabTarget)) {
+                 tab.style.display = 'block';
+             } else {
+                 tab.style.display = 'none';
+             }
+         }
+     }
 
-                <!-- Equipment Detail Section -->
-                <section class="content-section detail-section">
-                    <div class="detail-container">
-                        <div class="detail-image">
-                            {% image page.main_image scale-50 %}
+     function selectModel(modelTarget) {
+         modelTarget = modelTarget + "-tab-contents";
+         var modelBlocks = document.getElementsByClassName('detail-tabs-contents');
+
+         for (var block of modelBlocks) {
+             if (block.id==modelTarget) {
+                 block.style.display = 'block';
+             } else {
+                 block.style.display = 'none';
+             }
+         }
+         hideNonActiveTabs();
+     }
+
+     function hideNonActiveTabs() {
+         var selectedModel = document.getElementById('model-select').value;
+         var includedGroups = model_mapping[selectedModel].map((groupName) => groupName.toLowerCase());
+
+         var tabs = document.getElementsByClassName('detail-tab');
+         var needNewTab = false;
+         for (var tab of tabs) {
+             var tabGroup = tab.id.split("-").slice(2).join("-");
+             if (includedGroups.includes(tabGroup) || tabGroup == "full-description") {
+                 tab.style.display = 'flex';
+             } else {
+                 tab.style.display = 'none';
+                 if (tab.classList.contains('active')) needNewTab = true;
+             }
+         }
+
+         if (needNewTab) {
+             document.getElementById('detail-tab-full-description').click();
+         }
+     }
+
+     function initializeModelToGroups() {
+         model_mapping = {};
+         var modelName;
+         var modelGroupList;
+         {% for model in page.models.all %}
+             modelName = "{{ model.name }}";
+             modelGroupList = [];
+             {% for spec_group in model.merged_spec_groups %}
+                 modelGroupList.push("{{ spec_group.name }}")
+             {% endfor %}
+             model_mapping[modelName] = modelGroupList;
+         {% endfor %}
+
+     }
+
+     function initialSetup() {
+         initializeModelToGroups();
+         selectTab('tab-spec-full-description');
+
+         var tabs = document.getElementsByClassName('detail-tab');
+         for (var tab of tabs) {
+             tab.addEventListener('click', function() {
+                 for (var otherTab of tabs) {
+                     otherTab.classList.remove('active');
+                 }
+                 this.classList.add('active');
+                 selectTab(this.getAttribute('data-target'));
+             })
+         }
+
+         var modelSelect = document.getElementById('model-select');
+         console.log("initial select of " + modelSelect.value + "-tab-contents");
+         selectModel(modelSelect.value);
+         modelSelect.addEventListener('change', function() {
+             console.log("select of " + modelSelect.value + "-tab-contents");
+             selectModel(this.value);
+         });
 
 
-                        </div>
-                        <div class="detail-info">
-                            <h2>{{ page.title }}</h2>
-                            <p class="price">Price: ${{ page.price }}</p>
-                            {{ page.description|richtext }}
-                            {% if page.specifications %}
-                            <div class="specifications">
-                                <h3>Specifications</h3>
-                                <ul>
-                                    {% for spec in page.specifications.all %}
-                                    <li>{{ spec.specification }}</li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                            {% endif %}
-                            <button class="shop-button">Buy Now</button>
-                        </div>
-                    </div>
-                </section>
-        </main>
-    </body>
-</html>
+      }
+     initialSetup();
 
+     // ---------- Tab Functionality ----------
+     function initDetailTabs(container) {
+         console.log("initing detail tabs");
+         var tabs = container.querySelectorAll('.detail-tab');
+         tabs.forEach(function(tab) {
+             tab.addEventListener('click', function() {
+                 tabs.forEach(function(t) {
+                     t.classList.remove('active');
+                 });
+                 container.querySelectorAll('.detail-tab-content').forEach(function(content) {
+                     content.style.display = 'none';
+                 });
+                 this.classList.add('active');
+                 var target = this.getAttribute('data-target');
+                 var targetPanels = container.querySelectorAll('.' + target);
+                 for (var targetPanel of targetPanels) {
+                     if(targetPanel) { targetPanel.style.display = 'block'; }
+                 }
+             });
+         });
+     }
+
+     function initVisibleDetailContainer() {
+         for (var container of document.querySelectorAll('.detail-tabs-contents')) {
+             initDetailTabs(container);
+         }
+     }
+
+     //initVisibleDetailContainer();
+
+     // ---------- Model Selector Behavior ----------
+         /* var modelSelect = document.getElementById('model-select');
+          * if(modelSelect) {
+          *         modelSelect.addEventListener('change', function(){
+          *             var selectedValue = this.value;
+          *             document.querySelectorAll('.detail-tabs-contents').forEach(function(container){
+          *                 container.style.display = 'none';
+          *             });
+          *             var activeContainer = document.getElementById(selectedValue);
+          *             if(activeContainer) {
+          *                 activeContainer.style.display = 'block';
+                 *                 initDetailTabs(activeContainer);
+          *             }
+          *         });
+          * }*/
+            });
+</script>
 {% endblock %}

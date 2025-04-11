@@ -29,7 +29,6 @@ if APPS_DIR not in sys.path:
 # Application definition
 
 INSTALLED_APPS = [
-    "apps.base_site",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "apps.base_site",
 ]
 
 # Loop through each directory inside the apps directory.
@@ -121,6 +121,7 @@ DATABASES = {
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
 }
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Password validation
