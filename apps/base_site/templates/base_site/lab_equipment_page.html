@@ -184,51 +184,8 @@
       }
      initialSetup();
 
-     // ---------- Tab Functionality ----------
-     function initDetailTabs(container) {
-         console.log("initing detail tabs");
-         var tabs = container.querySelectorAll('.detail-tab');
-         tabs.forEach(function(tab) {
-             tab.addEventListener('click', function() {
-                 tabs.forEach(function(t) {
-                     t.classList.remove('active');
-                 });
-                 container.querySelectorAll('.detail-tab-content').forEach(function(content) {
-                     content.style.display = 'none';
-                 });
-                 this.classList.add('active');
-                 var target = this.getAttribute('data-target');
-                 var targetPanels = container.querySelectorAll('.' + target);
-                 for (var targetPanel of targetPanels) {
-                     if(targetPanel) { targetPanel.style.display = 'block'; }
-                 }
-             });
-         });
-     }
 
-     function initVisibleDetailContainer() {
-         for (var container of document.querySelectorAll('.detail-tabs-contents')) {
-             initDetailTabs(container);
-         }
-     }
 
-     //initVisibleDetailContainer();
-
-     // ---------- Model Selector Behavior ----------
-         /* var modelSelect = document.getElementById('model-select');
-          * if(modelSelect) {
-          *         modelSelect.addEventListener('change', function(){
-          *             var selectedValue = this.value;
-          *             document.querySelectorAll('.detail-tabs-contents').forEach(function(container){
-          *                 container.style.display = 'none';
-          *             });
-          *             var activeContainer = document.getElementById(selectedValue);
-          *             if(activeContainer) {
-          *                 activeContainer.style.display = 'block';
-                 *                 initDetailTabs(activeContainer);
-          *             }
-          *         });
-          * }*/
-            });
+});
 </script>
 {% endblock %}
