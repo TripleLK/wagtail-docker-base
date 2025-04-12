@@ -89,7 +89,7 @@ MIDDLEWARE = [
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 ]
 
-ROOT_URLCONF = "lllk_wagtail_base.urls"
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
@@ -109,7 +109,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "lllk_wagtail_base.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
