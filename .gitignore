@@ -4,3 +4,5 @@ media/
 __pycache__/
 apps/categorized_tags/node_modules/
 apps/categorized_tags/package-lock.json
+client/node_modules/
+client/package-lock.json
