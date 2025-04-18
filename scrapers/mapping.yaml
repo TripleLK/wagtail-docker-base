@@ -1,0 +1,26 @@
+---
+mapping_selector:
+  name:
+    - soup_selector:
+        attrs:
+          tag_name: div
+          class: roweven
+        index: 0
+    - soup_selector:
+        attrs:
+          tag_name: h1
+        index: 0
+    - text_selector
+  imgs:
+    - soup_selector:
+        attrs:
+          id: image-wrapper
+        index: 0
+    - soup_selector:
+        attrs:
+          tag_name: img
+    - for_each_selector:
+        selector:
+          attr_selector:
+            attr: src
+

@@ -1,0 +1,17 @@
+---
+mapping_selector:
+  img:
+    for_each_selector:
+      selector:
+      - soup_selector:
+          attrs:
+            class: card-img-top
+            tag_name: img
+      - text_selector
+  link:
+  - soup_selector:
+      attrs:
+        class: a
+      index: 0
+  - attr_selector:
+      attr: href
