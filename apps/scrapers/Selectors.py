@@ -101,13 +101,20 @@ class Selector(ABC):
                 "split_selector": SplitSelector,
                 "file_selector": FileSelector,
                 "print_selector": PrintSelector,
+                "concat_selector": ConcatSelector,
+                "plain_text_selector": PlainTextSelector,
                 'zip_selector': ZipSelector
             }
             # there will only be one key in the dict, and it'll be the name of the selector
             for key, value in yamlDict.items():
                 sole_selector = key
                 sole_arguments = value
-            return dict_specs_dict[sole_selector].fromYamlDict(sole_arguments)
+
+            try:
+                return dict_specs_dict[sole_selector].fromYamlDict(sole_arguments)
+            except:
+                print(sole_selector, "<- selector\n", sole_arguments, "<- arguments")
+                raise Exception("errored")
 
     def fromFilePath(file_path):
         try:
@@ -127,6 +134,21 @@ class Selector(ABC):
 
     def toYamlDict(self):
         pass
+
+class PlainTextSelector(Selector):
+    def __init__(self, text):
+        self.text = text
+
+    def select(self, selected):
+        return Selected(self.text, SelectedType.VALUE)
+
+    def toYamlDict(self):
+        return {"plain_text_selector": {"text": self.text}}
+
+    def fromYamlDict(yamlDict):
+        print("Text is " + yamlDict["text"])
+        return PlainTextSelector(yamlDict["text"])
+
 
 # A TextSelector takes a Selected Single and returns the text value within it.
 # S->V
@@ -178,6 +200,21 @@ class FileSelector(Selector):
     def fromYamlDict(yamlDict):
         return FileSelector(yamlDict['file_path'])
 
+class ConcatSelector(Selector):
+    def __init__(self, first, second):
+        self.first = first
+        self.second = second
+        print("concat inited")
+
+    def select(self, selected):
+        return Selected(str(self.first.select(selected).collapsed_value) + str(self.second.select(selected).collapsed_value), SelectedType.VALUE)
+
+    def toYamlDict(self):
+        return {"concat_selector": {first: self.first.toYamlDict(), second: self.second.toYamlDict()}}
+
+    def fromYamlDict(yamlDict):
+        print("About to init concat")
+        return ConcatSelector(Selector.fromYamlDict(yamlDict['first']), Selector.fromYamlDict( yamlDict['second'] ))
 
 
 # A SoupSelector is initialized with a dictionary of attribute names to values. It takes a Selected Single and finds all children of the Single that have those values for those attributes. Use tag_name to target a tag. Has an optional "index" parameter that can be used to specify an index, which will be accessed using an IndexedSelector

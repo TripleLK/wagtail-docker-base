@@ -26,4 +26,4 @@ zip_selector:
           - for_each_selector:
               selector:
                 - file_selector:
-                    file_path: airscience-yamls/spec_groups.yaml
+                    file_path: apps/scrapers/airscience-yamls/spec_groups.yaml

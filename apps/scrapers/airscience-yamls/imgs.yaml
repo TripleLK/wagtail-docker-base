@@ -1,0 +1,17 @@
+---
+- soup_selector:
+    attrs:
+      id: image-wrapper
+    index: 0
+- soup_selector:
+    attrs:
+      tag_name: img
+- for_each_selector:
+    selector:
+      - concat_selector:
+          first:
+            plain_text_selector:
+              text: https://www.airscience.com
+          second:
+            attr_selector:
+              attr: src
