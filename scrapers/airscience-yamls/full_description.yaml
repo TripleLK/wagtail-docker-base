@@ -1,0 +1,10 @@
+---
+- soup_selector:
+    attrs:
+      class: introprodtext
+    index: 0
+- soup_selector:
+    attrs:
+      tag_name: ul
+    index: 0
+- html_selector

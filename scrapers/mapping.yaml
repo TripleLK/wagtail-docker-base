@@ -23,4 +23,69 @@ mapping_selector:
         selector:
           attr_selector:
             attr: src
-
+  full-description:
+    - soup_selector:
+        attrs:
+          class: introprodtext
+        index: 0
+    - soup_selector:
+        attrs:
+          tag_name: ul
+        index: 0
+    - html_selector
+  short-description:
+    - soup_selector:
+        attrs:
+          class: descriptioncontainer
+        index: 0
+    - soup_selector:
+        attrs:
+          tag_name: div
+        index: 0
+    - text_selector
+  models:
+    - soup_selector:
+        attrs:
+          tag_name: div
+        re-attrs:
+          id: "^Div\\d$"
+              # each of this for each is one model
+    - for_each_selector:
+        selector:
+          # idenitfy all of the spec groups
+          - soup_selector:
+              attrs:
+                class: expandable-container
+                # create a mapping of them, including their spec group name and values
+          - for_each_selector:
+              selector:
+                - mapping_selector:
+                    name:
+                      - soup_selector:
+                          attrs:
+                            class: expandable-text
+                          index: 0
+                      - text_selector
+                    specs:
+                      - soup_selector:
+                          attrs:
+                            class: expandable-content
+                          index: 0
+                      - split_selector:
+                          delimiter: <br/>
+                      - for_each_selector:
+                          selector:
+                            mapping_selector:
+                              spec_name:
+                                - soup_selector:
+                                    attrs:
+                                      tag_name: strong
+                                    index: 0
+                                - text_selector
+                              spec_value:
+                                - split_selector:
+                                    delimiter: </strong>
+                                - indexed_selector:
+                                    index: 1
+                                - html_selector
+                          skip_on_fail: true

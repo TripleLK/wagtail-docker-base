@@ -143,13 +143,44 @@ class LabEquipmentGalleryImage(Orderable):
     page = ParentalKey(
         'LabEquipmentPage',
         related_name='gallery_images',
+        on_delete=models.CASCADE
     )
 
-    image = models.ForeignKey(
-        'wagtailimages.Image', on_delete=models.CASCADE, related_name='+'
+    # Field for uploaded image (internal)
+    internal_image = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        related_name='+'
     )
 
-    panels = [FieldPanel('image')]
+    # Field for an external image URL
+    external_image_url = models.URLField(
+        "External image URL",
+        blank=True,
+        help_text="If provided, this will be used instead of an uploaded image."
+    )
+
+    panels = [
+        FieldPanel('internal_image'),
+        FieldPanel('external_image_url'),
+    ]
+
+    def get_image_url(self):
+        """
+        Returns the URL to be used:
+         - Prefer the external image URL if provided.
+         - Otherwise, return a rendition URL of the internal image if it exists.
+         - Otherwise, returns an empty string.
+        """
+        if self.external_image_url:
+            return self.external_image_url
+        elif self.internal_image:
+            # Adjust the rendition string as needed.
+            rendition = self.internal_image.get_rendition('fill-800x600')
+            return rendition.url
+        return ""
 
 class LabEquipmentPage(Page):
     """
@@ -189,7 +220,7 @@ class LabEquipmentPage(Page):
     def main_image(self):
         gallery_item = self.gallery_images.first()
         if gallery_item:
-            return gallery_item.image
+            return gallery_item.get_image_url
         else:
             return None
 

@@ -8,13 +8,14 @@ from enum import Enum
 import copy
 from abc import ABC
 from copy import deepcopy
+import re
+import yaml
 
 # Selecteds are the return values of Selectors. They can be Multiples (lists of Selecteds), Singles (pieces of the DOM tree), or Values (terminal values that will not have any further selection performed on them)
 class SelectedType(Enum):
     VALUE = 0
     SINGLE = 1
     MULTIPLE = 2
-    
 
 class Selected:
     def __init__(self, value, selected_type):
@@ -25,13 +26,12 @@ class Selected:
         if potential_type_error != None:
             raise potential_type_error
 
+
     @property
     def collapsed_value(self):
         if self.selected_type == SelectedType.MULTIPLE:
-            print("in collapsed_value, self.value is " + str(self.value))
             return [sub_selected.collapsed_value for sub_selected in self.value]
         else:
-            print("in collapsed_value else, self.value is " + str(self.value) + " and selected type is " + str(self.selected_type))
             return self.value
 
 
@@ -67,8 +67,12 @@ class Selected:
 
 class Selector(ABC):
     def validate_selected_type(self, selected):
-        if (selected.selected_type != self.expected_selected):
-            raise TypeError(str(type(self)) + " expects a Selected of type " + self.expected_selected.name + ", but received " + selected.selected_type.name)
+        if isinstance(self.expected_selected, list):
+            if selected.selected_type not in self.expected_selected:
+                raise TypeError(str(type(self)) + " expects a Selected of type " + " or ".join([expsel.name for exspel in self.expected_selected]) + ", but received " + selected.selected_type.name)
+        else:
+            if selected.selected_type != self.expected_selected:
+                raise TypeError(str(type(self)) + " expects a Selected of type " + self.expected_selected.name + ", but received " + selected.selected_type.name)
 
     def __call__(self, selected):
         return self.select(selected)
@@ -82,7 +86,8 @@ class Selector(ABC):
             return SeriesSelector.fromYamlDict(yamlDict)
         elif isinstance(yamlDict, str):
             string_specs_dict = {
-                "text_selector": TextSelector
+                "text_selector": TextSelector,
+                "html_selector": HtmlSelector
             }
             if yamlDict in string_specs_dict:
                 return string_specs_dict[yamlDict].fromYamlDict(yamlDict)
@@ -92,13 +97,33 @@ class Selector(ABC):
                 "indexed_selector": IndexedSelector,
                 "attr_selector": AttrSelector,
                 "for_each_selector": ForEachSelector,
-                "mapping_selector": MappingSelector
+                "mapping_selector": MappingSelector,
+                "split_selector": SplitSelector,
+                "file_selector": FileSelector,
+                "print_selector": PrintSelector,
+                'zip_selector': ZipSelector
             }
-            # there will only be one key in the dict, and it'll be the same of the selector
+            # there will only be one key in the dict, and it'll be the name of the selector
             for key, value in yamlDict.items():
                 sole_selector = key
                 sole_arguments = value
             return dict_specs_dict[sole_selector].fromYamlDict(sole_arguments)
+
+    def fromFilePath(file_path):
+        try:
+            with open(file_path, 'r') as file:
+                yaml_file = file.read()
+
+            yaml_dict = yaml.safe_load(yaml_file)
+            if yaml_dict == None:
+                raise Exception("No contents of file!")
+
+        except Exception as e:
+            print("There was an issue trying to load the file! Error:\n", e)
+            return None
+
+        return Selector.fromYamlDict(yaml_dict)
+
 
     def toYamlDict(self):
         pass
@@ -111,7 +136,7 @@ class TextSelector(Selector):
 
     def select(self, selected):
         super().select(selected)
-        return Selected(selected.value.get_text(), SelectedType.VALUE)
+        return Selected(str(selected.value.get_text()).strip(), SelectedType.VALUE)
 
     def toYamlDict(self):
         return 'text_selector'
@@ -119,13 +144,58 @@ class TextSelector(Selector):
     def fromYamlDict(yamlDict):
         return TextSelector()
 
+# An HTMLSelector takes a Selected Single and returns the whole html value within it.
+# S->V
+class HtmlSelector(Selector):
+    def __init__(self):
+        self.expected_selected = SelectedType.SINGLE
+
+    def select(self, selected):
+        super().select(selected)
+
+        return Selected(str(selected.value.prettify()).strip(), SelectedType.VALUE)
+
+    def toYamlDict(self):
+        return 'html_selector'
+
+    def fromYamlDict(yamlDict):
+        return HtmlSelector()
+
+# Creates a selector based on a secondary file. Allows for neatening of files
+class FileSelector(Selector):
+    def __init__(self, file_path):
+        self.file_path = file_path
+
+        self.selector = Selector.fromFilePath(file_path)
+
+    def select(self, selected):
+        
+        return self.selector.select(selected)
+
+    def toYamlDict(self):
+        return self.selector.toYamlDict()
+
+    def fromYamlDict(yamlDict):
+        return FileSelector(yamlDict['file_path'])
+
+
 
 # A SoupSelector is initialized with a dictionary of attribute names to values. It takes a Selected Single and finds all children of the Single that have those values for those attributes. Use tag_name to target a tag. Has an optional "index" parameter that can be used to specify an index, which will be accessed using an IndexedSelector
 # S->M
 class SoupSelector(Selector):
-    blah = 3
-    def __init__(self, attrs, index=None):
+    def __init__(self, attrs, re_attrs=None, index=None):
+        self.original_attrs = attrs
+        self.original_re_attrs = re_attrs
         new_attrs = deepcopy(attrs)
+
+        # compile any regex type attributes
+        if re_attrs != None:
+
+            for key, val in re_attrs.items():
+                compiled = re.compile(val)
+                new_attrs[key] = re.compile(val)
+
+
         self.expected_selected = SelectedType.SINGLE
         self.tagname = new_attrs.pop("tag_name") if "tag_name" in attrs else None
         self.attrs = new_attrs
@@ -146,14 +216,13 @@ class SoupSelector(Selector):
 
     def toYamlDict(self):
         args_dict = {}
-        attrs_dict = deepcopy(self.attrs)
-        if self.tagname != None:
-            attrs_dict['tag_name'] = self.tagname
-
-        args_dict['attrs'] = attrs_dict
+        args_dict['attrs'] = self.original_attrs
 
         if self.index != None:
             args_dict['index'] = self.index
+
+        if self.original_re_attrs != None:
+            args_dict['re_attrs'] = self.original_re_attrs
 
         return {'soup_selector': args_dict}
 
@@ -162,12 +231,11 @@ class SoupSelector(Selector):
             return SoupSelector(yamlDict['attrs'], index=yamlDict['index'])
 
         attrs_dict = deepcopy(yamlDict['attrs'])
-        tagName = None
-        if 'tag_name' in attrs_dict:
-            tagName = attrs_dict.pop('tag_name')
+
+        re_attrs_dict = deepcopy(yamlDict['re-attrs']) if 're-attrs' in yamlDict else None
 
 
-        return SoupSelector(yamlDict['attrs'], )
+        return SoupSelector(yamlDict['attrs'], re_attrs=re_attrs_dict)
 
 
 
@@ -209,16 +277,39 @@ class AttrSelector(Selector):
     def fromYamlDict(yamlDict):
         return AttrSelector(yamlDict['attr'])
 
+# Split Selector takes a Selected Single (which it will turn to HTML) or a Selected Value. It splits that string by the string delimiter, and returns a Selected Multiple of Selected Values.
+class SplitSelector(Selector):
+    def __init__(self, delimiter):
+        self.expected_selected = [SelectedType.VALUE, SelectedType.SINGLE]
+        self.delimiter = delimiter
+
+    def select(self, selected):
+        text_rep = str(selected.value if selected.selected_type == SelectedType.SINGLE else selected.value)
+        split_up = text_rep.split(self.delimiter)
+        portions = []
+
+        for portion in split_up:
+            portion_soup = BeautifulSoup(portion, 'html.parser')
+            portion_single = Selected(portion_soup, SelectedType.SINGLE)
+            portions.append(portion_single)
+
+
+        return Selected(portions, SelectedType.MULTIPLE)
+
+    def fromYamlDict(yamlDict):
+        return SplitSelector(yamlDict['delimiter'])
+
+    def toYamlDict(self):
+        return {"split_selector": {"delimiter": self.delimiter}}
+
 
 # A SeriesSelector is initialized with a list of Selectors. It takes a Selected of the type expected by its first selector and calls the selectors in sequence, returning the final value.
 # Variable type, depends on selectors assigned to it
 class SeriesSelector(Selector):
     def __init__(self, selectors):
-        self.expected_selected = selectors[0].expected_selected
         self.selectors = selectors
 
     def select(self, selected):
-        super().select(selected)
 
         current = selected
         series_copy = deepcopy(self.selectors)
@@ -231,17 +322,35 @@ class SeriesSelector(Selector):
         return [selector.toYamlDict() for selector in self.selectors]
 
     def fromYamlDict(yamlDictList):
-        print("dict:" + str(yamlDictList))
         subSelectors = [Selector.fromYamlDict(subYamlDict) for subYamlDict in yamlDictList]
         return SeriesSelector(subSelectors)
 
+class PrintSelector(Selector):
+    def __init__(self, message, print_selected=False):
+        self.message = message
+        self.print_selected = print_selected
+
+    def select(self, selected):
+        print(self.message)
+        if self.print_selected:
+            print("PrintSelector report.\nSelected Type:", selected.selected_type, "\nCollapsed Value:", selected.collapsed_value)
+        return selected
+
+    def toYamlDict(self):
+        if print_selected:
+            return {"print_selector": {"message": self.message, "print_selected": True}}
+        return {"print_selector": {"message": self.message}}
+
+    def fromYamlDict(yamlDict):
+        return PrintSelector(yamlDict["message"], print_selected=("print_selected" in yamlDict and yamlDict["print_selected"]))
 
 # A ForEachSelector is initialized with a Selector of any type (including a SeriesSelector). It takes a Selected Multiple and returns a Selected Multiple, where each Selected in the returned Selected Multiple is the result of applying the selector to an element of the inputted Selected Multiple (in order)
 # M->M
 class ForEachSelector(Selector):
-    def __init__(self, selector):
+    def __init__(self, selector, skip_on_fail=False):
         self.expected_selected = SelectedType.MULTIPLE
         self.selector = selector
+        self.skip_on_fail = skip_on_fail
 
     def select(self, selected):
         super().select(selected)
@@ -249,8 +358,14 @@ class ForEachSelector(Selector):
 
         result_selecteds = []
         for sub_selected in sub_selecteds:
-            result_selected = self.selector.select(sub_selected)
-            result_selecteds.append(result_selected)
+            try:
+                result_selected = self.selector.select(sub_selected)
+                result_selecteds.append(result_selected)
+            except Exception as e:
+                if self.skip_on_fail:
+                    pass
+                else:
+                    raise e
 
         return Selected(result_selecteds, SelectedType.MULTIPLE)
 
@@ -258,15 +373,57 @@ class ForEachSelector(Selector):
         return {'for_each_selector': {'selector': self.selector.toYamlDict()}}
 
     def fromYamlDict(yamlDict):
+        skip_on_fail = "skip_on_fail" in yamlDict and yamlDict["skip_on_fail"]
         subselector = Selector.fromYamlDict(yamlDict['selector'])
-        return ForEachSelector(subselector)
+        return ForEachSelector(subselector, skip_on_fail)
+
+# A ZipSelector takes two Selectors as arguments, one of which (keys) will be used to make the keys of a dictionary, the other of which (values) will be used to make the values of that dictionary. May adapt it eventually to allow an arbitrary number of value options, but not sure
+# S->M(V)
+class ZipSelector(Selector):
+    def __init__(self, keys_selector, vals_selector):
+        self.keys_selector = keys_selector
+        self.vals_selector = vals_selector
+
+    
+    def select(self, selected):
+        keys = self.keys_selector.select(selected).value
+        vals = self.vals_selector.select(selected).value
+
+        if len(keys) != len(vals):
+            raise Exception("Keys and Vals provided to ZipSelector must be the same length!")
+
+        keys_are_values = [key.selected_type == SelectedType.VALUE for key in keys]
+        vals_are_values = [val.selected_type == SelectedType.VALUE for val in vals]
+
+        key_values = [key.collapsed_value for key in keys]
+        val_values = [val.collapsed_value for val in vals]
+
+        mapped = dict(zip(key_values, val_values))
+
+        return Selected(mapped, SelectedType.VALUE)
+
+    def toYamlDict(self):
+        return {'zip_selector': {'keys': self.keys_selector.toYamlDict(), 'vals': self.vals_selector.toYamlDict()}}
+
+    def fromYamlDict(yamlDict):
+        mapping = {}
+        for key, selector in yamlDict.items():
+            mapping[key] = Selector.fromYamlDict(selector)
+
+        return ZipSelector(Selector.fromYamlDict(yamlDict['keys']), Selector.fromYamlDict(yamlDict['vals']))
+
+
+
 
 
 # A MappingSelector is initialized with a dictionary of string keywords to selectors. It takes a Selected Single and returns a Selected Value with the same keywords, mapped to the value selected by their Selector
+
+# error strategy will get upgraded at some point, but can be "mark_none" (to mark the option down as none), "raise" (to raise the error), or "skip" to skip this entire iteration of the map
 class MappingSelector(Selector):
-    def __init__(self, mapping):
+    def __init__(self, mapping, error_strategy="skip"):
         self.expected_selected = SelectedType.SINGLE
         self.mapping = mapping
+        self.error_strategy = error_strategy
 
     def select(self, selected):
         super().select(selected)
@@ -276,8 +433,13 @@ class MappingSelector(Selector):
             try:
                 mapped[key] = selector.select(selected).collapsed_value
             except Exception as e:
-                print("Exception raised while reterieving value for", str(key) + ", setting to None: ", e)
-                mapped[key] = None
+                if self.error_strategy == "raise":
+                    raise e
+                elif self.error_strategy == "mark_none":
+                    print("Exception raised while reterieving value for", str(key) + ", setting to None: ", e)
+                    mapped[key] = None
+                else:
+                    raise Exception("skip")
 
         return Selected(mapped, SelectedType.VALUE)
 

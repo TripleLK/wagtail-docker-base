@@ -1,0 +1,29 @@
+---
+zip_selector:
+  keys:
+    - soup_selector:
+        attrs:
+          tag_name: option
+        re-attrs:
+          value: "^Div\\d$"
+    - for_each_selector:
+        selector:
+        - text_selector
+  vals:
+    - soup_selector:
+        attrs:
+          tag_name: div
+        re-attrs:
+          id: "^Div\\d$"
+              # each of this for each is one model
+    - for_each_selector:
+        selector:
+          # idenitfy all of the spec groups
+          - soup_selector:
+              attrs:
+                class: expandable-container
+                # create a mapping of them, including their spec group name and values
+          - for_each_selector:
+              selector:
+                - file_selector:
+                    file_path: airscience-yamls/spec_groups.yaml

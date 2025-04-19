@@ -1,0 +1,33 @@
+---
+- zip_selector:
+    keys:
+      - soup_selector:
+          attrs:
+            class: expandable-text
+      - for_each_selector:
+          selector:
+            text_selector
+    vals:
+      - soup_selector:
+          attrs:
+            class: expandable-content
+      - for_each_selector:
+          selector:
+            - split_selector:
+                delimiter: <br/>
+            - for_each_selector:
+                selector:
+                  - mapping_selector:
+                      spec_name:
+                        - soup_selector:
+                            attrs:
+                              tag_name: strong
+                            index: 0
+                        - text_selector
+                      spec_value:
+                        - split_selector:
+                            delimiter: </strong>
+                        - indexed_selector:
+                            index: 1
+                        - html_selector
+                skip_on_fail: true
