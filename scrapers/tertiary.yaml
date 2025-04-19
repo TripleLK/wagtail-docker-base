@@ -1,0 +1,8 @@
+---
+mapping_selector:
+  blah:
+    file_selector:
+      file_path: secondary.yaml
+  blab:
+    file_selector:
+      file_path: secondary.yaml

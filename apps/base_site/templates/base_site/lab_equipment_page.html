@@ -32,19 +32,22 @@
       <div class="splash-content">
         <!-- Gallery Column -->
         <div class="gallery-column">
-          <div class="featured-image">
-            {% if page.gallery_images.first %}
-              {% image page.gallery_images.first.image scale-50 as feat_img %}
-              <img id="featured-img" src="{{ feat_img.url }}" alt="{{ page.title }}">
+            <div class="featured-image">
+                {% if page.main_image %}
+                {% with img_url=page.main_image %}
+              <img id="featured-img" src="{{ img_url }}" alt="{{ page.title }}">
+                {% endwith %}
             {% else %}
               <img id="featured-img" src="{% static 'default-image.jpg' %}" alt="{{ page.title }}">
             {% endif %}
           </div>
           <div class="thumbnails">
             {% for gallery_item in page.gallery_images.all %}
-              {% image gallery_item.image scale-50 as thumb_img %}
-              <img class="thumbnail" src="{{ thumb_img.url }}" alt="Gallery Image"
-                   data-full="{{ thumb_img.url }}">
+              {% with img_url=gallery_item.get_image_url %}
+              {% if img_url %}
+              <img class ="thumbnail" src="{{ img_url }}" alt="Gallery Image">
+              {% endif %}
+              {% endwith %}
             {% endfor %}
           </div>
         </div>
@@ -83,17 +86,21 @@
  document.addEventListener('DOMContentLoaded', function() {
      var model_mapping;
 
-     var featuredImg = document.getElementById('featured-img');
-     document.querySelectorAll('.thumbnail').forEach(function(thumb) {
-         thumb.addEventListener('click', function() {
-             document.querySelectorAll('.thumbnail').forEach(function(t) {
-                 t.style.borderColor = 'transparent';
-             });
-             this.style.borderColor = '#02ADFF';
-             featuredImg.src = this.getAttribute('data-full');
+     const featuredImg = document.getElementById('featured-img');
+     const thumbnails = document.querySelectorAll('.thumbnail');
+
+     thumbnails.forEach(thumb => {
+         thumb.addEventListener('click', () => {
+             // Remove border-color from all thumbnails
+             thumbnails.forEach(t => t.style.borderColor = 'transparent');
+
+             // Highlight the clicked thumbnail
+             thumb.style.borderColor = '#02ADFF';
+
+             // Set the featured image source using the data-full attribute
+             featuredImg.src = thumb.src;
          });
      });
-
      function selectTab(tabTarget) {
          var tabContents = document.getElementsByClassName('detail-tab-content');
 

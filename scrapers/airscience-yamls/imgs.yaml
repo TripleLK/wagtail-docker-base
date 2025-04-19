@@ -1,0 +1,12 @@
+---
+- soup_selector:
+    attrs:
+      id: image-wrapper
+    index: 0
+- soup_selector:
+    attrs:
+      tag_name: img
+- for_each_selector:
+    selector:
+      attr_selector:
+         attr: src
