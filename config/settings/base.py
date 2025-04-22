@@ -64,6 +64,8 @@ for app_name in os.listdir(APPS_DIR):
     ):
         INSTALLED_APPS.insert(0, f"apps.{app_name}")
 
+        print("Installed apps: " + str(INSTALLED_APPS))
+
 
 # If mounted with a shared apps directory, add all to the apps
 SHARED_APPS_DIR = os.path.join(APPS_DIR, "shared")

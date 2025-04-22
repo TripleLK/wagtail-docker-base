@@ -31,12 +31,12 @@ class MultiProductPage(Page):
     pass
 
 class Spec(ClusterableModel):
-    SpecGroup = ParentalKey(
+    spec_group = ParentalKey(
         'SpecGroup',
         related_name='specs',
     )
     key = models.CharField(
-        max_length=32,
+        max_length=128,
         help_text="What the specification is measuring (e.g. height)"
     )
     value = models.CharField(
@@ -53,12 +53,12 @@ class Spec(ClusterableModel):
 
 class SpecGroup(ClusterableModel):
     name = models.CharField(
-        max_length=32,
+        max_length=128,
         help_text="The name of the specification group (e.g. dimensions, construction, electrical, etc.)"
     )
 
 class EquipmentModelSpecGroup(SpecGroup):
-    EquipmentModel = ParentalKey(
+    equipment_model = ParentalKey(
         'EquipmentModel',
         related_name='spec_groups',
     )

@@ -116,6 +116,7 @@
 
      function selectModel(modelTarget) {
          modelTarget = modelTarget + "-tab-contents";
+         console.log("modelTarget: " + modelTarget);
          var modelBlocks = document.getElementsByClassName('detail-tabs-contents');
 
          for (var block of modelBlocks) {
@@ -127,10 +128,23 @@
          }
          hideNonActiveTabs();
      }
-
+     
+     function slugify(text) {
+         return text.toString().toLowerCase()
+                    .trim()
+                    .replace('&amp;', '')
+                    .replace(/\s+/g, '-')        // Replace spaces with -
+                    .replace(/&+/g, '')      // Remove all non-word characters
+                    .replace(/[^\w\-]+/g, '')      // Remove all non-word characters
+                    .replace(/\-\-+/g, '-');       // Replace multiple - with a single -
+}
      function hideNonActiveTabs() {
          var selectedModel = document.getElementById('model-select').value;
-         var includedGroups = model_mapping[selectedModel].map((groupName) => groupName.toLowerCase());
+         var includedGroups = model_mapping[selectedModel].map((groupName) => {
+             let blah = slugify(groupName);
+             console.log('pre: ' + groupName + '; post: ' + blah);
+             return blah;
+         });
 
          var tabs = document.getElementsByClassName('detail-tab');
          var needNewTab = false;
@@ -154,7 +168,7 @@
          var modelName;
          var modelGroupList;
          {% for model in page.models.all %}
-             modelName = "{{ model.name }}";
+             modelName = "{{ model.name|slugify }}";
              modelGroupList = [];
              {% for spec_group in model.merged_spec_groups %}
                  modelGroupList.push("{{ spec_group.name }}")
