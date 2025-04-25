@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "apps.base_site",
+   # "apps.base_site",
 ]
 
 # Loop through each directory inside the apps directory.
@@ -59,13 +59,14 @@ for app_name in os.listdir(APPS_DIR):
     app_path = os.path.join(APPS_DIR, app_name)
     if (
         os.path.isdir(app_path)
-        and app_name != "base_site"
+        and app_name != "base_site" 
         and os.path.exists(os.path.join(app_path, "__init__.py"))
     ):
-        INSTALLED_APPS.insert(0, f"apps.{app_name}")
+        INSTALLED_APPS.insert(-1, f"apps.{app_name}")
 
-        print("Installed apps: " + str(INSTALLED_APPS))
 
+INSTALLED_APPS.insert(-1, "apps.base_site")
+print("Installed apps: " + str(INSTALLED_APPS))
 
 # If mounted with a shared apps directory, add all to the apps
 SHARED_APPS_DIR = os.path.join(APPS_DIR, "shared")
