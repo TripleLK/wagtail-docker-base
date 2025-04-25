@@ -7,7 +7,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class ColorPickerWidget(forms.TextInput):
-    template_name = 'categorized_tags_2/widgets/color_picker_widget.html'
+    template_name = 'categorized_tags/widgets/color_picker_widget.html'
     
     class Media:
         css = {
@@ -20,7 +20,7 @@ class ColorPickerWidget(forms.TextInput):
         self.attrs.update({'class': 'color-picker'})
 
 class CategoryTagWidget(TagWidget):
-    template_name = 'categorized_tags_2/widgets/category_tag_widget.html'
+    template_name = 'categorized_tags/widgets/category_tag_widget.html'
     
     def get_context(self, name, value, attrs):
         context = super().get_context(name, value, attrs)
