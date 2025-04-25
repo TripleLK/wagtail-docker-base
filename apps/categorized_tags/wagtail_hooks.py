@@ -21,7 +21,7 @@ class TagCategoryViewSet(SnippetViewSet):
     inspect_view_enabled = True
     
     def get_inspect_template(self):
-        return 'wagtailsnippets/snippets/categorized_tags_2/tagcategory.html'
+        return 'wagtailsnippets/snippets/categorized_tags/tagcategory.html'
     
     def get_context_data(self, **kwargs):
         """Add the tags belonging to this category to the context"""
@@ -50,7 +50,7 @@ class CategorizedTagViewSet(SnippetViewSet):
     inspect_view_enabled = True
     
     def get_inspect_template(self):
-        return 'wagtailsnippets/snippets/categorized_tags_2/categorizedtag.html'
+        return 'wagtailsnippets/snippets/categorized_tags/categorizedtag.html'
 
 register_snippet(TagCategoryViewSet)
 register_snippet(CategorizedTagViewSet)
@@ -74,4 +74,4 @@ def editor_js():
 def editor_css():
     """Add category colors to the editor"""
     categories = TagCategory.objects.all()
-    return format_html(render_to_string('categorized_tags_2/admin_styles.html', {'categories': categories}))
+    return format_html(render_to_string('categorized_tags/admin_styles.html', {'categories': categories}))

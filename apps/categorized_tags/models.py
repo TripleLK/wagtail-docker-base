@@ -89,4 +89,4 @@ class CategorizedTaggedItemBase(ItemBase):
 
 
 class CategorizedPageTag(CategorizedTaggedItemBase):
-    content_object = ParentalKey('base_site.LabEquipmentPage', on_delete=models.CASCADE, related_name='tagged_items')
+    content_object = ParentalKey(to='wagtailcore.Page', on_delete=models.CASCADE, related_name='categorized_tagged_items')

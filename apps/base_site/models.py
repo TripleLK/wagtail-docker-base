@@ -6,8 +6,8 @@ from wagtail.fields import RichTextField
 from wagtail.search import index
 from taggit.models import TaggedItemBase
 from modelcluster.contrib.taggit import ClusterTaggableManager
-from apps.categorized_tags_2.models import CategorizedPageTag
-from apps.categorized_tags_2.forms import CategoryTagForm
+from apps.categorized_tags.models import CategorizedPageTag
+from apps.categorized_tags.forms import CategoryTagForm
 
 class BasicPage(Page):
     intro = models.CharField(max_length=250)
@@ -195,8 +195,6 @@ class LabEquipmentPage(Page):
     # tags = ClusterTaggableManager(through=CategoryPageTag, blank=True)
     categorized_tags = ClusterTaggableManager(through=CategorizedPageTag, blank=True)
 
-
-
     content_panels = Page.content_panels + [
         FieldPanel('short_description', classname="full"),
         FieldPanel('full_description', classname="full"),
@@ -238,8 +236,6 @@ class LabEquipmentPage(Page):
         print("returning: " + str(spec_group_names))
         return sorted(list(spec_group_names))
 
-
-
     def get_effective_spec_groups(self, equipment_model=None):
         """
         Returns a list of merged spec groups (each a dict with a name and a list of specs)
@@ -268,8 +264,6 @@ class LabEquipmentPage(Page):
 
         # Return as a list – you can sort by name or leave unsorted.
         return sorted(effective.values(), key=lambda x: x['name'])
-
-
 
 class LabEquipmentAccessory(ClusterableModel):
     page = ParentalManyToManyField(
