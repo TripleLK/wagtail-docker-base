@@ -25,6 +25,86 @@
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/base_site.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!-- Import Roboto font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                background-color: #ffe;
+            }
+            
+            /* Main Header */
+            .main-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 80px;
+                padding: 0 20px;
+                background-color: #fff;
+                border-bottom: 1px solid #ddd;
+            }
+            .logo { display: flex; align-items: center; }
+            .logo-img { width: 60px; height: 60px; }
+            .search-bar {
+                position: relative;
+                flex: 1;
+                max-width: 400px;
+                margin: 0 20px;
+            }
+            .search-bar input {
+                width: 100%;
+                padding: 8px 30px 8px 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .search-icon {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #888;
+            }
+            .contact-quote { display: flex; align-items: center; }
+            .quote-button {
+                background-color: #02ADFF;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                margin-right: 20px;
+                cursor: pointer;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+            .contact-details {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+            }
+            
+            /* Common content container */
+            .content-container {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+            
+            /* Page header with blue gradient */
+            .page-header {
+                background: linear-gradient(90deg, #02ADFF, #A6E1FF);
+                padding: 30px 20px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .page-header h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+        </style>
 
         {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
@@ -33,6 +113,30 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="logo">
+                <a href="/">
+                    <img class="logo-img" src="{% static 'Triad_Logo.png' %}" alt="Logo"/>
+                </a>
+            </div>
+            <div class="search-bar">
+                <form action="{% url 'search' %}" method="get">
+                    <input type="text" name="query" placeholder="See if we have it..." {% if search_query %}value="{{ search_query }}"{% endif %}>
+                    <button type="submit" style="background: none; border: none; position: absolute; right: 5px; top: 50%; transform: translateY(-50%);">
+                        <i class="fas fa-search search-icon"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="contact-quote">
+                <button class="quote-button">REQUEST QUOTE</button>
+                <div class="contact-details">
+                    <span class="contact-item"><i class="fas fa-phone"></i> 1-732-292-1994</span>
+                    <span class="contact-item"><i class="fas fa-envelope"></i> Email Us</span>
+                </div>
+            </div>
+        </header>
 
         {% block content %}{% endblock %}
 
