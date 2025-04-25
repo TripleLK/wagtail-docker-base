@@ -1,0 +1,242 @@
+{% extends "base_site/base.html" %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}multi-product-page{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    {% if is_search_results %}
+        <h1>Search Results for "{{ search_query }}"</h1>
+    {% else %}
+        <h1>{{ page.intro_title|default:page.title }}</h1>
+    {% endif %}
+</section>
+
+<div class="content-container">
+    {% if not is_search_results and page.intro_text %}
+        <div class="mb-6">
+            {{ page.intro_text|richtext }}
+        </div>
+    {% endif %}
+
+    <!-- Product grid -->
+    <div class="product-grid">
+        {% for result in search_results %}
+            <div class="product-card">
+                <a href="{% pageurl result %}" class="product-link">
+                    {% if is_search_results %}
+                        {% if result.main_image_url %}
+                            <div class="product-image">
+                                <img src="{{ result.main_image_url }}" alt="{{ result.title }}" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                            </div>
+                        {% else %}
+                            <div class="product-image no-image">
+                                <span>No image available</span>
+                            </div>
+                        {% endif %}
+                    {% else %}
+                        {% with main_image=result.main_image %}
+                            {% if main_image %}
+                                <div class="product-image">
+                                    <img src="{{ main_image }}" alt="{{ result.title }}" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                                </div>
+                            {% else %}
+                                <div class="product-image no-image">
+                                    <span>No image available</span>
+                                </div>
+                            {% endif %}
+                        {% endwith %}
+                    {% endif %}
+                    <div class="product-info">
+                        <h3 class="product-title">{{ result.title }}</h3>
+                        {% if result.short_description %}
+                            <div class="product-description">
+                                {{ result.short_description|richtext|truncatewords_html:20 }}
+                            </div>
+                        {% endif %}
+                        <div class="product-tags">
+                            {% for tag in result.categorized_tags.all|slice:":3" %}
+                                <span class="tag" style="background-color: {{ tag.category_color }}">
+                                    {{ tag.name }}
+                                </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% empty %}
+            <div class="no-results">
+                {% if is_search_results %}
+                    <h3>No results found</h3>
+                    <p>Try using different search terms or browse our categories</p>
+                {% else %}
+                    <h3>No products available</h3>
+                    <p>Check back later for new products</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    {% if search_results.has_other_pages %}
+        <div class="pagination">
+            {% if search_results.has_previous %}
+                <a href="?{% if search_query %}query={{ search_query|urlencode }}&{% endif %}page={{ search_results.previous_page_number }}" 
+                   class="pagination-link">
+                    Previous
+                </a>
+            {% endif %}
+            
+            {% for i in search_results.paginator.page_range %}
+                {% if search_results.number == i %}
+                    <span class="pagination-link active">{{ i }}</span>
+                {% else %}
+                    <a href="?{% if search_query %}query={{ search_query|urlencode }}&{% endif %}page={{ i }}" 
+                       class="pagination-link">
+                        {{ i }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+            
+            {% if search_results.has_next %}
+                <a href="?{% if search_query %}query={{ search_query|urlencode }}&{% endif %}page={{ search_results.next_page_number }}" 
+                   class="pagination-link">
+                    Next
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Product Grid */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+    
+    /* Product Card */
+    .product-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    
+    .product-link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .product-image {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+    
+    .product-card:hover .product-image img {
+        transform: scale(1.05);
+    }
+    
+    .product-image.no-image {
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+    }
+    
+    .product-info {
+        padding: 15px;
+    }
+    
+    .product-title {
+        font-size: 18px;
+        margin: 0 0 10px;
+        font-weight: 500;
+    }
+    
+    .product-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .product-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .tag {
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        color: white;
+        display: inline-block;
+    }
+    
+    /* No results */
+    .no-results {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .no-results h3 {
+        font-size: 24px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    
+    .no-results p {
+        color: #777;
+    }
+    
+    /* Pagination */
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 30px;
+    }
+    
+    .pagination-link {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        color: #555;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+    
+    .pagination-link:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .pagination-link.active {
+        background-color: #02ADFF;
+        color: white;
+        border-color: #02ADFF;
+    }
+</style>
+{% endblock %} 

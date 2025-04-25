@@ -8,6 +8,7 @@ from taggit.models import TaggedItemBase
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from apps.categorized_tags.models import CategorizedPageTag
 from apps.categorized_tags.forms import CategoryTagForm
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 class BasicPage(Page):
     intro = models.CharField(max_length=250)
@@ -29,8 +30,109 @@ class CartPage(Page):
 class ContactPage(Page):
     pass
 
+class HomePage(Page):
+    """
+    Home page model that displays a hero section, categories, featured products, and about section.
+    """
+    hero_title = models.CharField(
+        max_length=255,
+        default="Welcome to Triad Scientific",
+        help_text="Title for the hero section"
+    )
+    
+    hero_subtitle = models.CharField(
+        max_length=255,
+        default="Your trusted source for high-quality lab equipment and scientific supplies",
+        help_text="Subtitle for the hero section"
+    )
+    
+    about_title = models.CharField(
+        max_length=255,
+        default="About Triad Scientific",
+        help_text="Title for the about section"
+    )
+    
+    about_content = RichTextField(
+        default="Triad Scientific has been a leading provider of laboratory equipment for over 20 years. "
+                "We offer a comprehensive range of high-quality scientific instruments, supplies, and accessories.",
+        help_text="Content for the about section"
+    )
+    
+    about_image = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+',
+        help_text="Image for the about section"
+    )
+    
+    content_panels = Page.content_panels + [
+        FieldPanel('hero_title'),
+        FieldPanel('hero_subtitle'),
+        FieldPanel('about_title'),
+        FieldPanel('about_content'),
+        FieldPanel('about_image'),
+    ]
+    
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        
+        # Get featured lab equipment pages - just getting the first 3 for simplicity
+        featured_products = LabEquipmentPage.objects.live().order_by('?')[:3]  # Random selection
+        
+        context['featured_products'] = featured_products
+        
+        return context
+
 class MultiProductPage(Page):
-    pass
+    """
+    A page that displays multiple lab equipment products with search and filtering options.
+    """
+    intro_title = models.CharField(
+        max_length=255,
+        blank=True,
+        help_text="Title to display at the top of the page"
+    )
+    
+    intro_text = RichTextField(
+        blank=True,
+        help_text="Introductory text to display at the top of the page"
+    )
+    
+    search_fields = Page.search_fields + [
+        index.SearchField('intro_title'),
+        index.SearchField('intro_text'),
+    ]
+    
+    content_panels = Page.content_panels + [
+        FieldPanel('intro_title'),
+        FieldPanel('intro_text'),
+    ]
+    
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        
+        # Get all lab equipment pages
+        equipment_pages = LabEquipmentPage.objects.live().order_by('title')
+        
+        # Pagination
+        page = request.GET.get('page', 1)
+        paginator = Paginator(equipment_pages, 12)  # Show 12 products per page
+        
+        try:
+            equipment_pages = paginator.page(page)
+        except PageNotAnInteger:
+            equipment_pages = paginator.page(1)
+        except EmptyPage:
+            equipment_pages = paginator.page(paginator.num_pages)
+        
+        context['search_results'] = equipment_pages
+        
+        # Pass a flag to indicate these are not search results
+        context['is_search_results'] = False
+        
+        return context
 
 class Spec(ClusterableModel):
     spec_group = ParentalKey(
@@ -157,6 +259,9 @@ class LabEquipmentGalleryImage(Orderable):
         help_text="If provided, this will be used instead of an uploaded image."
     )
 
+    # Flag to indicate if this is a fallback image (to avoid recursion in templates)
+    is_fallback = models.BooleanField(default=False, editable=False)
+
     panels = [
         FieldPanel('internal_image'),
         FieldPanel('external_image_url'),
@@ -165,17 +270,21 @@ class LabEquipmentGalleryImage(Orderable):
     def get_image_url(self):
         """
         Returns the URL to be used:
-         - Prefer the external image URL if provided.
-         - Otherwise, return a rendition URL of the internal image if it exists.
-         - Otherwise, returns an empty string.
+         - Prefer the internal image if it exists
+         - Otherwise, use the external image URL
+         - If neither is available, return None
+        
+        Note: External images are now used with an onerror handler in the template
+        to fallback to a default image if the external URL has CORS issues.
         """
-        if self.external_image_url:
-            return self.external_image_url
-        elif self.internal_image:
-            # Adjust the rendition string as needed.
+        if self.internal_image:
+            # Prefer internal images as they won't have CORS issues
             rendition = self.internal_image.get_rendition('fill-800x600')
             return rendition.url
-        return ""
+        elif self.external_image_url and not self.is_fallback:
+            # External image - template will handle CORS issues with onerror
+            return self.external_image_url
+        return None
 
 class LabEquipmentPage(Page):
     """
