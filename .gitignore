@@ -41,6 +41,7 @@ static/
 staticfiles/
 static-old/
 local_settings.py
+staticfiles.json
 
 # If using Django's default static file storage
 /static/
@@ -95,3 +96,16 @@ apps/categorized_tags/package-lock.json
 client/node_modules/
 client/package-lock.json
 static/staticfiles.json
+
+# Wagtail specific
+.wagtail/
+collected-static/
+/public/
+/private/
+.env
+.envs/
+*/settings/local.py
+
+# Frontend build artifacts
+frontend/build/
+frontend/dist/
