@@ -18,6 +18,10 @@
     margin-bottom: 5px;
 }
 
+.tag-item .tag-category {
+    font-weight: bold;
+}
+
 .tag-item .tag-delete {
     margin-left: 8px;
     color: #999;
@@ -147,7 +151,7 @@
                     <select id="category-select" class="form-control">
                         <option value="">-- Select a category --</option>
                         {% for category in widget.categories %}
-                        <option value="{{ category }}">{{ category }}</option>
+                        <option value="{{ category.name }}" data-color="{{ category.color }}">{{ category.name }}</option>
                         {% endfor %}
                         <option value="new">+ Create new category</option>
                     </select>
@@ -195,18 +199,26 @@ $(function() {
     var allCategories = [];
     // Track tags by category
     var tagsByCategory = {};
+    // Track colors by category
+    var categoryColors = {};
     // Current tag input mode: 'new' or 'existing'
     var tagInputMode = 'new';
     
-    // Initialize categories
+    // Initialize categories and their colors
     {% for category in widget.categories %}
-    allCategories.push("{{ category }}");
+    allCategories.push("{{ category.name }}");
+    categoryColors["{{ category.name }}"] = "{{ category.color }}";
     {% endfor %}
     
     // Initialize tags by category
     {% for tag in widget.existing_tags %}
-    var category = "{{ tag.text }}".split(':')[0].trim();
+    var category = "{{ tag.category }}";
     var name = "{{ tag.text }}".split(':')[1].trim();
+    
+    if (!categoryColors[category]) {
+        categoryColors[category] = "{{ tag.category_color }}";
+    }
+    
     if (!tagsByCategory[category]) {
         tagsByCategory[category] = [];
     }
@@ -220,8 +232,8 @@ $(function() {
         if (allCategories.indexOf(category) === -1) {
             allCategories.push(category);
             
-            // Add to dropdown
-            var $newOption = $('<option value="' + category + '">' + category + '</option>');
+            // Add to dropdown - Note: color will be assigned when saving
+            var $newOption = $('<option value="' + category + '" data-color="hsl(0, 0%, 90%)">' + category + '</option>');
             $('#category-select option:last').before($newOption);
         }
     }
@@ -376,7 +388,8 @@ $(function() {
         $tagList.empty();
         
         currentTags.forEach(function(tag, index) {
-            var $tag = $('<div class="tag-item" data-index="' + index + '">' + 
+            var color = categoryColors[tag.category] || 'hsl(0, 0%, 90%)';
+            var $tag = $('<div class="tag-item" data-index="' + index + '" style="background-color: ' + color + ';">' + 
                         '<span class="tag-category">' + tag.category + ':</span> ' +
                         '<span class="tag-name">' + tag.name + '</span>' +
                         '<span class="tag-delete">&times;</span>' +
@@ -409,6 +422,9 @@ $(function() {
             
             // Add to tags by category
             addTagToCategory(category, name);
+            
+            // If no color for this category, assign a random one
+            // Note: Server should handle color generation for new categories
             
             var text = category + ': ' + name;
             // Check if tag already exists
@@ -447,6 +463,10 @@ $(function() {
             setTagInputMode('new');
         } else if (category) {
             $('#new-category-div').hide();
+            
+            // Get the color from the data attribute
+            var color = $(this).find('option:selected').data('color');
+            categoryColors[category] = color;
             
             // Update and show tag select dropdown
             updateTagSelect(category);
