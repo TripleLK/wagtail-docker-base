@@ -23,6 +23,8 @@
         <base target="_blank">
         {% endif %}
 
+        {% block extra_meta %}{% endblock %}
+
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/base_site.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
