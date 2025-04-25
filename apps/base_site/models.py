@@ -6,7 +6,7 @@ from wagtail.fields import RichTextField
 from wagtail.search import index
 from taggit.models import TaggedItemBase
 from modelcluster.contrib.taggit import ClusterTaggableManager
-from apps.categorized_tags_2.models import CategoryPageTag
+from apps.categorized_tags_2.models import CategorizedPageTag
 from apps.categorized_tags_2.forms import CategoryTagForm
 
 class BasicPage(Page):
@@ -193,7 +193,7 @@ class LabEquipmentPage(Page):
 
     # This field will store our custom tags
     # tags = ClusterTaggableManager(through=CategoryPageTag, blank=True)
-    categorized_tags = ClusterTaggableManager(through=CategoryPageTag, blank=True)
+    categorized_tags = ClusterTaggableManager(through=CategorizedPageTag, blank=True)
 
 
 
