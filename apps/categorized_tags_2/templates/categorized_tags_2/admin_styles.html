@@ -1,0 +1,20 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/jquery.tagit.css' %}">
+<script src="{% static 'js/tag-it.min.js' %}"></script>
+
+<style>
+    .category-tag-field .ui-autocomplete-input {
+        width: 100%;
+    }
+    
+    .tagit-choice .tagit-label {
+        display: inline-block;
+    }
+    
+    /* Style for category part of tag */
+    .tagit-choice .category-part {
+        color: #666;
+        font-weight: bold;
+    }
+</style>

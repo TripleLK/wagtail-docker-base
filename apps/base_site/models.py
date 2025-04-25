@@ -6,6 +6,8 @@ from wagtail.fields import RichTextField
 from wagtail.search import index
 from taggit.models import TaggedItemBase
 from modelcluster.contrib.taggit import ClusterTaggableManager
+from apps.categorized_tags_2.models import CategoryPageTag
+from apps.categorized_tags_2.forms import CategoryTagForm
 
 class BasicPage(Page):
     intro = models.CharField(max_length=250)
@@ -78,13 +80,6 @@ class LabEquipmentPageSpecGroup(SpecGroup):
         FieldPanel( "name" ),
         InlinePanel('specs', label="Specifications"),
     ]
-
-class LabEquipmentTag(TaggedItemBase):
-    content_object = ParentalKey(
-        'LabEquipmentPage',
-        related_name='tagged_items',
-        on_delete=models.CASCADE
-    )
 
 class EquipmentFeature(Orderable):
     """
@@ -196,12 +191,16 @@ class LabEquipmentPage(Page):
         help_text="Detailed description of the equipment."
     )
 
-    tags = ClusterTaggableManager(through=LabEquipmentTag, blank=True)
+    # This field will store our custom tags
+    # tags = ClusterTaggableManager(through=CategoryPageTag, blank=True)
+    categorized_tags = ClusterTaggableManager(through=CategoryPageTag, blank=True)
+
+
 
     content_panels = Page.content_panels + [
         FieldPanel('short_description', classname="full"),
         FieldPanel('full_description', classname="full"),
-        FieldPanel('tags'),
+        FieldPanel('categorized_tags'),
         InlinePanel('gallery_images', label='Images'),
         InlinePanel(
             'spec_groups',
@@ -211,6 +210,8 @@ class LabEquipmentPage(Page):
         ),
         InlinePanel('models', label='Models'),
     ]
+
+    base_form_class = CategoryTagForm
 
     subpage_types = []  # No subpages allowed for a detail page
 
