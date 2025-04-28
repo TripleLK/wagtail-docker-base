@@ -25,10 +25,105 @@ class BasicPage(Page):
     ]
 
 class CartPage(Page):
-    pass
+    """
+    The quote cart page that displays items added to the quote cart
+    and provides a form to request a quote.
+    """
+    intro_text = RichTextField(
+        blank=True,
+        help_text="Introductory text for the quote cart page"
+    )
+    
+    empty_cart_text = RichTextField(
+        blank=True, 
+        default="Your quote cart is empty. Browse our products to add items to your quote request.",
+        help_text="Text to display when the cart is empty"
+    )
+    
+    success_message = RichTextField(
+        blank=True,
+        default="Thank you for your quote request. We will get back to you as soon as possible.",
+        help_text="Message to display after submitting a quote request"
+    )
+    
+    content_panels = Page.content_panels + [
+        FieldPanel('intro_text'),
+        FieldPanel('empty_cart_text'),
+        FieldPanel('success_message')
+    ]
+    
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        
+        # Get session key
+        if not request.session.session_key:
+            request.session.create()
+        session_key = request.session.session_key
+        
+        # Get cart items
+        cart_items = QuoteCartItem.objects.filter(session_key=session_key)
+        
+        context['cart_items'] = cart_items
+        context['cart_count'] = cart_items.count()
+        
+        return context
 
 class ContactPage(Page):
-    pass
+    """
+    Contact page model that also handles quote requests
+    """
+    intro_title = models.CharField(
+        max_length=255,
+        default="Contact Us",
+        help_text="Title for the contact page"
+    )
+    
+    intro_text = RichTextField(
+        blank=True,
+        help_text="Introductory text for the contact page"
+    )
+    
+    thank_you_text = RichTextField(
+        blank=True,
+        default="Thank you for contacting us. We will get back to you as soon as possible.",
+        help_text="Text to display after form submission"
+    )
+    
+    quote_request_title = models.CharField(
+        max_length=255,
+        default="Request a Quote",
+        help_text="Title for quote request section"
+    )
+    
+    quote_request_text = RichTextField(
+        blank=True, 
+        default="Fill out the form below to request a quote for the items in your cart.",
+        help_text="Text to display above quote request form"
+    )
+    
+    content_panels = Page.content_panels + [
+        FieldPanel('intro_title'),
+        FieldPanel('intro_text'),
+        FieldPanel('thank_you_text'),
+        FieldPanel('quote_request_title'),
+        FieldPanel('quote_request_text'),
+    ]
+    
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        
+        # Get session key
+        if not request.session.session_key:
+            request.session.create()
+        session_key = request.session.session_key
+        
+        # Get cart items
+        cart_items = QuoteCartItem.objects.filter(session_key=session_key)
+        
+        context['cart_items'] = cart_items
+        context['cart_count'] = cart_items.count()
+        
+        return context
 
 class HomePage(Page):
     """
@@ -399,3 +494,63 @@ class LabEquipmentAccessory(ClusterableModel):
         FieldPanel('model_number'),
         FieldPanel('image'),
     ]
+
+# Quote Cart models
+class QuoteCartItem(models.Model):
+    """
+    Model for items in the quote cart. These are stored in the session.
+    """
+    session_key = models.CharField(max_length=40)
+    equipment_page_id = models.IntegerField()
+    equipment_model_id = models.IntegerField(null=True, blank=True)  # Can be null for items without specific models
+    model_name = models.CharField(max_length=128)
+    model_number = models.CharField(max_length=32)
+    quantity = models.PositiveIntegerField(default=1)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date_added']
+
+    def __str__(self):
+        return f"{self.model_name} ({self.model_number}) - Qty: {self.quantity}"
+
+    @property
+    def equipment_page(self):
+        return LabEquipmentPage.objects.get(id=self.equipment_page_id)
+
+    @property
+    def equipment_model(self):
+        if self.equipment_model_id:
+            try:
+                return EquipmentModel.objects.get(id=self.equipment_model_id)
+            except EquipmentModel.DoesNotExist:
+                return None
+        return None
+
+class QuoteRequest(models.Model):
+    """
+    Model for storing quote requests from users.
+    """
+    INQUIRY_TYPES = (
+        ('general', 'General Inquiry'),
+        ('pricing', 'Pricing Request'),
+        ('availability', 'Availability Check'),
+        ('customization', 'Customization Options'),
+        ('other', 'Other'),
+    )
+
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=20, blank=True)
+    company = models.CharField(max_length=100, blank=True)
+    inquiry_type = models.CharField(max_length=20, choices=INQUIRY_TYPES, default='pricing')
+    message = models.TextField()
+    session_key = models.CharField(max_length=40)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return f"Quote Request from {self.name} ({self.created_at.strftime('%Y-%m-%d')})"
+    
+    @property
+    def cart_items(self):
+        return QuoteCartItem.objects.filter(session_key=self.session_key)
