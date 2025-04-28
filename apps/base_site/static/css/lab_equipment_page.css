@@ -1,214 +1,377 @@
-/* Import Roboto if not already loaded */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700;800&family=Afacad:wght@400;500;600;700&display=swap');
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffe;
+  font-family: 'Afacad', sans-serif;
+  background-color: #ffffff;
+  color: #2b2610;
 }
 
-/* Main Header */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
+/* Info Page Frame */
+.info-page-frame {
+  max-width: 1200px;
+  margin: 40px auto;
   padding: 0 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-}
-.logo { display: flex; align-items: center; }
-.logo-img { width: 60px; height: 60px; }
-.search-bar {
-  position: relative;
-  flex: 1;
-  max-width: 400px;
-  margin: 0 20px;
-}
-.search-bar input {
-  width: 100%;
-  padding: 8px 30px 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.search-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
-}
-.contact-quote { display: flex; align-items: center; }
-.quote-button {
-  background-color: #02ADFF;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-right: 20px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
-}
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
 }
 
-/* Gallery Splash Section */
-.gallery-splash {
-  background: linear-gradient(90deg, #02ADFF, #A6E1FF);
-  padding: 30px 20px;
-  color: #fff;
-}
-.gallery-splash h1 {
-  font-size: 48px;
+/* Product Image Container */
+.product-image-container {
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* Two-column layout for splash content */
-.splash-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: start;
+.product-detail-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
-.gallery-column { max-width: 500px; }
-.featured-image { margin-bottom: 15px; }
-.featured-image img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-.thumbnails {
+
+.thumbnail-gallery {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
-.thumbnail {
+
+.gallery-thumbnail {
   width: 80px;
   height: 70px;
   object-fit: cover;
   cursor: pointer;
   border: 2px solid transparent;
+  transition: border-color 0.2s ease;
 }
-.description-column {
-  max-width: 400px;
-  background: rgba(255,255,255,0.2);
-  padding: 20px;
-  border-radius: 8px;
+
+.gallery-thumbnail.active {
+  border-color: #CA3433;
 }
-.description-column h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+
+.gallery-thumbnail:hover {
+  border-color: #f0a0a0;
 }
-.short-description {
-  font-size: 16px;
+
+/* Machine Title */
+.machine-title {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2b2610;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Responsive adjustments for one-column layout */
-@media (max-width: 768px) {
-  .splash-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .gallery-column, .description-column { margin: 0 auto; }
+/* More Details Box Frame */
+.more-details-box-frame {
+  margin-bottom: 40px;
 }
 
-/* Unified Tabbed Detail Section */
-.tabbed-detail {
-  max-width: 1200px;
-  margin: 40px auto;
-}
-.detail-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+.long-description-box {
+  border-radius: 20px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.12);
+  background-color: #2b2610;
+  overflow: hidden;
 }
 
-/* Tabs Header Styling (integrated model selector and tabs) */
-.detail-tabs {
+.details-header {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  border-radius: 4px;
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;  /* improves touch scrolling on iOS */
-}
-
-.detail-tabs li {
-  display: inline-block;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-right: 5px;
-  background: #f7f7f7;
-  border-radius: 4px;
-  transition: background 0.2s ease;
-  display: flex;
+  width: 100%;
+  padding: 14px 20px;
   align-items: center;
-  justify-content: center;
-}
-.detail-tabs li:hover {
-  background-color: #e0e0e0;
-}
-.detail-tabs li.active {
-  background: #02ADFF;
-  color: #fff;
+  justify-content: space-between;
+  cursor: pointer;
+  color: white;
 }
 
-/* Make the model-select always use the hover color styling */
-.model-select-tab {
-  display: flex;
-  align-items: left;
-  padding: 10px 20px;
-  background: #e0e0e0;  /* Always the hover color */
-  border-radius: 4px;
-}
-.model-select-tab label {
-  margin-right: 5px;
-  font-size: 16px;
-  color: #333;
-}
-.model-select-tab select {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding-right: 1.5em;
-  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGwxMiAwbC02IDZMMAoiIGZpbGw9IiNjY2MiIC8+PC9zdmc+') no-repeat right 10px center, #fff;
-  appearance: none;
-  outline: none;
+.read-more-details {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
 }
 
-/* Tabs Contents – no border */
-.detail-tabs-contents {
+.expand-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  filter: invert(0); /* Not needed with white fill in SVG */
+}
+
+.full-description {
   padding: 20px;
-  border: none;
-}
-.detail-tab-content {
+  color: white;
+  background-color: #2b2610;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: none;
+  line-height: 1.6;
 }
-.detail-tab-content.full-description { /* additional styling if needed */ }
-.detail-tab-content:first-child {
+
+.full-description.active {
   display: block;
 }
 
-/* Specification Table */
-.spec-tabs-full table {
+/* Override richtext styling in full description */
+.full-description p, 
+.full-description li, 
+.full-description h1, 
+.full-description h2, 
+.full-description h3, 
+.full-description h4, 
+.full-description h5, 
+.full-description h6 {
+  color: white;
+}
+
+.full-description a {
+  color: #f0a0a0;
+}
+
+/* Models and Specifications */
+.modelsand-specifications {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #2b2610;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Model Accordion */
+.model-accordion {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.model-accordion-header {
+  display: flex;
+  width: 100%;
+  padding: 18px 20px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #2b2610;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.model-accordion-header:hover {
+  background-color: #f0f0f0;
+}
+
+.model-accordion.active .model-accordion-header {
+  background-color: #f0f0f0;
+  border-bottom-color: #d3d3d3;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.model-name {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #2b2610;
+}
+
+.model-accordion-content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Accordion */
+.faq-accordion {
+  align-items: stretch;
+  border-radius: 20px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.12);
+  background-color: #2b2610;
+  display: flex;
+  margin-top: 20px;
+  min-height: 60px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
+  flex-direction: column;
+  color: white;
+}
+
+.model-accordion-content .faq-accordion:first-child {
+  margin-top: 0;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  padding: 14px 20px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: white;
+  background-color: #2b2610;
+}
+
+.specification {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.spec-content {
+  padding: 20px;
+  color: white;
+  background-color: #2b2610;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.faq-accordion.active .heading {
+  background-color: #3a3420;
+}
+
+.faq-accordion.active .spec-content {
+  display: block;
+}
+
+.spec-content p, 
+.spec-content li, 
+.spec-content td, 
+.spec-content th {
+  color: white;
+}
+
+/* Spec Table */
+.spec-table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
+  color: white;
 }
-.spec-tabs-full th,
-.spec-tabs-full td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+
+.spec-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.spec-tabs-full th { background: #f0f0f0; }
+
+.spec-table tr:last-child {
+  border-bottom: none;
+}
+
+.spec-table td {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.spec-table td:first-child {
+  font-weight: 500;
+  width: 40%;
+  color: white;
+}
+
+/* Quote Button */
+.quote-button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.quote-button button {
+  background-color: #fff3ef;
+  color: #2b2610;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote-button button:hover {
+  background-color: #ffe5dc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .info-page-frame {
+    padding: 0 20px;
+  }
+  
+  .machine-title {
+    font-size: 28px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+  }
+  
+  .modelsand-specifications {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .model-accordion-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .quote-button {
+    width: 75%;
+  }
+  
+  .quote-button button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-thumbnail {
+    width: 60px;
+    height: 50px;
+  }
+  
+  .specification {
+    font-size: 16px;
+  }
+}

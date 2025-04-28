@@ -4,6 +4,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
             {% block title %}
             {% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}
@@ -16,7 +17,6 @@
         {% if page.search_description %}
         <meta name="description" content="{{ page.search_description }}" />
         {% endif %}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Force all links in the live preview panel to be opened in a new tab #}
         {% if request.in_preview_panel %}
@@ -29,62 +29,91 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/base_site.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         
-        <!-- Import Roboto font -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Import fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700;800&family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
         
         <style>
             body {
                 margin: 0;
-                font-family: 'Roboto', sans-serif;
-                background-color: #ffe;
+                font-family: 'Afacad', sans-serif;
+                background-color: #fff;
             }
             
-            /* Main Header */
-            .main-header {
-                display: flex;
+            /* Navigation Bar */
+            .nav-bar {
                 justify-content: space-between;
                 align-items: center;
-                height: 80px;
-                padding: 0 20px;
-                background-color: #fff;
-                border-bottom: 1px solid #ddd;
-            }
-            .logo { display: flex; align-items: center; }
-            .logo-img { width: 60px; height: 60px; }
-            .search-bar {
-                position: relative;
-                flex: 1;
-                max-width: 400px;
-                margin: 0 20px;
-            }
-            .search-bar input {
-                width: 100%;
-                padding: 8px 30px 8px 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
-            .search-icon {
-                position: absolute;
-                right: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                color: #888;
-            }
-            .contact-quote { display: flex; align-items: center; }
-            .quote-button {
-                background-color: #02ADFF;
-                color: #fff;
-                border: none;
-                padding: 10px 20px;
-                margin-right: 20px;
-                cursor: pointer;
-                border-radius: 4px;
-                font-size: 14px;
-            }
-            .contact-details {
+                background-color: #fff3ef;
                 display: flex;
+                width: 100%;
+                padding: 10px 20px;
+                font-family: 'Advent Pro', sans-serif;
+                font-size: 24px;
+                color: #2b2610;
+                font-weight: 500;
+                white-space: nowrap;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            
+            .nav-bar-items {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+            
+            .logo-image {
+                aspect-ratio: 1;
+                object-fit: contain;
+                object-position: center;
+                width: 10vw;
+                align-self: stretch;
+                margin: auto 0;
+                flex-shrink: 0;
+            }
+            
+            .products, .contact {
+                align-self: stretch;
+                margin: auto 0;
+                cursor: pointer;
+            }
+            
+            /* Search Bar */
+            .search-bar {
+                display: flex;
+                width: 100%;
+                padding: 40px 147px;
                 flex-direction: column;
-                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+                background-color: #f5f5f5;
+            }
+            
+            .search-view {
+                border: 3px solid #2B2610;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                width: 100%;
+                gap: 10px;
+                max-width: 100%;
+                background-color: #ffffff;
+            }
+            
+            .search-view .content {
+                flex: 1;
+            }
+            
+            .search-view input,
+            .search-view .input-text {
+                width: 100%;
+                border: none;
+                outline: none;
+                font-family: 'Afacad', sans-serif;
+                font-size: 16px;
+                color: #2b2610;
+                background: transparent;
             }
             
             /* Common content container */
@@ -94,17 +123,43 @@
                 padding: 0 20px;
             }
             
-            /* Page header with blue gradient */
-            .page-header {
-                background: linear-gradient(90deg, #02ADFF, #A6E1FF);
-                padding: 30px 20px;
-                color: #fff;
-                text-align: center;
-                margin-bottom: 30px;
+            /* Responsive styles */
+            @media (max-width: 991px) {
+                .nav-bar {
+                    padding: 10px;
+                }
+                
+                .logo-image {
+                    width: 15vw;
+                }
+                
+                .search-bar {
+                    padding: 20px;
+                }
             }
-            .page-header h1 {
-                font-size: 36px;
-                margin: 0;
+            
+            @media (max-width: 500px) {
+                .nav-bar {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                
+                .nav-bar-items {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                
+                .logo-image {
+                    width: 30vw;
+                }
+                
+                .search-bar {
+                    padding: 10px;
+                }
+                
+                .search-view {
+                    padding: 5px;
+                }
             }
         </style>
 
@@ -116,29 +171,29 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
         
-        <!-- Main Header -->
-        <header class="main-header">
-            <div class="logo">
+        <!-- Navigation Bar -->
+        <header class="nav-bar">
+            <div class="nav-bar-items">
                 <a href="/">
-                    <img class="logo-img" src="{% static 'Triad_Logo.png' %}" alt="Logo"/>
+                    <img class="logo-image" src="{% static 'img/Triad_Logo_Red.svg' %}" alt="Triad Logo"/>
                 </a>
+                <nav class="products"><b>Products</b></nav>
+                <nav class="contact">Contact</nav>
             </div>
-            <div class="search-bar">
-                <form action="{% url 'search' %}" method="get">
-                    <input type="text" name="query" placeholder="See if we have it..." {% if search_query %}value="{{ search_query }}"{% endif %}>
-                    <button type="submit" style="background: none; border: none; position: absolute; right: 5px; top: 50%; transform: translateY(-50%);">
-                        <i class="fas fa-search search-icon"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="contact-quote">
-                <button class="quote-button">REQUEST QUOTE</button>
-                <div class="contact-details">
-                    <span class="contact-item"><i class="fas fa-phone"></i> 1-732-292-1994</span>
-                    <span class="contact-item"><i class="fas fa-envelope"></i> Email Us</span>
-                </div>
-            </div>
+            <img width="30" height="30" src="https://img.icons8.com/material-outlined/48/shopping-cart--v1.png" alt="shopping-cart--v1"/>
         </header>
+
+        <!-- Search Bar -->
+        <section class="search-bar">
+            <div class="search-view">
+                <div class="content">
+                    <form action="{% url 'search' %}" method="get">
+                        <input type="text" name="query" placeholder="Search..." {% if search_query %}value="{{ search_query }}"{% endif %}>
+                    </form>
+                </div>
+                <img width="30" height="30" src="https://img.icons8.com/ios/50/search--v1.png" alt="Search Icon"/>
+            </div>
+        </section>
 
         {% block content %}{% endblock %}
 
