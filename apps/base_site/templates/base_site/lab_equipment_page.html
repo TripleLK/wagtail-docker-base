@@ -1,30 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_site/base.html" %}
 {% load wagtailcore_tags wagtailimages_tags static %}
 
 {% block extra_head %}
 {% endblock %}
 
-{% block content %}
+{% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/lab_equipment_page.css' %}"  />
-<div class="lab-equipment-page">
-  <!-- Main Header -->
-  <header class="main-header">
-    <div class="logo">
-      <img class="logo-img" src="{% static 'Triad_Logo.png' %}" alt="Logo"/>
-    </div>
-    <div class="search-bar">
-      <input type="text" placeholder="See if we have it...">
-      <i class="fas fa-search search-icon"></i>
-    </div>
-    <div class="contact-quote">
-      <button class="quote-button">REQUEST QUOTE</button>
-      <div class="contact-details">
-        <span class="contact-item"><i class="fas fa-phone"></i> 1-732-292-1994</span>
-        <span class="contact-item"><i class="fas fa-envelope"></i> Email Us</span>
-      </div>
-    </div>
-  </header>
+{% endblock %}
 
+{% block content %}
+<div class="lab-equipment-page">
   <!-- Gallery Splash Section -->
   <section class="gallery-splash">
     <div class="splash-overlay">
@@ -35,17 +20,17 @@
             <div class="featured-image">
                 {% if page.main_image %}
                 {% with img_url=page.main_image %}
-              <img id="featured-img" src="{{ img_url }}" alt="{{ page.title }}">
+              <img id="featured-img" src="{{ img_url }}" alt="{{ page.title }}" onerror="this.src='{% static 'img/default-image.jpg' %}'">
                 {% endwith %}
             {% else %}
-              <img id="featured-img" src="{% static 'default-image.jpg' %}" alt="{{ page.title }}">
+              <img id="featured-img" src="{% static 'img/default-image.jpg' %}" alt="{{ page.title }}">
             {% endif %}
           </div>
           <div class="thumbnails">
             {% for gallery_item in page.gallery_images.all %}
               {% with img_url=gallery_item.get_image_url %}
               {% if img_url %}
-              <img class ="thumbnail" src="{{ img_url }}" alt="Gallery Image">
+              <img class="thumbnail" src="{{ img_url }}" alt="Gallery Image" onerror="this.src='{% static 'img/default-image.jpg' %}'">
               {% endif %}
               {% endwith %}
             {% endfor %}
@@ -67,20 +52,21 @@
   <section class="tabbed-detail">
       {% if page.models.all %}
       <div class="detail-container" id="detail-model">
-          {% include "spec_tabs_header.html" with spec_group_names=page.spec_group_names models=page.models.all %}
+          {% include "base_site/spec_tabs_header.html" with spec_group_names=page.spec_group_names models=page.models.all %}
       {% for model in page.models.all %}
-          {% include "spec_tabs_content.html" with full_description=page.full_description spec_groups=model.merged_spec_groups name=model.name %}
+          {% include "base_site/spec_tabs_content.html" with full_description=page.full_description spec_groups=model.merged_spec_groups name=model.name %}
       {% endfor %}
       </div>
       {% else %}
       <div class="detail-container" id="detail-default">
-          {% include "spec_tabs_header.html" with spec_groups=page.get_effective_spec_groups %}
-          {% include "spec_tabs_content.html" with full_description=page.full_description spec_groups=page.get_effective_spec_groups %}
+          {% include "base_site/spec_tabs_header.html" with spec_groups=page.get_effective_spec_groups %}
+          {% include "base_site/spec_tabs_content.html" with full_description=page.full_description spec_groups=page.get_effective_spec_groups %}
       </div>
       {% endif %}
   </section>
 </div>
 
+{% block extra_js %}
 <script>
  // ---------- Gallery Thumbnail Behavior ----------
  document.addEventListener('DOMContentLoaded', function() {
@@ -205,8 +191,7 @@
       }
      initialSetup();
 
-
-
 });
 </script>
+{% endblock %}
 {% endblock %}
