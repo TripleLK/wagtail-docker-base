@@ -9,189 +9,245 @@
 {% endblock %}
 
 {% block content %}
-<div class="lab-equipment-page">
-  <!-- Gallery Splash Section -->
-  <section class="gallery-splash">
-    <div class="splash-overlay">
-      <h1 class="splash-title">{{ page.title }}</h1>
-      <div class="splash-content">
-        <!-- Gallery Column -->
-        <div class="gallery-column">
-            <div class="featured-image">
-                {% if page.main_image %}
-                {% with img_url=page.main_image %}
-              <img id="featured-img" src="{{ img_url }}" alt="{{ page.title }}" onerror="this.src='{% static 'img/default-image.jpg' %}'">
-                {% endwith %}
-            {% else %}
-              <img id="featured-img" src="{% static 'img/default-image.jpg' %}" alt="{{ page.title }}">
-            {% endif %}
-          </div>
-          <div class="thumbnails">
-            {% for gallery_item in page.gallery_images.all %}
-              {% with img_url=gallery_item.get_image_url %}
-              {% if img_url %}
-              <img class="thumbnail" src="{{ img_url }}" alt="Gallery Image" onerror="this.src='{% static 'img/default-image.jpg' %}'">
-              {% endif %}
-              {% endwith %}
-            {% endfor %}
-          </div>
-        </div>
-        <!-- Description Column -->
-        <div class="description-column">
-          <h2 class="overview-title">Overview</h2>
-           <div class="short-description">
-            {{ page.short_description|richtext }}
-          </div>
-        </div>
-      </div><!-- .splash-content -->
-
-    </div><!-- .splash-overlay -->
-  </section>
-
-  <!-- Unified Tabbed Detail Section -->
-  <section class="tabbed-detail">
-      {% if page.models.all %}
-      <div class="detail-container" id="detail-model">
-          {% include "base_site/spec_tabs_header.html" with spec_group_names=page.spec_group_names models=page.models.all %}
-      {% for model in page.models.all %}
-          {% include "base_site/spec_tabs_content.html" with full_description=page.full_description spec_groups=model.merged_spec_groups name=model.name %}
+<section class="info-page-frame">
+  <!-- Product Image and Title Section -->
+  <div class="product-image-container">
+    {% if page.main_image %}
+    {% with img_url=page.main_image %}
+    <img id="featured-img" src="{{ img_url }}" alt="{{ page.title }}" class="product-detail-image" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+    {% endwith %}
+    {% else %}
+    <img id="featured-img" src="{% static 'img/default-image.jpg' %}" alt="{{ page.title }}" class="product-detail-image">
+    {% endif %}
+    
+    <!-- Thumbnails Gallery -->
+    {% if page.gallery_images.all %}
+    <div class="thumbnail-gallery">
+      {% for gallery_item in page.gallery_images.all %}
+      {% with img_url=gallery_item.get_image_url %}
+      {% if img_url %}
+      <img class="gallery-thumbnail" src="{{ img_url }}" alt="Gallery Image" onerror="this.src='{% static 'img/default-image.jpg' %}'" data-full="{{ img_url }}">
+      {% endif %}
+      {% endwith %}
       {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  
+  <h2 class="machine-title">{{ page.title }}</h2>
+  <div class="product-description">
+    {{ page.short_description|richtext }}
+  </div>
+  
+  <!-- Full Description Accordion -->
+  <div class="more-details-box-frame">
+    <div class="long-description-box">
+      <div class="details-header" id="full-description-header">
+        <h3 class="read-more-details">Read More Details</h3>
+        <img src="{% static 'img/expand-icon.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
       </div>
-      {% else %}
-      <div class="detail-container" id="detail-default">
-          {% include "base_site/spec_tabs_header.html" with spec_groups=page.get_effective_spec_groups %}
-          {% include "base_site/spec_tabs_content.html" with full_description=page.full_description spec_groups=page.get_effective_spec_groups %}
+      <div class="full-description" id="full-description-content">
+        {{ page.full_description|richtext }}
+      </div>
+    </div>
+  </div>
+  
+  <h2 class="modelsand-specifications">Models and Specifications</h2>
+  
+  <!-- Model Specification Sections -->
+  {% if page.models.all %}
+  {% for model in page.models.all %}
+  <div class="model-accordion">
+    <div class="model-accordion-header">
+      <h3 class="model-name">{{ model.name }}</h3>
+      <div class="header-right">
+        <a href="#" class="quote-button">
+          <button>Add to Quote Cart</button>
+        </a>
+        <img src="{% static 'img/expand-icon-dark.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
+      </div>
+    </div>
+    <div class="model-accordion-content">
+      <!-- Specification Accordions -->
+      {% for group in model.merged_spec_groups %}
+      {% if group.specs %}
+      <div class="faq-accordion">
+        <div class="heading">
+          <h4 class="specification">{{ group.name }}</h4>
+          <img src="{% static 'img/expand-icon.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
+        </div>
+        <div class="spec-content">
+          <table class="spec-table">
+            <tbody>
+              {% for spec in group.specs %}
+              <tr>
+                <td>{{ spec.key }}</td>
+                <td>{{ spec.value }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
       </div>
       {% endif %}
-  </section>
-</div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  {% else %}
+  <!-- Single Product Specification Section (no models) -->
+  <div class="model-accordion">
+    <div class="model-accordion-header">
+      <h3 class="model-name">{{ page.title }}</h3>
+      <div class="header-right">
+        <a href="#" class="quote-button">
+          <button>Add to Quote Cart</button>
+        </a>
+        <img src="{% static 'img/expand-icon-dark.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
+      </div>
+    </div>
+    <div class="model-accordion-content">
+      <!-- Specification Accordions -->
+      {% for group in page.get_effective_spec_groups %}
+      {% if group.specs %}
+      <div class="faq-accordion">
+        <div class="heading">
+          <h4 class="specification">{{ group.name }}</h4>
+          <img src="{% static 'img/expand-icon.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
+        </div>
+        <div class="spec-content">
+          <table class="spec-table">
+            <tbody>
+              {% for spec in group.specs %}
+              <tr>
+                <td>{{ spec.key }}</td>
+                <td>{{ spec.value }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</section>
+
+{% endblock %}
 
 {% block extra_js %}
 <script>
- // ---------- Gallery Thumbnail Behavior ----------
- document.addEventListener('DOMContentLoaded', function() {
-     var model_mapping;
-
-     const featuredImg = document.getElementById('featured-img');
-     const thumbnails = document.querySelectorAll('.thumbnail');
-
-     thumbnails.forEach(thumb => {
-         thumb.addEventListener('click', () => {
-             // Remove border-color from all thumbnails
-             thumbnails.forEach(t => t.style.borderColor = 'transparent');
-
-             // Highlight the clicked thumbnail
-             thumb.style.borderColor = '#02ADFF';
-
-             // Set the featured image source using the data-full attribute
-             featuredImg.src = thumb.src;
-         });
-     });
-     function selectTab(tabTarget) {
-         var tabContents = document.getElementsByClassName('detail-tab-content');
-
-         console.log("Tab target is " + tabTarget);
-         for (var tab of tabContents) {
-             if (tab.classList.contains(tabTarget)) {
-                 tab.style.display = 'block';
-             } else {
-                 tab.style.display = 'none';
-             }
-         }
-     }
-
-     function selectModel(modelTarget) {
-         modelTarget = modelTarget + "-tab-contents";
-         console.log("modelTarget: " + modelTarget);
-         var modelBlocks = document.getElementsByClassName('detail-tabs-contents');
-
-         for (var block of modelBlocks) {
-             if (block.id==modelTarget) {
-                 block.style.display = 'block';
-             } else {
-                 block.style.display = 'none';
-             }
-         }
-         hideNonActiveTabs();
-     }
-     
-     function slugify(text) {
-         return text.toString().toLowerCase()
-                    .trim()
-                    .replace('&amp;', '')
-                    .replace(/\s+/g, '-')        // Replace spaces with -
-                    .replace(/&+/g, '')      // Remove all non-word characters
-                    .replace(/[^\w\-]+/g, '')      // Remove all non-word characters
-                    .replace(/\-\-+/g, '-');       // Replace multiple - with a single -
-}
-     function hideNonActiveTabs() {
-         var selectedModel = document.getElementById('model-select').value;
-         var includedGroups = model_mapping[selectedModel].map((groupName) => {
-             let blah = slugify(groupName);
-             console.log('pre: ' + groupName + '; post: ' + blah);
-             return blah;
-         });
-
-         var tabs = document.getElementsByClassName('detail-tab');
-         var needNewTab = false;
-         for (var tab of tabs) {
-             var tabGroup = tab.id.split("-").slice(2).join("-");
-             if (includedGroups.includes(tabGroup) || tabGroup == "full-description") {
-                 tab.style.display = 'flex';
-             } else {
-                 tab.style.display = 'none';
-                 if (tab.classList.contains('active')) needNewTab = true;
-             }
-         }
-
-         if (needNewTab) {
-             document.getElementById('detail-tab-full-description').click();
-         }
-     }
-
-     function initializeModelToGroups() {
-         model_mapping = {};
-         var modelName;
-         var modelGroupList;
-         {% for model in page.models.all %}
-             modelName = "{{ model.name|slugify }}";
-             modelGroupList = [];
-             {% for spec_group in model.merged_spec_groups %}
-                 modelGroupList.push("{{ spec_group.name }}")
-             {% endfor %}
-             model_mapping[modelName] = modelGroupList;
-         {% endfor %}
-
-     }
-
-     function initialSetup() {
-         initializeModelToGroups();
-         selectTab('tab-spec-full-description');
-
-         var tabs = document.getElementsByClassName('detail-tab');
-         for (var tab of tabs) {
-             tab.addEventListener('click', function() {
-                 for (var otherTab of tabs) {
-                     otherTab.classList.remove('active');
-                 }
-                 this.classList.add('active');
-                 selectTab(this.getAttribute('data-target'));
-             })
-         }
-
-         var modelSelect = document.getElementById('model-select');
-         console.log("initial select of " + modelSelect.value + "-tab-contents");
-         selectModel(modelSelect.value);
-         modelSelect.addEventListener('change', function() {
-             console.log("select of " + modelSelect.value + "-tab-contents");
-             selectModel(this.value);
-         });
-
-
+document.addEventListener('DOMContentLoaded', function() {
+  // Gallery Thumbnail Behavior
+  const featuredImg = document.getElementById('featured-img');
+  const thumbnails = document.querySelectorAll('.gallery-thumbnail');
+  
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', function() {
+      // Remove active class from all thumbnails
+      thumbnails.forEach(t => t.classList.remove('active'));
+      
+      // Add active class to clicked thumbnail
+      this.classList.add('active');
+      
+      // Set the featured image source
+      featuredImg.src = this.getAttribute('data-full') || this.src;
+    });
+  });
+  
+  // Make first thumbnail active by default
+  if (thumbnails.length > 0) {
+    thumbnails[0].classList.add('active');
+  }
+  
+  // Full description accordion toggle
+  const fullDescHeader = document.getElementById('full-description-header');
+  const fullDescContent = document.getElementById('full-description-content');
+  
+  if (fullDescHeader && fullDescContent) {
+    fullDescHeader.addEventListener('click', function() {
+      const icon = this.querySelector('.expand-icon');
+      
+      if (fullDescContent.classList.contains('active')) {
+        fullDescContent.classList.remove('active');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      } else {
+        fullDescContent.classList.add('active');
+        if (icon) icon.style.transform = 'rotate(180deg)';
       }
-     initialSetup();
-
+    });
+  }
+  
+  // Model accordions
+  const modelAccordions = document.querySelectorAll('.model-accordion');
+  
+  modelAccordions.forEach(accordion => {
+    const header = accordion.querySelector('.model-accordion-header');
+    const content = accordion.querySelector('.model-accordion-content');
+    const icon = header.querySelector('.expand-icon');
+    
+    if (header && content) {
+      // Show first model by default
+      if (accordion === modelAccordions[0]) {
+        accordion.classList.add('active');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+      }
+      
+      header.addEventListener('click', function(e) {
+        // Don't toggle if clicking the quote button
+        if (e.target.closest('.quote-button')) {
+          return;
+        }
+        
+        const isActive = accordion.classList.contains('active');
+        
+        if (isActive) {
+          accordion.classList.remove('active');
+          content.style.display = 'none';
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        } else {
+          accordion.classList.add('active');
+          content.style.display = 'block';
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    }
+  });
+  
+  // Specification accordions
+  const accordions = document.querySelectorAll('.faq-accordion');
+  
+  accordions.forEach(accordion => {
+    const heading = accordion.querySelector('.heading');
+    const content = accordion.querySelector('.spec-content');
+    const icon = heading.querySelector('.expand-icon');
+    
+    if (heading && content) {
+      heading.addEventListener('click', function() {
+        // Close all other accordions first
+        accordions.forEach(acc => {
+          if (acc !== accordion && acc.classList.contains('active')) {
+            acc.classList.remove('active');
+            const accIcon = acc.querySelector('.heading .expand-icon');
+            if (accIcon) accIcon.style.transform = 'rotate(0deg)';
+          }
+        });
+        
+        // Toggle current accordion
+        if (accordion.classList.contains('active')) {
+          accordion.classList.remove('active');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        } else {
+          accordion.classList.add('active');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    }
+  });
 });
 </script>
-{% endblock %}
 {% endblock %}
