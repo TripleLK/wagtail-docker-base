@@ -1,0 +1,604 @@
+{% extends "base_site/base.html" %}
+{% load static wagtailcore_tags wagtailimages_tags base_site_tags %}
+
+{% block body_class %}multi-product-page{% endblock %}
+
+{% block title %}
+    {% if is_search_results %}
+        {% if is_category_page %}
+            {{ category_page_title }} | Triad Scientific
+        {% else %}
+            Search Results for "{{ search_query }}" | Triad Scientific
+        {% endif %}
+    {% else %}
+        {{ page.intro_title|default:page.title }} | Triad Scientific
+    {% endif %}
+{% endblock %}
+
+{% block extra_meta %}
+    {% if is_category_page %}
+    <meta name="description" content="Browse our collection of {{ category_page_title }} equipment at Triad Scientific. High-quality lab equipment and scientific supplies.">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    {% if is_search_results %}
+        {% if is_category_page %}
+            <h1>{{ category_page_title }}</h1>
+        {% else %}
+            <h1>Search Results for "{{ search_query }}"</h1>
+        {% endif %}
+    {% else %}
+        <h1>{{ page.intro_title|default:page.title }}</h1>
+    {% endif %}
+</section>
+
+<div class="content-container">
+    {% if not is_search_results and page.intro_text %}
+        <div class="mb-6">
+            {{ page.intro_text|richtext }}
+        </div>
+    {% endif %}
+
+    <div class="layout-container">
+        <!-- Filter Sidebar -->
+        {% if tag_categories and available_filters %}
+        <div class="filter-sidebar">
+            <div class="filter-header">
+                <h3>Filter Results</h3>
+                {% if applied_filters %}
+                <a href="{% if search_query %}?query={{ search_query }}{% else %}?{% endif %}" class="clear-all">Clear All</a>
+                {% endif %}
+            </div>
+            
+            <form id="filter-form" method="get" action="{% url 'search' %}">
+                {% if search_query %}
+                <input type="hidden" name="query" value="{{ search_query }}">
+                {% endif %}
+                
+                {% for category in tag_categories %}
+                    {% if category.name in available_filters %}
+                    <div class="filter-category">
+                        <h4>{{ category.name }}</h4>
+                        <div class="filter-options">
+                            {% for tag in available_filters|get_item:category.name %}
+                                <div class="filter-option">
+                                    <label for="filter-{{ category.name|lower }}-{{ tag.name|slugify }}">
+                                        <input type="checkbox" 
+                                               id="filter-{{ category.name|lower }}-{{ tag.name|slugify }}" 
+                                               name="{{ category.name|lower }}" 
+                                               value="{{ tag.name }}"
+                                               {% if category.name in applied_filters and tag.name in applied_filters|get_item:category.name %}checked{% endif %}
+                                               class="filter-checkbox">
+                                        <span class="filter-label">{{ tag.name }}</span>
+                                        <span class="filter-count">({{ tag.page_count }})</span>
+                                    </label>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </form>
+        </div>
+        {% endif %}
+
+        <!-- Product grid -->
+        <div class="product-grid">
+            {% for result in search_results %}
+                <div class="product-card">
+                    <a href="{% pageurl result %}" class="product-link">
+                        {% if is_search_results %}
+                            {% if result.main_image_url %}
+                                <div class="product-image">
+                                    <img src="{{ result.main_image_url }}" alt="{{ result.title }}" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                                </div>
+                            {% else %}
+                                <div class="product-image no-image">
+                                    <span>No image available</span>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            {% with main_image=result.main_image %}
+                                {% if main_image %}
+                                    <div class="product-image">
+                                        <img src="{{ main_image }}" alt="{{ result.title }}" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                                    </div>
+                                {% else %}
+                                    <div class="product-image no-image">
+                                        <span>No image available</span>
+                                    </div>
+                                {% endif %}
+                            {% endwith %}
+                        {% endif %}
+                        <div class="product-info">
+                            <h3 class="product-title">{{ result.title }}</h3>
+                            {% if result.short_description %}
+                                <div class="product-description">
+                                    {{ result.short_description|richtext|truncatewords_html:20 }}
+                                </div>
+                            {% endif %}
+                            <div class="product-tags">
+                                {% for tag in result.categorized_tags.all|slice:":3" %}
+                                    <a href="{% url 'category_view' category_slug=tag.category|slugify value_slug=tag.name|slugify %}" 
+                                       class="tag" 
+                                       style="background-color: {{ tag.category_color }}">
+                                        {{ tag.name }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% empty %}
+                <div class="no-results">
+                    {% if is_search_results %}
+                        <h3>No results found</h3>
+                        {% if applied_filters %}
+                            <p>Try removing some filters or using different search terms</p>
+                            <div class="applied-filters">
+                                <h4>Applied Filters:</h4>
+                                <ul>
+                                    {% for category, values in applied_filters.items %}
+                                        <li><strong>{{ category }}:</strong> {{ values|join:", " }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <a href="{% if search_query %}?query={{ search_query }}{% else %}?{% endif %}" class="btn clear-filters">Clear Filters</a>
+                            </div>
+                        {% else %}
+                            <p>Try using different search terms or browse our categories</p>
+                        {% endif %}
+                    {% else %}
+                        <h3>No products available</h3>
+                        <p>Check back later for new products</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    {% if search_results.paginator.num_pages > 1 %}
+    <div class="row mt-4">
+        <div class="col-12">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    {% if search_results.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?{% for key, values in request.GET.lists %}{% if key != 'page' %}{% for value in values %}{{ key }}={{ value|urlencode }}&{% endfor %}{% endif %}{% endfor %}page={{ search_results.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo;</span>
+                        </li>
+                    {% endif %}
+                    
+                    {% for p in search_results.paginator.page_range %}
+                        {% if p == search_results.number %}
+                            <li class="page-item active">
+                                <span class="page-link">{{ p }}</span>
+                            </li>
+                        {% elif p > search_results.number|add:"-3" and p < search_results.number|add:"3" %}
+                            <li class="page-item">
+                                <a class="page-link" href="?{% for key, values in request.GET.lists %}{% if key != 'page' %}{% for value in values %}{{ key }}={{ value|urlencode }}&{% endfor %}{% endif %}{% endfor %}page={{ p }}">{{ p }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% if search_results.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?{% for key, values in request.GET.lists %}{% if key != 'page' %}{% for value in values %}{{ key }}={{ value|urlencode }}&{% endfor %}{% endif %}{% endfor %}page={{ search_results.next_page_number }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&raquo;</span>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Layout Container */
+    .layout-container {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    /* Filter Sidebar */
+    .filter-sidebar {
+        width: 250px;
+        flex-shrink: 0;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+    
+    .filter-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    
+    .filter-header h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .clear-all {
+        font-size: 12px;
+        color: #666;
+        text-decoration: none;
+    }
+    
+    .clear-all:hover {
+        text-decoration: underline;
+    }
+    
+    .filter-category {
+        margin-bottom: 20px;
+    }
+    
+    .filter-category h4 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    .filter-options {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    
+    .filter-option {
+        margin-bottom: 8px;
+    }
+    
+    .filter-option label {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .filter-checkbox {
+        margin-right: 8px;
+    }
+    
+    .filter-label {
+        flex-grow: 1;
+    }
+    
+    .filter-count {
+        color: #999;
+        font-size: 12px;
+    }
+    
+    /* Applied Filters */
+    .applied-filters {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+    }
+    
+    .applied-filters h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .applied-filters ul {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .btn.clear-filters {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: #02ADFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    /* Product Grid */
+    .product-grid {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    
+    /* Product Card */
+    .product-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    
+    .product-link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .product-image {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+    
+    .product-card:hover .product-image img {
+        transform: scale(1.05);
+    }
+    
+    .product-image.no-image {
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+    }
+    
+    .product-info {
+        padding: 15px;
+    }
+    
+    .product-title {
+        font-size: 18px;
+        margin: 0 0 10px;
+        font-weight: 500;
+    }
+    
+    .product-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .product-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .tag {
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        transition: opacity 0.2s;
+    }
+    
+    .tag:hover {
+        opacity: 0.9;
+        color: white;
+    }
+    
+    /* No results */
+    .no-results {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .no-results h3 {
+        font-size: 24px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    
+    .no-results p {
+        color: #777;
+    }
+    
+    /* Pagination */
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 30px;
+    }
+    
+    .pagination-link {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        color: #555;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+    
+    .pagination-link:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .pagination-link.active {
+        background-color: #02ADFF;
+        color: white;
+        border-color: #02ADFF;
+    }
+    
+    /* Responsive layout */
+    @media (max-width: 768px) {
+        .layout-container {
+            flex-direction: column;
+        }
+        
+        .filter-sidebar {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Function to update URL with current filters
+    function updateUrlWithFilters(form) {
+        const formData = new FormData(form);
+        let searchParams = new URLSearchParams();
+        
+        // Add search query if exists
+        const searchQuery = formData.get('query');
+        if (searchQuery) {
+            searchParams.append('query', searchQuery);
+        }
+        
+        // Add all checkbox filters
+        const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
+        checkboxes.forEach(checkbox => {
+            searchParams.append(checkbox.name, checkbox.value);
+        });
+        
+        // Preserve current page if it exists in the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('page')) {
+            searchParams.append('page', urlParams.get('page'));
+        }
+        
+        // Update URL without reloading page
+        const newUrl = window.location.pathname + '?' + searchParams.toString();
+        window.history.pushState({path: newUrl}, '', newUrl);
+        
+        // Fetch and update content
+        fetchAndUpdateResults(newUrl);
+        
+        return false; // Prevent form submission
+    }
+    
+    // Function to fetch and update results
+    function fetchAndUpdateResults(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Update product grid - Using the correct class name
+                const productGrid = document.querySelector('.product-grid');
+                const newProductGrid = doc.querySelector('.product-grid');
+                if (productGrid && newProductGrid) {
+                    productGrid.innerHTML = newProductGrid.innerHTML;
+                }
+                
+                // Update filter sidebar
+                const filterSidebar = document.querySelector('.filter-sidebar');
+                const newFilterSidebar = doc.querySelector('.filter-sidebar');
+                if (filterSidebar && newFilterSidebar) {
+                    filterSidebar.innerHTML = newFilterSidebar.innerHTML;
+                    
+                    // Re-attach event listeners to new checkboxes
+                    const filterForm = document.getElementById('filter-form');
+                    if (filterForm) {
+                        const checkboxes = filterForm.querySelectorAll('input[type="checkbox"]');
+                        checkboxes.forEach(checkbox => {
+                            checkbox.addEventListener('change', function() {
+                                updateUrlWithFilters(filterForm);
+                            });
+                        });
+                    }
+                }
+                
+                // Update pagination - With proper null checks
+                const pagination = document.querySelector('.pagination');
+                const newPagination = doc.querySelector('.pagination');
+                
+                if (pagination && newPagination) {
+                    const paginationContainer = pagination.closest('.row');
+                    const newPaginationContainer = newPagination.closest('.row');
+                    
+                    if (paginationContainer && newPaginationContainer) {
+                        paginationContainer.innerHTML = newPaginationContainer.innerHTML;
+                        // Re-attach event listeners to new pagination links
+                        attachPaginationListeners();
+                    }
+                }
+            })
+            .catch(error => console.error('Error updating results:', error));
+    }
+    
+    // Function to attach listeners to pagination links
+    function attachPaginationListeners() {
+        const paginationLinks = document.querySelectorAll('.pagination .page-link');
+        paginationLinks.forEach(link => {
+            if (!link.hasAttribute('aria-hidden')) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const url = this.getAttribute('href');
+                    window.history.pushState({path: url}, '', url);
+                    fetchAndUpdateResults(url);
+                });
+            }
+        });
+    }
+    
+    // Handle form submission
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterForm = document.getElementById('filter-form');
+        if (filterForm) {
+            filterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                return updateUrlWithFilters(this);
+            });
+            
+            // Handle checkbox changes
+            const checkboxes = filterForm.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    updateUrlWithFilters(filterForm);
+                });
+            });
+            
+            // Initial attachment of pagination listeners
+            attachPaginationListeners();
+        }
+    });
+    
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', function(e) {
+        if (e.state && e.state.path) {
+            fetchAndUpdateResults(e.state.path);
+        } else {
+            location.reload();
+        }
+    });
+</script>
+{% endblock %} 
