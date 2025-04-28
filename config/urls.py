@@ -14,6 +14,7 @@ urlpatterns = [
     path("documents/", include(wagtaildocs_urls)),
     path('', include('apps.search.urls')),
     path("git-reload", include('apps.reload_from_git.urls')),
+    path("", include('apps.base_site.urls')),
 ]
 
 

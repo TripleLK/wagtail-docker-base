@@ -6,6 +6,118 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/lab_equipment_page.css' %}"  />
+<style>
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid #ddd;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 4px 0;
+    margin: 0 5px;
+    font-family: 'Afacad', sans-serif;
+    /* Hide the spinner buttons */
+    -moz-appearance: textfield;
+  }
+  
+  .quantity-input::-webkit-inner-spin-button,
+  .quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .quantity-input:focus {
+    outline: none;
+  }
+  
+  .quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b2610;
+    transition: background-color 0.2s;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #eeeeee;
+  }
+  
+  .trash-icon {
+    color: #cc0000;
+  }
+  
+  .quote-or {
+    margin: 0 10px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Shared button styles */
+  .request-quote-button button,
+  .quote-button button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Afacad', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  /* Request Quote button specific styles */
+  .request-quote-button button {
+    background-color: #e9f0f9;
+    color: #2b2610;
+  }
+  
+  .request-quote-button button:hover {
+    background-color: #d8e5f5;
+  }
+  
+  /* Add to Quote Cart button specific styles */
+  .quote-button button {
+    background-color: #ffebe0;
+    color: #2b2610;
+  }
+  
+  .quote-button button:hover {
+    background-color: #ffe0d0;
+  }
+  
+  /* Fix for strange line */
+  .model-accordion-header .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quote-actions {
+    display: flex;
+    align-items: center;
+  }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -61,9 +173,23 @@
     <div class="model-accordion-header">
       <h3 class="model-name">{{ model.name }}</h3>
       <div class="header-right">
-        <a href="#" class="quote-button">
-          <button>Add to Quote Cart</button>
-        </a>
+        <div class="quote-actions" data-equipment-id="{{ page.id }}" data-model-id="{{ model.id }}" data-model-name="{{ model.name }}" data-slug="{{ page.slug }}">
+          <a href="{% url 'request_single_quote_with_model' page.id model.id %}" class="request-quote-button">
+            <button>Request Quote</button>
+          </a>
+          <span class="quote-or">or</span>
+          <a href="#" class="quote-button">
+            <button>Add to Quote Cart</button>
+          </a>
+          <div class="quantity-controls" style="display: none;">
+            <button class="quantity-btn decrease-btn" data-action="decrease">
+              <i class="fas fa-trash-alt trash-icon" style="display: none;"></i>
+              <span class="minus-sign">-</span>
+            </button>
+            <input type="number" min="1" class="quantity-input" value="1">
+            <button class="quantity-btn increase-btn" data-action="increase">+</button>
+          </div>
+        </div>
         <img src="{% static 'img/expand-icon-dark.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
       </div>
     </div>
@@ -100,9 +226,23 @@
     <div class="model-accordion-header">
       <h3 class="model-name">{{ page.title }}</h3>
       <div class="header-right">
-        <a href="#" class="quote-button">
-          <button>Add to Quote Cart</button>
-        </a>
+        <div class="quote-actions" data-equipment-id="{{ page.id }}" data-slug="{{ page.slug }}">
+          <a href="{% url 'request_single_quote' page.id %}" class="request-quote-button">
+            <button>Request Quote</button>
+          </a>
+          <span class="quote-or">or</span>
+          <a href="#" class="quote-button">
+            <button>Add to Quote Cart</button>
+          </a>
+          <div class="quantity-controls" style="display: none;">
+            <button class="quantity-btn decrease-btn" data-action="decrease">
+              <i class="fas fa-trash-alt trash-icon" style="display: none;"></i>
+              <span class="minus-sign">-</span>
+            </button>
+            <input type="number" min="1" class="quantity-input" value="1">
+            <button class="quantity-btn increase-btn" data-action="increase">+</button>
+          </div>
+        </div>
         <img src="{% static 'img/expand-icon-dark.svg' %}" alt="Expand Icon" class="expand-icon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgOUwxMiAxNkw1IDlaIiBmaWxsPSIjMkIyNjEwIi8+PC9zdmc+'" />
       </div>
     </div>
@@ -198,8 +338,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       header.addEventListener('click', function(e) {
-        // Don't toggle if clicking the quote button
-        if (e.target.closest('.quote-button')) {
+        // Don't toggle if clicking the quote button or quantity controls
+        if (e.target.closest('.quote-actions')) {
           return;
         }
         
@@ -248,6 +388,317 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+  
+  // Check session for items already in cart and update UI
+  fetchCartItems();
+  
+  function fetchCartItems() {
+    // Get current cart items from server to ensure we're in sync
+    fetch('{% url "get_cart_items" %}')
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          // Update each product's quantity controls
+          updateProductQuantities(data.cart_items);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching cart items:', error);
+      });
+  }
+  
+  function updateProductQuantities(cartItems) {
+    const quoteActions = document.querySelectorAll('.quote-actions');
+    
+    quoteActions.forEach(actionContainer => {
+      const equipmentId = actionContainer.getAttribute('data-equipment-id');
+      const modelId = actionContainer.getAttribute('data-model-id') || '';
+      
+      // Find this item in the cart
+      const cartItem = cartItems.find(item => 
+        item.equipment_page_id == equipmentId && 
+        (modelId === '' || item.equipment_model_id == modelId)
+      );
+      
+      if (cartItem) {
+        // Store slug for better navigation
+        if (cartItem.page_slug) {
+          actionContainer.setAttribute('data-slug', cartItem.page_slug);
+        }
+        
+        showQuantityControls(actionContainer, cartItem.quantity);
+        
+        // Update trash icon visibility
+        const decreaseBtn = actionContainer.querySelector('.decrease-btn');
+        const trashIcon = decreaseBtn.querySelector('.trash-icon');
+        const minusSign = decreaseBtn.querySelector('.minus-sign');
+        
+        if (cartItem.quantity === 1) {
+          trashIcon.style.display = 'inline';
+          minusSign.style.display = 'none';
+        } else {
+          trashIcon.style.display = 'none';
+          minusSign.style.display = 'inline';
+        }
+      }
+    });
+  }
+  
+  // Quote cart functionality
+  const quoteButtons = document.querySelectorAll('.quote-button');
+  
+  quoteButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const actionContainer = this.closest('.quote-actions');
+      const equipmentId = actionContainer.getAttribute('data-equipment-id');
+      const modelId = actionContainer.getAttribute('data-model-id');
+      const quantity = 1;
+      
+      addToCart(actionContainer, equipmentId, modelId, quantity);
+    });
+  });
+  
+  // Setup quantity controls
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('quantity-btn') || e.target.closest('.quantity-btn')) {
+      const btn = e.target.classList.contains('quantity-btn') ? e.target : e.target.closest('.quantity-btn');
+      const actionContainer = btn.closest('.quote-actions');
+      const quantityInput = actionContainer.querySelector('.quantity-input');
+      const equipmentId = actionContainer.getAttribute('data-equipment-id');
+      const modelId = actionContainer.getAttribute('data-model-id');
+      let quantity = parseInt(quantityInput.value);
+      
+      if (btn.classList.contains('increase-btn')) {
+        quantity++;
+        quantityInput.value = quantity;
+        updateCart(actionContainer, equipmentId, modelId, quantity);
+        
+        // Show minus sign if we're increasing from 1
+        if (quantity === 2) {
+          const decreaseBtn = actionContainer.querySelector('.decrease-btn');
+          decreaseBtn.querySelector('.trash-icon').style.display = 'none';
+          decreaseBtn.querySelector('.minus-sign').style.display = 'inline';
+        }
+      } else if (btn.classList.contains('decrease-btn')) {
+        if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+          updateCart(actionContainer, equipmentId, modelId, quantity);
+          
+          // Show trash icon if we're decreasing to 1
+          if (quantity === 1) {
+            const decreaseBtn = actionContainer.querySelector('.decrease-btn');
+            decreaseBtn.querySelector('.trash-icon').style.display = 'inline';
+            decreaseBtn.querySelector('.minus-sign').style.display = 'none';
+          }
+        } else {
+          // Remove the item from cart
+          removeFromCart(equipmentId, modelId);
+          
+          // Hide quantity controls and show both buttons
+          const quantityControls = actionContainer.querySelector('.quantity-controls');
+          quantityControls.style.display = 'none';
+          
+          const quoteButton = actionContainer.querySelector('.quote-button');
+          quoteButton.style.display = 'inline-block';
+          
+          // Also show the Request Quote button and "or" text
+          const requestQuoteButton = actionContainer.querySelector('.request-quote-button');
+          const quoteOr = actionContainer.querySelector('.quote-or');
+          if (requestQuoteButton) requestQuoteButton.style.display = 'inline-block';
+          if (quoteOr) quoteOr.style.display = 'inline-block';
+        }
+      }
+    }
+  });
+  
+  document.addEventListener('change', function(e) {
+    if (e.target.classList.contains('quantity-input') && e.target.closest('.quote-actions')) {
+      const actionContainer = e.target.closest('.quote-actions');
+      const equipmentId = actionContainer.getAttribute('data-equipment-id');
+      const modelId = actionContainer.getAttribute('data-model-id');
+      let quantity = parseInt(e.target.value);
+      
+      // Validate quantity
+      if (isNaN(quantity) || quantity < 1) {
+        quantity = 1;
+        e.target.value = 1;
+      }
+      
+      updateCart(actionContainer, equipmentId, modelId, quantity);
+      
+      // Update decrease button appearance
+      const decreaseBtn = actionContainer.querySelector('.decrease-btn');
+      const trashIcon = decreaseBtn.querySelector('.trash-icon');
+      const minusSign = decreaseBtn.querySelector('.minus-sign');
+      
+      if (quantity === 1) {
+        trashIcon.style.display = 'inline';
+        minusSign.style.display = 'none';
+      } else {
+        trashIcon.style.display = 'none';
+        minusSign.style.display = 'inline';
+      }
+    }
+  });
+  
+  function addToCart(actionContainer, equipmentId, modelId, quantity) {
+    // Create form data for AJAX request
+    const formData = new FormData();
+    formData.append('equipment_page_id', equipmentId);
+    if (modelId) {
+      formData.append('equipment_model_id', modelId);
+    }
+    formData.append('quantity', quantity);
+    
+    // Send AJAX request to add to cart
+    fetch('{% url "cart_add" %}', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'X-CSRFToken': getCookie('csrftoken')
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        // Show quantity controls instead of button
+        showQuantityControls(actionContainer, quantity);
+        
+        // Update cart count in header
+        updateCartCountDisplay(data.cart_count);
+      } else {
+        alert(data.error || 'An error occurred while adding to cart');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred while adding to cart');
+    });
+  }
+  
+  function updateCart(actionContainer, equipmentId, modelId, quantity) {
+    // Create form data for AJAX request
+    const formData = new FormData();
+    formData.append('equipment_page_id', equipmentId);
+    if (modelId) {
+      formData.append('equipment_model_id', modelId);
+    }
+    formData.append('quantity', quantity);
+    
+    // Send AJAX request to add to cart (which will update if already exists)
+    fetch('{% url "cart_add" %}', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'X-CSRFToken': getCookie('csrftoken')
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        // Update cart count in header
+        updateCartCountDisplay(data.cart_count);
+      } else {
+        alert(data.error || 'An error occurred while updating the cart');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred while updating the cart');
+    });
+  }
+  
+  function removeFromCart(equipmentId, modelId) {
+    const formData = new FormData();
+    formData.append('equipment_page_id', equipmentId);
+    if (modelId) {
+      formData.append('equipment_model_id', modelId);
+    }
+    
+    fetch('{% url "cart_remove_item" %}', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'X-CSRFToken': getCookie('csrftoken')
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        // Update cart count in header
+        updateCartCountDisplay(data.cart_count);
+      } else {
+        alert(data.error || 'An error occurred while removing the item');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred while removing the item');
+    });
+  }
+  
+  function showQuantityControls(actionContainer, quantity) {
+    // Hide the "Add to Cart" button
+    const quoteButton = actionContainer.querySelector('.quote-button');
+    quoteButton.style.display = 'none';
+    
+    // Also hide the "Request Quote" button and "or" text
+    const requestQuoteButton = actionContainer.querySelector('.request-quote-button');
+    const quoteOr = actionContainer.querySelector('.quote-or');
+    if (requestQuoteButton) requestQuoteButton.style.display = 'none';
+    if (quoteOr) quoteOr.style.display = 'none';
+    
+    // Show and setup quantity controls
+    const quantityControls = actionContainer.querySelector('.quantity-controls');
+    quantityControls.style.display = 'flex';
+    
+    // Set the current quantity
+    const quantityInput = quantityControls.querySelector('.quantity-input');
+    quantityInput.value = quantity;
+    
+    // Update trash icon visibility
+    const decreaseBtn = quantityControls.querySelector('.decrease-btn');
+    const trashIcon = decreaseBtn.querySelector('.trash-icon');
+    const minusSign = decreaseBtn.querySelector('.minus-sign');
+    
+    if (quantity === 1) {
+      trashIcon.style.display = 'inline';
+      minusSign.style.display = 'none';
+    } else {
+      trashIcon.style.display = 'none';
+      minusSign.style.display = 'inline';
+    }
+  }
+  
+  function updateCartCountDisplay(count) {
+    // Update cart count in header if present
+    const cartCountElements = document.querySelectorAll('.cart-count');
+    if (cartCountElements.length > 0) {
+      cartCountElements.forEach(el => {
+        el.textContent = count;
+        el.style.display = count > 0 ? 'flex' : 'none';
+      });
+    }
+  }
+  
+  // Helper function to get CSRF token from cookies
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
 });
 </script>
 {% endblock %}

@@ -48,7 +48,7 @@
                 width: 100%;
                 padding: 10px 20px;
                 font-family: 'Advent Pro', sans-serif;
-                font-size: 24px;
+                font-size: 23px;
                 color: #2b2610;
                 font-weight: 500;
                 white-space: nowrap;
@@ -66,7 +66,8 @@
                 aspect-ratio: 1;
                 object-fit: contain;
                 object-position: center;
-                width: 10vw;
+                width: 8vw;
+                max-height: 40px;
                 align-self: stretch;
                 margin: auto 0;
                 flex-shrink: 0;
@@ -78,11 +79,37 @@
                 cursor: pointer;
             }
             
+            .cart-icon-container {
+                position: relative;
+                text-decoration: none;
+            }
+            
+            .cart-icon {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .cart-count {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background-color: #cc0000;
+                color: white;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            
             /* Search Bar */
             .search-bar {
                 display: flex;
                 width: 100%;
-                padding: 40px 147px;
+                padding: 15px 147px;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -90,11 +117,11 @@
             }
             
             .search-view {
-                border: 3px solid #2B2610;
+                border: 2px solid #2B2610;
                 border-radius: 20px;
                 display: flex;
                 flex-direction: row;
-                padding: 10px;
+                padding: 7px 10px;
                 width: 100%;
                 gap: 10px;
                 max-width: 100%;
@@ -177,10 +204,21 @@
                 <a href="/">
                     <img class="logo-image" src="{% static 'img/Triad_Logo_Red.svg' %}" alt="Triad Logo"/>
                 </a>
-                <nav class="products"><b>Products</b></nav>
-                <nav class="contact">Contact</nav>
+                <a href="/search/" style="text-decoration: none; color: inherit;">
+                    <nav class="contact">Products</nav>
+                </a>
+                <a href="/contact/" style="text-decoration: none; color: inherit;">
+                    <nav class="contact">Contact</nav>
+                </a>
             </div>
-            <img width="30" height="30" src="https://img.icons8.com/material-outlined/48/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+            <a href="{% url 'cart_view' %}" class="cart-icon-container">
+                <div class="cart-icon">
+                    <img width="30" height="30" src="https://img.icons8.com/material-outlined/48/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                    {% if cart_count and cart_count > 0 %}
+                    <span class="cart-count">{{ cart_count }}</span>
+                    {% endif %}
+                </div>
+            </a>
         </header>
 
         <!-- Search Bar -->
