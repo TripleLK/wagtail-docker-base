@@ -77,11 +77,33 @@
                 align-self: stretch;
                 margin: auto 0;
                 cursor: pointer;
+                padding: 5px 8px;
+                transition: transform 0.3s;
+                position: relative;
+            }
+            
+            .products:hover, .contact:hover {
+                transform: translateY(-3px);
+            }
+            
+            /* Add padding to navigation links to prevent cutoff */
+            .nav-bar-items a {
+                display: inline-block;
+                padding: 5px 0;
+                text-decoration: none;
+                color: inherit;
             }
             
             .cart-icon-container {
                 position: relative;
                 text-decoration: none;
+                padding: 5px;
+                display: inline-block;
+                transition: transform 0.3s;
+            }
+            
+            .cart-icon-container:hover {
+                transform: translateY(-3px);
             }
             
             .cart-icon {
