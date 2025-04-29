@@ -12,6 +12,11 @@
   .cart-header {
     margin-bottom: 30px;
   }
+
+  .cart-icon img {
+      transition: filter 0.3s ease;
+      filter:grayscale(0%);
+  }
   
   .cart-items {
     margin-bottom: 30px;
@@ -79,8 +84,15 @@
     padding: 4px 0;
     margin: 0 5px;
     font-family: 'Afacad', sans-serif;
+    -moz-appearance: textfield;
   }
   
+  .quantity-input::-webkit-inner-spin-button,
+  .quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
   .quantity-input:focus {
     outline: none;
   }
@@ -196,7 +208,7 @@
   <div class="cart-empty">
     {{ page.empty_cart_text|richtext }}
     <div class="cart-actions">
-      <a href="/" class="continue-shopping">Browse Products</a>
+      <a href="/search/" class="continue-shopping">Browse Products</a>
     </div>
   </div>
   {% endif %}

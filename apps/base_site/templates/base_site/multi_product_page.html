@@ -128,20 +128,22 @@
                             {% endif %}
                         {% endwith %}
                     {% endif %}
-                    <h3 class="product-title">{{ result.title }}</h3>
-                    {% if result.short_description %}
-                        <p class="description">
-                            {{ result.short_description|richtext|striptags|truncatewords:20 }}
-                        </p>
-                    {% endif %}
-                    <div class="product-tags">
-                        {% for tag in result.categorized_tags.all|slice:":3" %}
-                            <a href="{% url 'category_view' category_slug=tag.category|slugify value_slug=tag.name|slugify %}" 
-                               class="product-tag" 
-                               style="background-color: {{ tag.category_color }}">
-                                {{ tag.name }}
-                            </a>
-                        {% endfor %}
+                    <div class="product-text-container">
+                        <h3 class="product-title">{{ result.title }}</h3>
+                        {% if result.short_description %}
+                            <p class="description">
+                                {{ result.short_description|richtext|striptags|truncatewords:20 }}
+                            </p>
+                        {% endif %}
+                        <div class="product-tags">
+                            {% for tag in result.categorized_tags.all|slice:":3" %}
+                                <a href="{% url 'category_view' category_slug=tag.category|slugify value_slug=tag.name|slugify %}" 
+                                   class="product-tag" 
+                                   style="background-color: {{ tag.category_color }}">
+                                    {{ tag.name }}
+                                </a>
+                            {% endfor %}
+                        </div>
                     </div>
                 </a>
             </article>

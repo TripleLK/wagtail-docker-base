@@ -180,14 +180,17 @@ body {
 }
 
 .model-accordion-header:hover {
-  background-color: #f0f0f0;
+  background-color: #f7b9a9;
 }
 
 .model-accordion.active .model-accordion-header {
-  background-color: #f0f0f0;
+  background-color: #fbd6cc;
   border-bottom-color: #d3d3d3;
 }
 
+.model-accordion.active .model-accordion-header:hover {
+  background-color: #f7b9a9;
+}
 .header-right {
   display: flex;
   align-items: center;
@@ -204,7 +207,7 @@ body {
 
 .model-accordion-content {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #fff3ef;
 }
 
 /* Accordion */

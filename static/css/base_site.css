@@ -595,6 +595,14 @@ body {
     font-size: 14px;
 }
 
+.cart-icon img {
+    transition: filter 0.3s ease;
+    filter:grayscale(100%);
+}
+.cart-icon:hover img {
+    transition: filter 0.3s ease;
+    filter:grayscale(0%);
+}
 /* Products Grid */
 .products-grid {
     display: grid;
