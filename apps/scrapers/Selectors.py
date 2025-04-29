@@ -42,6 +42,9 @@ class Selected:
         else:
             return str(self.values())
 
+    def values(self):
+        return [el.value for el in self.value]
+
 
     def __validate_selected_type(self):
         sts = SelectedType.VALUE
@@ -103,6 +106,7 @@ class Selector(ABC):
                 "print_selector": PrintSelector,
                 "concat_selector": ConcatSelector,
                 "plain_text_selector": PlainTextSelector,
+                "css_selector": CSSSelector,
                 'zip_selector': ZipSelector
             }
             # there will only be one key in the dict, and it'll be the name of the selector
@@ -112,9 +116,9 @@ class Selector(ABC):
 
             try:
                 return dict_specs_dict[sole_selector].fromYamlDict(sole_arguments)
-            except:
+            except Exception as e:
                 print(sole_selector, "<- selector\n", sole_arguments, "<- arguments")
-                raise Exception("errored")
+                raise Exception("errored: " + str(e))
 
     def fromFilePath(file_path):
         try:
@@ -149,6 +153,29 @@ class PlainTextSelector(Selector):
         print("Text is " + yamlDict["text"])
         return PlainTextSelector(yamlDict["text"])
 
+
+class CSSSelector(Selector):
+    def __init__(self, css_selector, index=None):
+        self.expected_selected = SelectedType.SINGLE
+        self.css_selector_text = css_selector
+        self.index = index
+
+    def select(self, selected):
+        super().select(selected)
+        selecteds = Selected([Selected(sub_selected, SelectedType.SINGLE) for sub_selected in selected.value.select(self.css_selector_text)], SelectedType.MULTIPLE)
+        if self.index != None:
+            return IndexedSelector(self.index).select(selecteds)
+        else:
+            return selecteds
+
+    def toYamlDict(self):
+        return {"css_selector": {"css_selector": self.css_selector_text}}
+
+    def fromYamlDict(yamlDict):
+        if "index" in yamlDict:
+            return CSSSelector(yamlDict["css_selector"], index=yamlDict["index"])
+        else:
+            return CSSSelector(yamlDict["css_selector"] )
 
 # A TextSelector takes a Selected Single and returns the text value within it.
 # S->V
@@ -272,7 +299,7 @@ class SoupSelector(Selector):
         re_attrs_dict = deepcopy(yamlDict['re-attrs']) if 're-attrs' in yamlDict else None
 
 
-        return SoupSelector(yamlDict['attrs'], re_attrs=re_attrs_dict)
+        return SoupSelector(yamlDict['attrs'], re_attrs_dict)
 
 
 

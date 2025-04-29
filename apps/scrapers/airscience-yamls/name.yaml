@@ -1,11 +1,5 @@
 ---
-- soup_selector:
-    attrs:
-      tag_name: div
-      class: roweven
-    index: 0
-- soup_selector:
-    attrs:
-      tag_name: h1
+- css_selector:
+    css_selector: "div.roweven > h1"
     index: 0
 - text_selector
