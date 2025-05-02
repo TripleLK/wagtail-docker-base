@@ -11,8 +11,8 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
 # Database settings - PostgreSQL for production
 # Fixed to prevent PostgreSQL from interpreting the database name as a file path
-db_engine = os.getenv('DB_ENGINE', 'django.db.backends.postgresql')
-db_name = os.getenv('DB_NAME', 'triad_db')
+db_engine = os.getenv('DATABASE_ENGINE', 'django.db.backends.postgresql')
+db_name = os.getenv('DATABASE_NAME', 'triad_db')
 
 # For PostgreSQL, don't use os.path.join to avoid path issues
 if db_engine == 'django.db.backends.postgresql':
@@ -20,10 +20,10 @@ if db_engine == 'django.db.backends.postgresql':
         'default': {
             'ENGINE': db_engine,
             'NAME': db_name,  # Just use the plain database name, not a path
-            'USER': os.getenv('DB_USER', ''),
-            'PASSWORD': os.getenv('DB_PASSWORD', ''),
-            'HOST': os.getenv('DB_HOST', 'localhost'),
-            'PORT': os.getenv('DB_PORT', '5432'),
+            'USER': os.getenv('DATABASE_USER', ''),
+            'PASSWORD': os.getenv('DATABASE_PASSWORD', ''),
+            'HOST': os.getenv('DATABASE_HOST', 'localhost'),
+            'PORT': os.getenv('DATABASE_PORT', '5432'),
             'CONN_MAX_AGE': 60,
             'CONN_HEALTH_CHECKS': True,
             'OPTIONS': {
@@ -36,10 +36,10 @@ else:
         'default': {
             'ENGINE': db_engine,
             'NAME': os.path.join(BASE_DIR, db_name) if db_engine == 'django.db.backends.sqlite3' else db_name,
-            'USER': os.getenv('DB_USER', ''),
-            'PASSWORD': os.getenv('DB_PASSWORD', ''),
-            'HOST': os.getenv('DB_HOST', 'localhost'),
-            'PORT': os.getenv('DB_PORT', '5432'),
+            'USER': os.getenv('DATABASE_USER', ''),
+            'PASSWORD': os.getenv('DATABASE_PASSWORD', ''),
+            'HOST': os.getenv('DATABASE_HOST', 'localhost'),
+            'PORT': os.getenv('DATABASE_PORT', '5432'),
         }
     }
 
@@ -69,7 +69,7 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 
 # Static files configuration
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'  # Use standard storage
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'  # Use standard storage
 
 # Logging
 LOGGING = {
