@@ -1,0 +1,7436 @@
+[
+{
+  "model": "base_site.specgroup",
+  "pk": 1,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 2,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 3,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 4,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 5,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 6,
+  "fields": {
+    "name": "WARRANTY"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 7,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 8,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 9,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 10,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 11,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 12,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 13,
+  "fields": {
+    "name": "WARRANTY"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 14,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 15,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 16,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 17,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 18,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 19,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 20,
+  "fields": {
+    "name": "WARRANTY"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 21,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 27,
+  "fields": {
+    "name": "WARRANTY"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 28,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 29,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 30,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 31,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 32,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 33,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 34,
+  "fields": {
+    "name": "WARRANTY"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 35,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 36,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 37,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 38,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 39,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 40,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 41,
+  "fields": {
+    "name": "WARRANTY"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 42,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22538,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22539,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22540,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22541,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22542,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22543,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22544,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22545,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22546,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22547,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22548,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22549,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22550,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22551,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22552,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22553,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22554,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22555,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22556,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22557,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22558,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22559,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22560,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22561,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22562,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22563,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22564,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22565,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22566,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22567,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22568,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22569,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22570,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22571,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22572,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22573,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22574,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22575,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22576,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22577,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22578,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22579,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22580,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22581,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22582,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22583,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22584,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22585,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22586,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22587,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22588,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22589,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22590,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22591,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22592,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22593,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22594,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22595,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22596,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22597,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22598,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22599,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22600,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22685,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22686,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22687,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22688,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22689,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22690,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22691,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22692,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22693,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22694,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22695,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22696,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22697,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22698,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22699,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22700,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22701,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22702,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22703,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22704,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22705,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22706,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22707,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22708,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22709,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22710,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22711,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22712,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22821,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22822,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22823,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22824,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22825,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22826,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22827,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22828,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22829,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22830,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22831,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22832,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22833,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22834,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22835,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22836,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22837,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22838,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22839,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22840,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22841,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22842,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22843,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22844,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22845,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22846,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22847,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22848,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22849,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22850,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22851,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22852,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22853,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22854,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22855,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 22856,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23487,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23488,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23489,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23490,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23491,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23492,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23493,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23494,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23495,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23496,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23497,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23498,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23499,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23500,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23501,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23502,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23503,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23504,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23505,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23506,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23507,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23508,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23509,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23510,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23511,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23512,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23513,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23514,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23515,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23516,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23517,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23518,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23519,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23520,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23521,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23522,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23523,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23524,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23525,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23526,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23527,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23528,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23529,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23530,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23531,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23532,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23533,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23534,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23535,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23536,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23537,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23538,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23539,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23540,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23541,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23542,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23543,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23544,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23545,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23546,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23547,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23548,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23549,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23550,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23551,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23552,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23553,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23554,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23555,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23556,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23557,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23558,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23559,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23560,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23561,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23562,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23563,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23564,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23565,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23566,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23567,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23568,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23569,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23570,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23571,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23572,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23573,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23574,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23575,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23576,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23577,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23578,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23579,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23580,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23581,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23582,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23583,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23584,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23585,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23586,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23587,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23588,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23589,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23590,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23591,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23592,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23593,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23594,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23595,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23596,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23597,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23598,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23599,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23600,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23601,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23602,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23603,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23604,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23605,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23606,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23607,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23608,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23609,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23610,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23611,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23612,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23613,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23614,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23615,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23616,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23617,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23618,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23619,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23620,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23621,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23622,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23623,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23624,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23625,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23626,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23627,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23628,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23629,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23630,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23631,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23632,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23633,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23634,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23635,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23636,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23637,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23638,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23639,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23640,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23641,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23642,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23643,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23644,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23645,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23646,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23647,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23648,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23649,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23650,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23651,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23652,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23653,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23654,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23655,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23656,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23657,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23658,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23659,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23660,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23661,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23662,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23663,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23664,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23665,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23666,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23667,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23668,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23669,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23670,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23671,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23672,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23673,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23674,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23675,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23676,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23677,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23678,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23679,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23680,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23681,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23682,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23683,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23684,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23685,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23686,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23687,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23688,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23689,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23690,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23691,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23692,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23693,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23694,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23695,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23696,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23823,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23824,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23825,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23826,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23827,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23828,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23829,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23830,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23831,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23832,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23833,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23834,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23835,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23836,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23837,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23838,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23839,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23840,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23841,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23842,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23843,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23844,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23845,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23846,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23847,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23848,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23849,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23850,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23851,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23852,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23853,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23854,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23855,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23856,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23857,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23858,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23859,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23860,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23861,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23862,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23863,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23864,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23928,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23929,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23930,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23931,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23932,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23933,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23934,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23935,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23936,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23937,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23938,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23939,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23940,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23941,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23942,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23943,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23944,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23945,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23946,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23947,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 23948,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24075,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24076,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24077,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24078,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24079,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24080,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24081,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24082,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24083,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24084,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24085,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24086,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24087,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24088,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24089,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24090,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24091,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24092,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24093,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24094,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24095,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24096,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24097,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24098,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24099,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24100,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24101,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24102,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24103,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24104,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24105,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24106,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24107,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24108,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24109,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24110,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24111,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24112,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24113,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24114,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24115,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24116,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24180,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24181,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24182,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24183,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24184,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24185,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24186,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24187,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24188,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24189,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24190,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24191,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24192,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24193,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24194,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24195,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24196,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24197,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24198,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24199,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24200,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24204,
+  "fields": {
+    "name": "Specifications"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24229,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24230,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24231,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24232,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24233,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24234,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24235,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24236,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24339,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24340,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24341,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24342,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24343,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24344,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24345,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24346,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24347,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24348,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24349,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24350,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24351,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24352,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24353,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24354,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24355,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24356,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24357,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24358,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24359,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24360,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24361,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24362,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24363,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24364,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24365,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24366,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24367,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24368,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24369,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24370,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24371,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24372,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24559,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24560,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24561,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24562,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24563,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24564,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24565,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24566,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24567,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24568,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24569,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24570,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24571,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24572,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24573,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24574,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24575,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24576,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24577,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24578,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24579,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24580,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24581,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24582,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24583,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24584,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24585,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24586,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24587,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24588,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24589,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24590,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24591,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24592,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24593,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24594,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24595,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24596,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24597,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24598,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24599,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24600,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24601,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24602,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24603,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24604,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24605,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24606,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24607,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24608,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24609,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24610,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24611,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24612,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24613,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24614,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24615,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24616,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24617,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24618,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24619,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24620,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24684,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24685,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24686,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24687,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24688,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24689,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24690,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24691,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24692,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24693,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24694,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24695,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24696,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24697,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24698,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24699,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24700,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24701,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24702,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24703,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24704,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24750,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24751,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24752,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24753,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24754,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24755,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24756,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24757,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24758,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24759,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24760,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24761,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24762,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24763,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24764,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24780,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24781,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24782,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24783,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24784,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24878,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24879,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24880,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24881,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24882,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24883,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24884,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24885,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24886,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24887,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24888,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24889,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24890,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24891,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24892,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24893,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24894,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24895,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24896,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24897,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24898,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24899,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24900,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24901,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24902,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24903,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24904,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24905,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24906,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24907,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24908,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24927,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24928,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24929,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24930,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24931,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24932,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24951,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24952,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24953,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24954,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24955,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 24956,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25020,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25021,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25022,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25023,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25024,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25025,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25026,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25027,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25028,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25029,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25030,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25031,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25032,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25033,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25034,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25035,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25036,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25037,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25038,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25039,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25040,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25053,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25054,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25055,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25056,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25066,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25067,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25068,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25111,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25112,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25113,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25114,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25115,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25116,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25117,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25118,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25119,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25120,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25121,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25122,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25123,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25124,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25161,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25162,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25163,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25164,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25165,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25166,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25167,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25168,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25169,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25170,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25171,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25172,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25299,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25300,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25301,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25302,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25303,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25304,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25305,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25306,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25307,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25308,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25309,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25310,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25311,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25312,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25313,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25314,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25315,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25316,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25317,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25318,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25319,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25320,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25321,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25322,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25323,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25324,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25325,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25326,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25327,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25328,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25329,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25330,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25331,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25332,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25333,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25334,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25335,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25336,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25337,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25338,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25339,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25340,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25395,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25396,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25397,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25398,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25399,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25400,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25401,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25402,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25403,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25404,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25405,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25406,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25407,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25408,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25409,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25410,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25411,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25412,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25560,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25561,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25562,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25563,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25564,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25565,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25566,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25567,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25568,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25569,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25570,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25571,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25572,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25573,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25574,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25575,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25576,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25577,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25578,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25579,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25580,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25581,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25582,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25583,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25584,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25585,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25586,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25587,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25588,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25589,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25590,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25591,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25592,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25593,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25594,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25595,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25596,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25597,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25598,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25599,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25600,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25601,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25602,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25603,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25604,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25605,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25606,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25607,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25608,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25735,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25736,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25737,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25738,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25739,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25740,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25741,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25742,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25743,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25744,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25745,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25746,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25747,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25748,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25749,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25750,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25751,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25752,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25753,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25754,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25755,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25756,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25757,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25758,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25759,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25760,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25761,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25762,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25763,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25764,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25765,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25766,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25767,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25768,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25769,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25770,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25771,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25772,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25773,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25774,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25775,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25776,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25993,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25994,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25995,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25996,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25997,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25998,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 25999,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26000,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26001,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26002,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26003,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26004,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26005,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26006,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26007,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26008,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26009,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26010,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26011,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26012,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26013,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26014,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26015,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26016,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26017,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26018,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26019,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26020,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26021,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26022,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26023,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26024,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26025,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26026,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26027,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26028,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26029,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26030,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26031,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26032,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26033,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26034,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26035,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26036,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26037,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26038,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26039,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26040,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26041,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26042,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26043,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26044,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26045,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26046,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26047,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26048,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26049,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26050,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26051,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26052,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26053,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26054,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26055,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26056,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26057,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26058,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26059,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26060,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26061,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26062,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26063,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26064,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26173,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26174,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26175,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26176,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26177,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26178,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26179,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26180,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26181,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26182,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26183,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26184,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26185,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26186,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26187,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26188,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26189,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26190,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26191,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26192,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26193,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26194,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26195,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26196,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26197,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26198,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26199,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26200,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26201,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26202,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26203,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26204,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26205,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26206,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26207,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26208,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26293,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26294,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26295,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26296,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26297,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26298,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26299,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26300,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26301,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26302,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26303,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26304,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26305,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26306,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26307,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26308,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26309,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26310,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26311,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26312,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26313,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26314,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26315,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26316,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26317,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26318,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26319,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26320,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26339,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26340,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26341,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26342,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26343,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26344,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26408,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26409,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26410,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26411,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26412,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26413,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26414,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26415,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26416,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26417,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26418,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26419,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26420,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26421,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26422,
+  "fields": {
+    "name": "DIMENSIONS & WEIGHTS"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26423,
+  "fields": {
+    "name": "CONSTRUCTION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26424,
+  "fields": {
+    "name": "PROTECTION & COMPLIANCE"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26425,
+  "fields": {
+    "name": "OPTIONS AND ACCESSORIES"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26426,
+  "fields": {
+    "name": "AIRFLOW & FILTRATION"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26427,
+  "fields": {
+    "name": "ELECTRICAL"
+  }
+},
+{
+  "model": "base_site.specgroup",
+  "pk": 26428,
+  "fields": {
+    "name": "CONTROLS & MONITORING"
+  }
+}
+]

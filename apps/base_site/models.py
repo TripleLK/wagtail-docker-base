@@ -328,7 +328,6 @@ class EquipmentModel(ClusterableModel):
         Returns the merged spec groups for this model (default specs overridden
         by model-specific specs). This calls LabEquipmentPage.get_effective_spec_groups.
         """
-        print(self.page.get_effective_spec_groups(self))
         return self.page.get_effective_spec_groups(self)
 
 class LabEquipmentGalleryImage(Orderable):
@@ -429,15 +428,12 @@ class LabEquipmentPage(Page):
 
     @property
     def spec_group_names(self):
-        print("getting spec_group_names")
         spec_group_names = set()
         for model in self.models.all():
-            print("a model")
             spec_groups = self.get_effective_spec_groups(model)
             for spec_group in spec_groups:
                 spec_group_names.add(spec_group['name'])
 
-        print("returning: " + str(spec_group_names))
         return sorted(list(spec_group_names))
 
     def get_effective_spec_groups(self, equipment_model=None):

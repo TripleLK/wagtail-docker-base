@@ -1,7 +1,3 @@
-"""
-Django settings initialization.
-This module loads the appropriate Django settings based on the environment.
-"""
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -16,4 +12,4 @@ django_env = os.getenv('DJANGO_ENV', 'development')
 if django_env == 'production':
     from .production import *
 else:
-    from .dev import *
+    from .development import *

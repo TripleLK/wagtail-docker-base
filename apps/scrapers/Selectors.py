@@ -395,13 +395,14 @@ class PrintSelector(Selector):
         self.print_selected = print_selected
 
     def select(self, selected):
-        print(self.message)
-        if self.print_selected:
-            print("PrintSelector report.\nSelected Type:", selected.selected_type, "\nCollapsed Value:", selected.collapsed_value)
+        # Replaced print statements with comments to prevent serialization issues
+        # print(self.message)
+        # if self.print_selected:
+        #    print("PrintSelector report.\nSelected Type:", selected.selected_type, "\nCollapsed Value:", selected.collapsed_value)
         return selected
 
     def toYamlDict(self):
-        if print_selected:
+        if self.print_selected:
             return {"print_selector": {"message": self.message, "print_selected": True}}
         return {"print_selector": {"message": self.message}}
 

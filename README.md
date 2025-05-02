@@ -1,3 +1,67 @@
+# Triad Django Project
+
+## Environment Setup
+
+This project uses a flexible environment configuration system that supports both SQLite (development) and PostgreSQL (production) databases. All environment files are stored in the `envs/` directory.
+
+## Available Scripts
+
+### Main Scripts
+
+- **`run.sh`**: The primary script to run the application in the current environment
+- **`switch_env.sh`**: Switch between environments (dev/prod/safari)
+- **`create_db.sh`**: Create the PostgreSQL database for production
+- **`migrate_data.sh`**: Migrate data from SQLite to PostgreSQL
+
+### Environment Types
+
+- **Development (SQLite)**: `./switch_env.sh dev mac`
+- **Production (PostgreSQL)**: `./switch_env.sh prod mac`
+- **Safari-compatible**: `./switch_env.sh safari`
+
+## Getting Started
+
+1. Ensure you have Python and Django installed
+2. For production mode, ensure PostgreSQL is installed and running
+3. Run the appropriate commands to set up your environment:
+
+```bash
+# For development (SQLite)
+./switch_env.sh dev mac
+./run.sh
+
+# For production (PostgreSQL)
+./create_db.sh
+./switch_env.sh prod mac
+./run.sh
+```
+
+## Data Migration
+
+To transfer data from SQLite to PostgreSQL:
+
+```bash
+./migrate_data.sh
+```
+
+## Environment Files
+
+All environment configuration files are stored in the `envs/` directory:
+
+- `envs/dev.mac.env`: Development environment with SQLite
+- `envs/prod.mac.env`: Production environment with PostgreSQL
+- `envs/dev.safari.env`: Safari-compatible environment
+
+## Browser Compatibility
+
+When accessing the site, always use `http://` explicitly in the URL, not `https://`.
+
+## Notes
+
+- The default port is 8000 for regular environments and 8765 for Safari-compatible mode
+- In production mode, static files are automatically collected when running `run.sh`
+- Database migrations are automatically run when starting the server
+
 This repo contains the code that will be cloned into the wagtail docker image for LLLK projects. To see the Dockerfile responsible for setting up this docker image, consult TripleLK/lllk-web-base/Dockerfile.wagtail. The code here follows this structure:
 
 ```

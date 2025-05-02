@@ -1,0 +1,266 @@
+[
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 4,
+  "fields": {
+    "short_description": "<p data-block-key=\"19j89\">Air Science Purair® Vertical Laminar Flow Cabinets are a series of high-efficiency products designed to protect equipment and other contents of the work zone from particulates, for applications sensitive to such contamination.</p>",
+    "full_description": "<ul><li data-block-key=\"sjvrp\">Purair Laminar Flow Hoods are available in vertical and horizontal configurations with various sizes and options for a total of 36 models to choose from in 6 different widths.</li><li data-block-key=\"iy187\">Purair Laminar Flow Hoods are shipped fully assembled. No installation is required; just plug them in and use them.</li><li data-block-key=\"ojxca\">Products are designed for desktop use, or may be installed on an optional mobile base stand.</li><li data-block-key=\"0sc3t\">The rear wall of vertical flow cabinets is perforated to reduce work surface turbulence by removing some of the airflow to the rear.</li><li data-block-key=\"4xbpe\">High capacity air handling system delivers flow velocity of 0.4 m/s or 80 fpm.</li><li data-block-key=\"ttod5\">Choose from standard powder coated interior or stainless steel interior (-SS models).</li><li data-block-key=\"gbol6\">Purair VLF and HLF hoods have an <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">ULPA filter</a> pressure gauge to measure filter performance.</li><li data-block-key=\"22myw\">The Air Science filters are easy to access, easy to change.</li><li data-block-key=\"hrjdc\">Accessories include an IV bar, service fixtures, base stand, UV lamp, and front door/cover.</li><li data-block-key=\"qbei1\">Provides sterile work zone for aeseptic techniques.</li><li data-block-key=\"1ynoo\">Air cleanliness meets and exceeds ISO Class 4.</li><li data-block-key=\"zq3at\">All models use ULPA filters (99.999% efficient at particle sizes between 0.1 and 0.3 microns.</li><li data-block-key=\"27l2t\">All models equipped with a stainless steel work surface.</li></ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 12,
+  "fields": {
+    "short_description": "<p data-block-key=\"mntq3\">Air Science Purair® Vertical Laminar Flow Cabinets are a series of high-efficiency products designed to protect equipment and other contents of the work zone from particulates, for applications sensitive to such contamination.</p>",
+    "full_description": "<ul><li data-block-key=\"g1cft\">Purair Laminar Flow Hoods are available in vertical and horizontal configurations with various sizes and options for a total of 36 models to choose from in 6 different widths.</li><li data-block-key=\"qcdjt\">Purair Laminar Flow Hoods are shipped fully assembled. No installation is required; just plug them in and use them.</li><li data-block-key=\"o50wa\">Products are designed for desktop use, or may be installed on an optional mobile base stand.</li><li data-block-key=\"a02i9\">The rear wall of vertical flow cabinets is perforated to reduce work surface turbulence by removing some of the airflow to the rear.</li><li data-block-key=\"cmqia\">High capacity air handling system delivers flow velocity of 0.4 m/s or 80 fpm.</li><li data-block-key=\"xdibj\">Choose from standard powder coated interior or stainless steel interior (-SS models).</li><li data-block-key=\"iwxo7\">Purair VLF and HLF hoods have an <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">ULPA filter</a> pressure gauge to measure filter performance.</li><li data-block-key=\"rrip2\">The Air Science filters are easy to access, easy to change.</li><li data-block-key=\"3g0sr\">Accessories include an IV bar, service fixtures, base stand, UV lamp, and front door/cover.</li><li data-block-key=\"5z8np\">Provides sterile work zone for aeseptic techniques.</li><li data-block-key=\"jwv5i\">Air cleanliness meets and exceeds ISO Class 4.</li><li data-block-key=\"ryfqs\">All models use ULPA filters (99.999% efficient at particle sizes between 0.1 and 0.3 microns.</li><li data-block-key=\"kq7f0\">All models equipped with a stainless steel work surface.</li></ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 14,
+  "fields": {
+    "short_description": "<div>The Purair® BASIC Series ductless fume hoods are compact, ideal for use in laboratory environments where space is limited or where only small volumes of harmful substances are handled. For package and mail inspection workstations, see <a href=\"/mail-handling-safety\">Purair SafeSEARCH</a>.</div>",
+    "full_description": "<ul> <li>High efficiency EC blower</li> <li>Energy saving LED lighting</li> <li>Filter blockage alarm</li> <li>Protects the operator from fume and (with added <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">HEPA/ULPA filter</a>) particle hazards.</li> <li>A unique filter clamping design eliminates bypass leakage outside the cabinet.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 15,
+  "fields": {
+    "short_description": "<div>Air Science® Purair® DUCTED Basic Fume Hoods are exterior-venting exhaust hoods designed to protect personnel from exposure to hazardous agents and toxic chemicals in various applications.</div>",
+    "full_description": "<ul> <li>Chemical-resistant epoxy coated steel frame</li> <li>360 degree visibility</li> <li>Protects the operator from fume hazards</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 16,
+  "fields": {
+    "short_description": "<div>The Purair® ADVANCED Series ductless fume hoods are available in 7 standard sizes in metal or polypropylene construction. This Series of high-efficiency products is designed to protect the user and the environment from hazardous vapors generated on the work surface.</div>",
+    "full_description": "<ul> <li>High operator protection to fume and particle hazards.</li> <li>Improved clamping eliminates bypass leakage.</li> <li>Filter blockage alarm.</li> <li>Polypropylene work surface (stainless steel option).</li> <li>High capacity filters for more demanding applications.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 17,
+  "fields": {
+    "short_description": "<div>The Purair® SafeSEARCH ductless fume hoods are a series of high efficiency workstations designed to increase protection from drugs, chemical vapors and particulates during the packaging examination process. </div>",
+    "full_description": "<ul> <li>High efficiency EC blower.</li> <li>Easy to change filters. </li> <li>A low airflow alarm warns of insufficient face velocity.</li> <li>Protects the investigator from hazardous drugs, chemicals, and particulates. </li> <li>Improved filter clamping design eliminates bypass leakage outside the cabinet.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 18,
+  "fields": {
+    "short_description": "<p data-block-key=\"dojrg\">Air Science Purair Horizontal Laminar Flow Cabinets are a series of high-efficiency products designed to protect equipment and other contents of the work zone from particulates, for applications sensitive to such contamination.</p>",
+    "full_description": "<ul><li data-block-key=\"h1810\">Purair Laminar Flow Hoods are available in vertical and horizontal configurations with various sizes and options for a total of 36 models to choose from in 6 different widths.</li><li data-block-key=\"cmg9u\">Purair Laminar Flow Hoods are shipped fully assembled. No installation is required; just plug them in and use them.</li><li data-block-key=\"snvrc\">Products are designed for desktop use, or may be installed on an optional mobile base stand.</li><li data-block-key=\"ehqci\">The rear wall of vertical flow cabinets is perforated to reduce work surface turbulence by removing some of the airflow to the rear.</li><li data-block-key=\"hn6zk\">High capacity air handling system delivers flow velocity of 0.4 m/s or 80 fpm.</li><li data-block-key=\"0g12v\">Choose from standard powder coated interior or stainless steel interior (-SS models).</li><li data-block-key=\"n74ff\">Purair VLF and HLF hoods have an <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">ULPA filter</a> pressure gauge to measure filter performance.</li><li data-block-key=\"xv8jk\">The Air Science filters are easy to access, easy to change.</li><li data-block-key=\"7gdex\">Accessories include an IV bar, service fixtures, base stand, UV lamp, and front door/cover.</li><li data-block-key=\"413qc\">Provides sterile work zone for aeseptic techniques.</li><li data-block-key=\"9dbn9\">Air cleanliness meets and exceeds ISO Class 4.</li><li data-block-key=\"x3oor\">All models use ULPA filters (99.999% efficient at particle sizes between 0.1 and 0.3 microns.</li><li data-block-key=\"z2ml6\">All models equipped with a stainless steel work surface.</li></ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 19,
+  "fields": {
+    "short_description": "<p data-block-key=\"kfjaz\">The Purair® BIO Biological Safety Cabinet (BSC) is certified for safety and performance in accordance with NSF/ANSI Standard 49 and EN12469 which certifies Class II, Type A2 laminar flow cabinets are suitable for working with biosafety agents at levels 1, 2 and 3. Air Science 4-foot and 6 foot models are certified by NSF.</p>",
+    "full_description": "<ul><li data-block-key=\"9zt0g\"><b>Single EC Blower Motor Design.</b> The Purair BIO biosafety cabinet is designed with a single EC blower motor for ease of use, reliability, and to promote low cost of ownership. Dual motor designs can introduce a number of problems, including unbalanced airflow, higher maintenance costs, longer certification processes, and uneven filter loading. Airflow adjustments are simpler, operational costs lower, and maintenance easier for BSCs equipped with single EC blower motors.</li><li data-block-key=\"npctn\"><b>Flexibility.</b> The Purair BIO includes multiple service connections for maximum flexibility. It includes duplex electrical outlets with splash-proof, UL listed covers. CSA certified service valves for gas, air, and vacuum are also available. Maximum working pressure of 75PSI.</li><li data-block-key=\"rweat\"><b>Operator Safety.</b> The anti-ultraviolet, 6 mm tempered glass ensures maximum protection for the operator.</li><li data-block-key=\"v8rrt\"><b>Ergonomic Design.</b> The user interface combines ergonomics, safety, and aesthetics with a 10° angled window design that reduces operator head and elbow discomfort, as well as eye strain and fatigue.</li><li data-block-key=\"rxhs4\"><b>Slim Profile.</b> The Purair BIO is one of the narrowest BSCs on the market and permits easy passage through standard doorways.</li></ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 20,
+  "fields": {
+    "short_description": "<p data-block-key=\"v50p8\">Engineered to meet the needs of the animal research laboratory, the Purair® CAGEX is designed to protect the user and the environment from animal dander or bedding material particulates generated on the work surface. The CAGEX incorporates carbon filters to absorb odor while optional HEPA filtration contains harmful particulates generated during cage changing and waste disposal operations.</p>",
+    "full_description": "<ul><li data-block-key=\"jxe4y\">High-efficiency EC blower.</li><li data-block-key=\"lna1y\">Energy saving LED lighting.</li><li data-block-key=\"3goln\">Filter blockage alarm.</li><li data-block-key=\"c2ghl\">Improved filter clamping eliminates bypass leakage.</li><li data-block-key=\"53cnr\">Easy to change filters.</li><li data-block-key=\"2xisf\">Mounted waste container allows for rapid waste disposal within work zone.</li><li data-block-key=\"ef10c\">Durable, chemically resistant cabinet frame, easy to clean work surfaces.</li><li data-block-key=\"iuevk\">Hinged front sash facilitates easy opening and closing.</li><li data-block-key=\"vc9w7\">Optional mobile cart offers ergonomic use and maximum flexibility.</li><li data-block-key=\"cprg1\">Construction complies with current technical and safety regulations.</li></ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 21,
+  "fields": {
+    "short_description": "<p data-block-key=\"ts8ov\">Purair® FLOW Series benchtop laminar flow cabinets are compact and ideal for laboratory environments with limited space. The vertical laminar flow hoods use HEPA filtration to protect equipment and other contents of the work zone from particulates.</p>",
+    "full_description": "<ul><li data-block-key=\"fbgwu\">Vertical laminar airflow with <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">HEPA/ULPA filtration</a> protects materials inside the cabinet from particulates.</li><li data-block-key=\"m6vxj\">High efficiency ebm-papst centrifugal fan.</li><li data-block-key=\"4jmso\">Air cleanliness meets and exceeds ISO Class 5.</li><li data-block-key=\"p72i3\">Energy saving LED lighting.</li><li data-block-key=\"0wner\">Large front opening provides unrestricted access to the work zone.</li></ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 22,
+  "fields": {
+    "short_description": "<div>SafeFUME™ cyanoacrylate fuming chambers are designed to safely develop latent fingerprints using methylcyanoacrylate (CNA) vapor in a controlled environment.</div>",
+    "full_description": "<ul> <li>Choose from multiple sizes, from bench top to floor standing.</li> <li>Multi-chamber cabinets available.</li> <li>Caster wheels standard on all models except bench top series.</li> <li>Optional UV Lamp decontamination.</li> <li>Optional side and rear windows for 360° view of development. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 23,
+  "fields": {
+    "short_description": "<div>The SafeFUME™ 360 is used to develop latent prints from non-porous surfaces in a controlled and safe environment. Choose from small benchtop units to larger walk-in chambers.</div>",
+    "full_description": "<ul> <li>Optional side and rear windows for 360° view of development.</li> <li>Choose from multiple sizes, from bench top to floor standing.</li> <li>Multi-chamber cabinets available.</li> <li>Caster wheels standard on all models except bench top series.</li> <li>Optional UV Lamp decontamination.</li> <li>Evidence is easily positioned inside the chamber using the adjustable hanging rods.</li> <li>Cyanoacrylate is placed within the chamber and starting the cycle triggers the automated system that controls the hot plate, cabinet humidity, door lock, internal circulation fan, and purge cycle.</li> <li>The recirculatory design requires no ducting for setup.</li> <li>Cyanoacrylate vapors are filtered by a special carbon filter that ensures no dangerous substances are exhausted into the atmosphere air supply.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 24,
+  "fields": {
+    "short_description": "<div>Purair® DWS™ Downflow Workstations are ductless fume hoods designed to protect the user and the environment from hazardous vapors generated on the work surface. Unrestricted front and side access permits applications requiring complex user involvement. Downward airflow in the chamber protects the operator.</div>",
+    "full_description": "<ul> <li>Available in 3 standard sizes, in metal or polypropylene construction, totaling 6 models.</li> <li>Wider units, comprising two or more workstations can be positioned side-by-side with junction connections option.</li> <li>Downward airflow protects operator from fume and particle hazards. </li> <li>Unrestricted front and side access to work area. </li> <li>Filter blockage alarm.</li> <li>The Air Science high capacity filters are easy to access, easy to change.</li> <li>A unique filter clamping design eliminates bypass leakage outside the cabinet.</li> <li>Redesigned DWS offers increased internal height.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 25,
+  "fields": {
+    "short_description": "<div>SafeKEEPER® series forensic evidence drying cabinets are designed to store, dry or otherwise process forensic evidence in the controlled environment of a tamper-resistant compartment to maintain the chain of custody.</div>",
+    "full_description": "<ul> <li>General Purpose Safekeeper cabinets are available in bench/desktop and floor-standing models. Select models are available with two, three or four independent drying chambers, each with its own filtration and control system. </li> <li>Most models are designed and configured for mobile use in uncontrolled environments. </li> <li>The Drugkeeper series is designed for safe storage of confiscated hazardous chemicals and illegal drugs. </li> <li>The Safeswab horizontal airflow cabinet is useful for protecting biological evidence collected on swabs from external contaminants and personnel in the working environment. </li> <li>The Evidence Transporter™ is an \"on-site\" fabric chamber developed for transporting evidence from the field to the lab. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 26,
+  "fields": {
+    "short_description": "<div>The Purair® RX Balance Hood is a Class I enclosure that meets USP 800 requirements for non-sterile compounding procedures.</div>",
+    "full_description": "<ul> <li>High efficiency ebm-papst EC blower.</li> <li>Energy savings LED lighting.</li> <li>Protects the operator from powder and particle hazards.</li> <li>Improved filter clamping eliminates bypass leakage.</li> <li>Exhaust canopy allows for thimble ducting to the facility exhaust system.</li> <li>Filter blockage alarm.</li> <li>Complies with USP 800 USP 795 guidelines.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 27,
+  "fields": {
+    "short_description": "<div>Protects the operator from nanomaterial particles (less than 100nm in size) encountered during processing of carbon nanotubes, lithium batteries, and rare earth metals.</div>",
+    "full_description": "<ul> <li>Protects the operator from nanomaterial particles (less than 100nm in size) encountered during processing of carbon nanotubes, lithium batteries, and rare earth metals. SafeSwitch™ Filter Shutter System (optional) for safer bag-out filter exchange.</li> <li>Improved filter clamping eliminates bypass leakage.</li> <li>Filter blockage alarm. </li> <li>High efficiency ebm-papst EC blower.</li> <li>Energy saving LED lighting.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 28,
+  "fields": {
+    "short_description": "<div>The EDU™ Series Ductless Demonstration Fume Hoods for individual and group applications protect the user and the classroom environment from hazardous vapors. Clear front, side and rear walls permit 360° visibility.</div>",
+    "full_description": "<ul> <li>Offers 360° visibility for full participation</li> <li>Protects the operator or class from toxic fumes and (with added HEPA/ULPA filter) particle hazards</li> <li>High efficiency ebm-papst centrifugal blower</li> <li>Available in four configurations and 6 standard sizes, in metal or polypropylene construction, totaling 12 standard models</li> <li>Filters are easy to change</li> <li>Improved filter clamping prevents bypass leakage</li> <li>Low airflow alarm warns of unsafe conditions</li> <li>Compliant with ANSI, OSHA, AFNOR and BSI safety standards</li> <li>Portable fume hood with transparent front, back and side walls for maximum visibility. The EDU Series offers personnel and environmental protection, optimal energy savings and zero toxic emissions to the room.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 29,
+  "fields": {
+    "short_description": "<div>The Purair® PCR workstation offers protection by laminar flow for PCR amplification handlings that are extremely sensitive to contamination with ease of UV decontamination and sterilization cycles.</div>",
+    "full_description": "<ul> <li>Provides sterile work zone for aseptic techniques. </li> <li>Air cleanliness meets and exceeds ISO Class 5. </li> <li>Energy saving LED lighting. </li> <li>Vertical laminar airflow with <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">HEPA filtration</a>. </li> <li>Equipped with germicidal UV lamp to create light emission conditions known to provide safe decontamination.</li> <li>360 degree visibility with UV absorbing polycarbonate construction. </li> <li>Purair PCR cabinets are available in three model sizes with various options. </li> <li>Designed for desktop use or installation on an optional base stand or mobile cart. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 30,
+  "fields": {
+    "short_description": "<div>We build custom enclosures for specific customer requirements and applications. Each unit is designed to maximize operator safety and accessibility, and is tested and certified to factory specifications and industry standards.</div>",
+    "full_description": "<ul> <li>Custom enclosures can be designed to protect the process, operator, or both from particulates, fumes and vapors.</li> <li>Air Science has developed enclosures to accommodate many of the most commonly used robotic systems.</li> <li>Customization can range from small modifications of existing standard Air Science models, to completely custom, application-specific enclosures.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 31,
+  "fields": {
+    "short_description": "<div>The Purair® SKY ceiling mounted filtration units are designed to protect laboratory personnel and the environment in areas where hazardous substances are handled.</div>",
+    "full_description": "<ul> <li>Advanced carbon filtration technology.</li> <li>Multi-unit connection options. </li> <li>Ceiling mounted or hanging configurations. </li> <li>Energy efficiency. </li> <li>Enhanced Filtration. Central to the design of the Purair SKY Series is the <a href=\"https://www.airscience.com/multiplex-filtration-system\">Multiplex<sup>TM </sup>Filtration System</a> developed to ensure universal protection in the work environment over the widest range of applications within the industry. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 32,
+  "fields": {
+    "short_description": "<div>The Purair® ECO Series high efficiency ductless fume hoods protect the user and the environment from hazardous vapors generated on the work surface.</div>",
+    "full_description": "<ul> <li>A high capacity air handling system delivers face velocity of 100 FPM.</li> <li>Improved clamping prevents bypass leakage.</li> <li>Ergonomic arm rest for user comfort.</li> <li>The filter assembly is easy to access, easy to change.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 33,
+  "fields": {
+    "short_description": "<div>Ideal for containment of powders and fumes during compounding or weighing, Vented ENCLOSURE™ offer important safety features that are not found with any other competitive products.</div>",
+    "full_description": "<ul> <li>Custom sizes to meet every need. </li> <li>Turbulent-free airflow pattern. </li> <li>Proven performance. </li> <li>Specialized <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">HEPA filter technology</a> for increased safety. </li> <li>Ductless design increases location possibilities. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 34,
+  "fields": {
+    "short_description": "<div>The Purair® FUMEBOX™ is designed to protect the user from chemicals, vapors or non-toxic powders during low-volume chemical manipulations by effectively containing low concentrations of noxious fumes, vapors, or powders.</div>",
+    "full_description": "<ul> <li>Low-profile, completely portable, no ductwork required.</li> <li>Compact size, easily positioned on shallow countertops or counters with overhanging wall cabinets.</li> <li>Clear viewing enclosure prevents chemical splash.</li> <li>Modular design permits multiple configurations.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 35,
+  "fields": {
+    "short_description": "<div>The Air Science Fuming Chamber uses cyanoacrylate fuming for latent print development on various surfaces. The fuming chamber incorporates the Air Science Fume Extraction unit coupled with a self-contained filtration system to safely purge the noxious fumes when the printing cycle is complete.</div>",
+    "full_description": ""
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 36,
+  "fields": {
+    "short_description": "<div>Air Science Vent BOX ductless filtration systems are modular ventilation and filtration units designed to protect laboratory personnel from chemical vapors found inside of stand-alone chemical safety cabinets.</div>",
+    "full_description": "<ul> <li>Low-profile, completely portable, no ductwork required.</li> <li>Compact size, easily positioned on shallow safety cabinets.</li> <li>Modular design permits multiple configurations.</li> <li>Universal connections allow retrofit to almost all available flammable and safety cabinets on the market.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 37,
+  "fields": {
+    "short_description": "<div>The SafeSTORE® Series of vented filtering storage cabinets offers an economical solution for storage of toxic, noxious and odorous chemicals in the laboratory.</div>",
+    "full_description": "<ul> <li>Activated carbon main filter formulated for general purpose storage to contain putrid organic odors as well as fumes (i.e. alcohol, solvents, gasoline, etc.).</li> <li>Perforated polypropylene shelves.</li> <li>With optional<a href=\"https://www.airscience.com/hepa-ulpa-filtration\"> HEPA filter</a>, eliminates exposure to biological particulates; see Accessories.</li> <li>Upflow airflow geometry operates at 120-180 FPM face velocity to exchange air through activated carbon main filter.</li> <li>Available with windowless doors</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 38,
+  "fields": {
+    "short_description": "<div>SafeDEVELOP™ fingerprint development chambers are designed to safely develop latent fingerprints on porous surfaces using DFO, Ninhydrin, and other chemicals in a controlled environment for optimum effectiveness and safety where moisture, temperature, and development time are critical factors.</div>",
+    "full_description": "<ul> <li>The professionally designed automatic development chamber eliminates reliance on do-it-yourself systems that lack user-safety allowances and controls needed for repeatable results. </li> <li>To change between profiles required only the press of a few buttons on an easy to use LED display.</li> <li>The chamber features rapid condition recovery following a door opening. </li> <li>The wide temperature and humidity range allows fingerprints to be processed in a matter of minutes - not days like some conventional methods. </li> <li>The steam generator produces humidity by a sealed, automatic, steam injection system, ensuring only vaporized water enters the sample chamber to eliminate the possibility of contaminating samples with water droplets.</li> <li>The chamber's generous working area and flexible shelving and rod system enable large batches of operational material to be processed quickly and easily. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 39,
+  "fields": {
+    "short_description": "<div>The Air Science Evidence BENCH™ series of laboratory work tables is designed specifically for high volume processing of forensic evidence by multiple users. Professional design and construction features offer convenience during use, cleaning and maintenance.</div>",
+    "full_description": "<ul> <li>No positive airflow</li> <li>Fabric withstands decontamination with standard bleach solution to eliminate blood-borne pathogens and DNA cross-contamination.</li> <li>Cabinet includes plastic hangers, a plastic zipper designed for tamperproof seals, hanging rod, push handle, locking wheels, evidence tray and biological hazard warning label.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 40,
+  "fields": {
+    "short_description": "<div>Drug KEEPER™ storage cabinets can be used for short-term storage of hazardous chemicals and substances typically associated with drug investigations.</div>",
+    "full_description": "<ul> <li>The ductless Drugkeeper storage cabinet is self-contained and does not require venting to the outside. Many units are portable and may be moved with minimal downtime and without filter changes. Set-up, operation and filter maintenance are straightforward.</li> <li>Because filtered air is returned to the room, no demands are required of the facility HVAC capacity for make-up air.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 41,
+  "fields": {
+    "short_description": "<div>The Evidence Transporter is a special-purpose basic evidence transporter and storage cabinet designed to maintain the chain of custody in transport from the field to the laboratory, while allowing effective air-drying prior to evidence processing.</div>",
+    "full_description": "<ul> <li>Kraft paper dispenser</li> <li>Lockable storage compartments to secure tools</li> <li>Open storage shelf</li> <li>Wheels allowing the bench to be moved throughout the building wherever processing needs to take place.</li> <li>Optional airflow pod</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 42,
+  "fields": {
+    "short_description": "<div>Air Science provides containment solutions to meet any analytical need. The Purair® FLEX glove bag is a portable, cost-effective flexible film isolator with more volume, easy setup and safety options.</div>",
+    "full_description": "<ul> <li><strong>Compliant with Multiple Criteria. </strong>ArmorFlex film complies with FDA 21CFR and 2002/72/EC standards for minimal outgassing, solvent and biological reactivity and static resistance.</li> <li><strong>Pharmaceutical Grade Materials.</strong> The Purair FLEX is constructed with FDA approved pharmaceutical grade LLDPE anti-static and ESD safe and meets European ATEX Directive.</li> <li><strong>Large Workspace.</strong> At 30\" (762 mm) wide and an internal volume of 3 cu.ft. (85 L) the Purair FLEX provides a large work area with a 12.5\" (317 mm) gas tight zippered access with a 6\" (152 mm) diameter opening.</li> <li><strong>Oxygen-free Work Zone.</strong> A nitrogen gas barb is a standard feature to permit creation of an oxygen-free workspace.</li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 43,
+  "fields": {
+    "short_description": "<div>With a HEPA main filter formulated to contain any particulates or biological material that might be present on swabs, SafeSWAB® is used to safely dry evidence swabs while protecting them from cross-contamination.</div>",
+    "full_description": "<ul> <li>Horizontal airflow geometry.</li> <li>Effective protection to personnel from particulate hazards.</li> <li>Controlled airflow to dry items of evidence in the cabinet. </li> <li>Lockable doors for security.</li> <li>Safe and easy to change <a href=\"https://www.airscience.com/hepa-ulpa-filtration\">HEPA/ULPA filters</a>. </li> </ul>"
+  }
+},
+{
+  "model": "base_site.labequipmentpage",
+  "pk": 44,
+  "fields": {
+    "short_description": "<div>The SafeKEEPER® COLD is a unique refrigerator designed to provide temperature controlled storage within a single cabinet with multiple layers of security.</div>",
+    "full_description": "<ul> <li><strong>Compact Footprint:</strong> The Safekeeper COLD is less than 24\" wide, which allows placement in nearly any location.</li> <li><strong>Customizable Door:</strong> Reversible door with the option to customize with a 304-stainless steel wrap.</li> <li><strong>100% CFC Free:</strong> Environmentally friendly design with no ozone-damaging chemicals.</li> </ul>"
+  }
+}
+]

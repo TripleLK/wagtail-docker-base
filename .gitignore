@@ -102,8 +102,8 @@ static/staticfiles.json
 collected-static/
 /public/
 /private/
-.env
-.envs/
+# .env
+# .envs/
 */settings/local.py
 
 # Frontend build artifacts
