@@ -1,0 +1,335 @@
+[
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 5,
+  "fields": {
+    "name": "Air Science",
+    "slug": "manufacturer-air-science",
+    "category": "Manufacturer"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 6,
+  "fields": {
+    "name": "Fume Hood",
+    "slug": "type-fume-hood",
+    "category": "type"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 7,
+  "fields": {
+    "name": "M",
+    "slug": "m",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 8,
+  "fields": {
+    "name": "a",
+    "slug": "a",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 9,
+  "fields": {
+    "name": "n",
+    "slug": "n",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 10,
+  "fields": {
+    "name": "u",
+    "slug": "u",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 11,
+  "fields": {
+    "name": "f",
+    "slug": "f",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 12,
+  "fields": {
+    "name": "c",
+    "slug": "c",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 13,
+  "fields": {
+    "name": "t",
+    "slug": "t",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 14,
+  "fields": {
+    "name": "r",
+    "slug": "r",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 15,
+  "fields": {
+    "name": "e",
+    "slug": "e",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 16,
+  "fields": {
+    "name": ":",
+    "slug": "",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 17,
+  "fields": {
+    "name": " ",
+    "slug": "_1",
+    "category": ""
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 18,
+  "fields": {
+    "name": "Purair Basic Ductless Fume Hoods",
+    "slug": "equipment-category-purair-basic-ductless-fume-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 19,
+  "fields": {
+    "name": "Purair Ducted Basic Fume Hoods",
+    "slug": "equipment-category-purair-ducted-basic-fume-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 20,
+  "fields": {
+    "name": "Purair Advanced Ductless Fume Hoods",
+    "slug": "equipment-category-purair-advanced-ductless-fume-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 21,
+  "fields": {
+    "name": "Purair Safesearch Ductless Fume Hoods",
+    "slug": "equipment-category-purair-safesearch-ductless-fume-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 22,
+  "fields": {
+    "name": "Purair Flow Laminar Flow Cabinets",
+    "slug": "equipment-category-purair-flow-laminar-flow-cabinets",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 23,
+  "fields": {
+    "name": "Purair Bio Biosafety Cabinets",
+    "slug": "equipment-category-purair-bio-biosafety-cabinets",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 24,
+  "fields": {
+    "name": "Purair Cagex",
+    "slug": "equipment-category-purair-cagex",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 25,
+  "fields": {
+    "name": "Purair Flow Laminar Flow Hoods",
+    "slug": "equipment-category-purair-flow-laminar-flow-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 26,
+  "fields": {
+    "name": "Safefume Fuming Chambers",
+    "slug": "equipment-category-safefume-fuming-chambers",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 27,
+  "fields": {
+    "name": "Safefume 360 Fuming Chamber",
+    "slug": "equipment-category-safefume-360-fuming-chamber",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 28,
+  "fields": {
+    "name": "Ductless Down Flow Workstations",
+    "slug": "equipment-category-ductless-down-flow-workstations",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 29,
+  "fields": {
+    "name": "Safekeeper Forensic Evidence Drying Cabinets",
+    "slug": "equipment-category-safekeeper-forensic-evidence-drying-cabinets",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 30,
+  "fields": {
+    "name": "Purair Rx Ductless Balance Enclosures",
+    "slug": "equipment-category-purair-rx-ductless-balance-enclosures",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 31,
+  "fields": {
+    "name": "Purair Nano Ductless Nanoparticle Enclosures",
+    "slug": "equipment-category-purair-nano-ductless-nanoparticle-enclosures",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 32,
+  "fields": {
+    "name": "Edu Class Demo Hoods",
+    "slug": "equipment-category-edu-class-demo-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 33,
+  "fields": {
+    "name": "Purair Pcr Laminar Flow Cabinets",
+    "slug": "equipment-category-purair-pcr-laminar-flow-cabinets",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 34,
+  "fields": {
+    "name": "Custom Engineered Products",
+    "slug": "equipment-category-custom-engineered-products",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 35,
+  "fields": {
+    "name": "Purair Sky Ceiling Unit",
+    "slug": "equipment-category-purair-sky-ceiling-unit",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 36,
+  "fields": {
+    "name": "Purair Eco Ductless Fume Hoods",
+    "slug": "equipment-category-purair-eco-ductless-fume-hoods",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 37,
+  "fields": {
+    "name": "Vented Enclosures",
+    "slug": "equipment-category-vented-enclosures",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 38,
+  "fields": {
+    "name": "Fume Box Ductless Enclosures",
+    "slug": "equipment-category-fume-box-ductless-enclosures",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 39,
+  "fields": {
+    "name": "Fumechamber",
+    "slug": "equipment-category-fumechamber",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 40,
+  "fields": {
+    "name": "Duct",
+    "slug": "equipment-category-duct",
+    "category": "Equipment Category"
+  }
+},
+{
+  "model": "categorized_tags.categorizedtag",
+  "pk": 41,
+  "fields": {
+    "name": "Air Filter",
+    "slug": "equipment-category-air-filter",
+    "category": "Equipment Category"
+  }
+}
+]

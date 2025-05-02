@@ -1,0 +1,1469 @@
+[
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 1,
+  "fields": {
+    "page": 4,
+    "name": "VLF-24-A - 24\"W, 115VAC, 60Hz",
+    "model_number": "a10"
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 2,
+  "fields": {
+    "page": 4,
+    "name": "VLF-36-A - 36\"W, 115VAC, 60Hz",
+    "model_number": "a10"
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3,
+  "fields": {
+    "page": 4,
+    "name": "VLF-48-A - 48\"W, 115VAC, 60Hz",
+    "model_number": "a10"
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4,
+  "fields": {
+    "page": 4,
+    "name": "VLF-60-A - 60\"W, 115VAC, 60Hz",
+    "model_number": "a10"
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 5,
+  "fields": {
+    "page": 4,
+    "name": "VLF-72-A - 72\"W, 115VAC, 60Hz",
+    "model_number": "a10"
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 6,
+  "fields": {
+    "page": 4,
+    "name": "VLF-96-A - 96\"W, 115VAC, 60Hz",
+    "model_number": "a10"
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3570,
+  "fields": {
+    "page": 22,
+    "name": "CA24S-A - Benchtop, 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3571,
+  "fields": {
+    "page": 22,
+    "name": "CA30S-A - Benchtop, 30\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3572,
+  "fields": {
+    "page": 22,
+    "name": "CA48S-A - Benchtop, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3573,
+  "fields": {
+    "page": 22,
+    "name": "CA60S-A - Benchtop, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3574,
+  "fields": {
+    "page": 22,
+    "name": "CA30T-A - Upright,  single door, 30\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3575,
+  "fields": {
+    "page": 22,
+    "name": "CA48T-A - Upright,  single door, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3576,
+  "fields": {
+    "page": 22,
+    "name": "CA60T-A - Upright,  double door, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3577,
+  "fields": {
+    "page": 22,
+    "name": "CATRI-A - Upright, 60\"W, triplex, three doors, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3578,
+  "fields": {
+    "page": 22,
+    "name": "CAQUAD-A - Upright, 60\"W, quad, four doors, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3591,
+  "fields": {
+    "page": 23,
+    "name": "ARV-24-A - Benchtop, 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3592,
+  "fields": {
+    "page": 23,
+    "name": "ARV-33T-A - Upright, 33\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3593,
+  "fields": {
+    "page": 23,
+    "name": "ARV-60T-A - Upright, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3594,
+  "fields": {
+    "page": 23,
+    "name": "ARV-72XL-A - Reach-in, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3613,
+  "fields": {
+    "page": 24,
+    "name": "DWS24-A - 24\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3614,
+  "fields": {
+    "page": 24,
+    "name": "DWS36-A - 36\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3615,
+  "fields": {
+    "page": 24,
+    "name": "DWS48-A - 48\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3616,
+  "fields": {
+    "page": 24,
+    "name": "DWS24-PP-A - 24\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3617,
+  "fields": {
+    "page": 24,
+    "name": "DWS36-PP-A - 36\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3618,
+  "fields": {
+    "page": 24,
+    "name": "DWS48-PP-A - 48\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3709,
+  "fields": {
+    "page": 25,
+    "name": "FDC-002M-A - Fits on 24\"D bench, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3710,
+  "fields": {
+    "page": 25,
+    "name": "FDC-002-A - Fits on 30\"D bench. 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3711,
+  "fields": {
+    "page": 25,
+    "name": "FDC-006GL-A - Single door, 36\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3712,
+  "fields": {
+    "page": 25,
+    "name": "FDC-007GL-A - Single door, 48\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3713,
+  "fields": {
+    "page": 25,
+    "name": "FDC-008GL-A - Single door, 60\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3714,
+  "fields": {
+    "page": 25,
+    "name": "FDC-008GL-Duplex-A - Two chambers, 60\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3715,
+  "fields": {
+    "page": 25,
+    "name": "FDC-006XL-XT-A - Single door, extra wide, 39\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3716,
+  "fields": {
+    "page": 25,
+    "name": "FDC-010-QUAD-A - Four doors, four chambers, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3717,
+  "fields": {
+    "page": 25,
+    "name": "FDC-003-A - Single door, 30\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3718,
+  "fields": {
+    "page": 25,
+    "name": "FDC-006-A - Single door, 36\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3719,
+  "fields": {
+    "page": 25,
+    "name": "FDC-007-A - Single door, 48\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3720,
+  "fields": {
+    "page": 25,
+    "name": "FDC-008-A - Single door, 60\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3721,
+  "fields": {
+    "page": 25,
+    "name": "FDC-010-A - Single door, 72\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3722,
+  "fields": {
+    "page": 25,
+    "name": "FDC-011-A - Single door, 96\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3723,
+  "fields": {
+    "page": 25,
+    "name": "FDC-006XL-A - Single door, 39\"W, 115VAC, 60Hz.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3724,
+  "fields": {
+    "page": 25,
+    "name": "FDC-003XT-A - Single door, 30\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3725,
+  "fields": {
+    "page": 25,
+    "name": "FDC-006XT-A - Single door, 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3726,
+  "fields": {
+    "page": 25,
+    "name": "FDC-007XT-A - Single door, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3727,
+  "fields": {
+    "page": 25,
+    "name": "FDC-008XT-A - Single door, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3728,
+  "fields": {
+    "page": 25,
+    "name": "FDC-010XT-A - Single door, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3729,
+  "fields": {
+    "page": 25,
+    "name": "FDC-011XT-A - Single door, 96\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3730,
+  "fields": {
+    "page": 25,
+    "name": "FDC-008DXT-A - Dual door, dual chamber, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3731,
+  "fields": {
+    "page": 25,
+    "name": "FDC-007DXT-A - Dual door, dual chamber, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3732,
+  "fields": {
+    "page": 25,
+    "name": "FDC-010DXT-A - Dual door, dual chamber, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3733,
+  "fields": {
+    "page": 25,
+    "name": "FDC-011DXT-A - Dual door, dual chamber, 96\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3734,
+  "fields": {
+    "page": 25,
+    "name": "FDC-010-TRI-A - Triple door, three chambers, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3735,
+  "fields": {
+    "page": 25,
+    "name": "FDC-007D-A - Dual door, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3736,
+  "fields": {
+    "page": 25,
+    "name": "FDC-008D-A - Dual door, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3737,
+  "fields": {
+    "page": 25,
+    "name": "FDC-010D-A - Dual door, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3738,
+  "fields": {
+    "page": 25,
+    "name": "FDC-011D-A - Dual door, 96\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3757,
+  "fields": {
+    "page": 26,
+    "name": "P5-24-XT (RX) -A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3758,
+  "fields": {
+    "page": 26,
+    "name": "P5-36-XT (RX) -A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3759,
+  "fields": {
+    "page": 26,
+    "name": "P5-48-XTS (RX) -A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3760,
+  "fields": {
+    "page": 26,
+    "name": "P5-48-XT (RX) -A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3761,
+  "fields": {
+    "page": 26,
+    "name": "P5-36-XTS (RX) -A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3762,
+  "fields": {
+    "page": 26,
+    "name": "P5-24-XTS (RX) -A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3772,
+  "fields": {
+    "page": 27,
+    "name": "P5-24-XT (NANO) -A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3773,
+  "fields": {
+    "page": 27,
+    "name": "P5-36-XT (NANO) -A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3774,
+  "fields": {
+    "page": 27,
+    "name": "P5-48-XT (NANO) -A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3793,
+  "fields": {
+    "page": 28,
+    "name": "P10XL-CART-RC-P-A - Mobile fume hood on casters, 34\"W, remote controls, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3794,
+  "fields": {
+    "page": 28,
+    "name": "P15-XT-CART-MCC-40-A - Mobile fume hood on casters, 39\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3795,
+  "fields": {
+    "page": 28,
+    "name": "P5-24XT-CART-A - Compact mobile fume hood on casters, 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3796,
+  "fields": {
+    "page": 28,
+    "name": "EDU-M-40-A - Mobile fume hood on cart, 40\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3797,
+  "fields": {
+    "page": 28,
+    "name": "EDU-M-48-A - Mobile fume hood on cart, 49\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3798,
+  "fields": {
+    "page": 28,
+    "name": "EDU-M-60-A - Mobile fume hood on cart, 59\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3808,
+  "fields": {
+    "page": 29,
+    "name": "PCR-24-A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3809,
+  "fields": {
+    "page": 29,
+    "name": "PCR-36-A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3810,
+  "fields": {
+    "page": 29,
+    "name": "PCR-48-A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3814,
+  "fields": {
+    "page": 30,
+    "name": "Main Model",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3821,
+  "fields": {
+    "page": 31,
+    "name": "SKY-24-A - Nominal 26.4\" x 26.4\", 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3822,
+  "fields": {
+    "page": 31,
+    "name": "SKY-48-A - Nominal 26.4\" x 52.75\", 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3838,
+  "fields": {
+    "page": 32,
+    "name": "ECO-10-A - 30\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3839,
+  "fields": {
+    "page": 32,
+    "name": "ECO-15-A - 39\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3840,
+  "fields": {
+    "page": 32,
+    "name": "ECO-20-A - 49\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3841,
+  "fields": {
+    "page": 32,
+    "name": "ECO-25-A - 59\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3842,
+  "fields": {
+    "page": 32,
+    "name": "ECO-30-A - 69\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3873,
+  "fields": {
+    "page": 33,
+    "name": "VE-FES-A - Airflow 265 cfm, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3874,
+  "fields": {
+    "page": 33,
+    "name": "VE-FED-A - Airflow 265 cfm, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3875,
+  "fields": {
+    "page": 33,
+    "name": "VE24S-A - Standard height, 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3876,
+  "fields": {
+    "page": 33,
+    "name": "VE34S-A - Standard height, 34\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3877,
+  "fields": {
+    "page": 33,
+    "name": "VE48S-A - Standard height, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3878,
+  "fields": {
+    "page": 33,
+    "name": "VE60S-A - Standard height, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3879,
+  "fields": {
+    "page": 33,
+    "name": "VE34T-A - Tall, 34\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3880,
+  "fields": {
+    "page": 33,
+    "name": "VE24T-A - Tall, 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3881,
+  "fields": {
+    "page": 33,
+    "name": "VE48T-A - Tall, 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3882,
+  "fields": {
+    "page": 33,
+    "name": "VE60T-A - Tall, 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3892,
+  "fields": {
+    "page": 34,
+    "name": "AP60H-A - Benchtop, horizontal, 21\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3893,
+  "fields": {
+    "page": 34,
+    "name": "AP60V-A - Benchtop, vertical, 21\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3894,
+  "fields": {
+    "page": 34,
+    "name": "AP60H-XL-A - Benchtop, horizontal, 30\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3904,
+  "fields": {
+    "page": 35,
+    "name": "BLC-EX-A - 110V, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3905,
+  "fields": {
+    "page": 35,
+    "name": "BLC-6.5-A - 110V, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3906,
+  "fields": {
+    "page": 35,
+    "name": "BLC-4-A - 110V, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3910,
+  "fields": {
+    "page": 36,
+    "name": "VB60-A - Modular filtration system, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3926,
+  "fields": {
+    "page": 37,
+    "name": "34S-A - 34\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3927,
+  "fields": {
+    "page": 37,
+    "name": "34T-A - 34\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3928,
+  "fields": {
+    "page": 37,
+    "name": "64T-A - 64\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3929,
+  "fields": {
+    "page": 37,
+    "name": "Mini Single-A - 21\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3930,
+  "fields": {
+    "page": 37,
+    "name": "Mini Double-A - 21\"W, Double, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3934,
+  "fields": {
+    "page": 38,
+    "name": "SD-34S-A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3938,
+  "fields": {
+    "page": 39,
+    "name": "EVB-72-A - Work table, 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3948,
+  "fields": {
+    "page": 40,
+    "name": "34S-A - Cabinet, Benchtop, 4 shelves, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3949,
+  "fields": {
+    "page": 40,
+    "name": "34T-A - Cabinet,Upright,  4 shelves, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3950,
+  "fields": {
+    "page": 40,
+    "name": "64T-A - Cabinet,Upright, Double,  6 shelves, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3954,
+  "fields": {
+    "page": 41,
+    "name": "FDC-BASIC-A - Portable, PVC frame set-up, mesh fabric wrap.",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3958,
+  "fields": {
+    "page": 42,
+    "name": "FLEX-30-A - 30\"W",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3965,
+  "fields": {
+    "page": 43,
+    "name": "FDC-001-A - 30 swab capacity, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3966,
+  "fields": {
+    "page": 43,
+    "name": "FDC-001M-A - 15 swab capacity, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3976,
+  "fields": {
+    "page": 44,
+    "name": "SAFEKEEPER-COLD-15-A - Refrigerator",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3977,
+  "fields": {
+    "page": 44,
+    "name": "SAFEKEEPER-COLD-12-A - Refrigerator",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3978,
+  "fields": {
+    "page": 44,
+    "name": "SAFEKEEPER-COLD-8-A - Refrigerator",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3997,
+  "fields": {
+    "page": 14,
+    "name": "P5-24-XT-A - Standard depth cabinet, 24\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3998,
+  "fields": {
+    "page": 14,
+    "name": "P5-36-XT-A - Standard depth cabinet, 36\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 3999,
+  "fields": {
+    "page": 14,
+    "name": "P5-48-XT-A - Standard depth cabinet, 48\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4000,
+  "fields": {
+    "page": 14,
+    "name": "P5-24-XTS-A - Shallow depth cabinet, 24\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4001,
+  "fields": {
+    "page": 14,
+    "name": "P5-36-XTS-A - Shallow depth cabinet, 36\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4002,
+  "fields": {
+    "page": 14,
+    "name": "P5-48-XTS-A - Shallow depth cabinet, 48\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4012,
+  "fields": {
+    "page": 15,
+    "name": "P5-24-XT-ENCL-DUCT-A - Standard depth cabinet, 24\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4013,
+  "fields": {
+    "page": 15,
+    "name": "P5-36-XT-ENCL-DUCT-A - Standard depth cabinet, 24\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4014,
+  "fields": {
+    "page": 15,
+    "name": "P5-48-XT-ENCL-DUCT-A - Standard depth cabinet, 24\"W, 120VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4036,
+  "fields": {
+    "page": 16,
+    "name": "P10-XT-A - Standard depth cabinet, 30\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4037,
+  "fields": {
+    "page": 16,
+    "name": "P10XL-XT-A - Standard depth cabinet, 34\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4038,
+  "fields": {
+    "page": 16,
+    "name": "P15-XT-A - Standard depth cabinet, 39\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4039,
+  "fields": {
+    "page": 16,
+    "name": "P20-XT-A - Standard depth cabinet, 49\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4040,
+  "fields": {
+    "page": 16,
+    "name": "P25-XT-A - Standard depth cabinet, 59\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4041,
+  "fields": {
+    "page": 16,
+    "name": "P30-XT-A - Standard depth cabinet, 69\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4042,
+  "fields": {
+    "page": 16,
+    "name": "P40-XT-A - Standard depth cabinet, 96\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4061,
+  "fields": {
+    "page": 17,
+    "name": "P5-24-XT-SafeSEARCH-A - Standard depth cabinet, 24\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4062,
+  "fields": {
+    "page": 17,
+    "name": "P5-24-XTS-SafeSEARCH-A - Shallow depth cabinet, 24\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4063,
+  "fields": {
+    "page": 17,
+    "name": "P5-36-XT-SafeSEARCH-A - Standard depth cabinet, 36\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4064,
+  "fields": {
+    "page": 17,
+    "name": "P5-36-XTS-SafeSEARCH-A - Shallow depth cabinet, 36\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4065,
+  "fields": {
+    "page": 17,
+    "name": "P5-48-XT-SafeSEARCH-A - Standard depth cabinet, 48\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4066,
+  "fields": {
+    "page": 17,
+    "name": "P5-48-XTS-SafeSEARCH-A - Shallow depth cabinet, 48\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4103,
+  "fields": {
+    "page": 18,
+    "name": "HLF-24-A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4104,
+  "fields": {
+    "page": 18,
+    "name": "HLF-24XT-A - 24\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4105,
+  "fields": {
+    "page": 18,
+    "name": "HLF-36-A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4106,
+  "fields": {
+    "page": 18,
+    "name": "HLF-36XT-A - 36\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4107,
+  "fields": {
+    "page": 18,
+    "name": "HLF-48-A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4108,
+  "fields": {
+    "page": 18,
+    "name": "HLF-48XT-A - 48\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4109,
+  "fields": {
+    "page": 18,
+    "name": "HLF-60-A - 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4110,
+  "fields": {
+    "page": 18,
+    "name": "HLF-60XT-A - 60\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4111,
+  "fields": {
+    "page": 18,
+    "name": "HLF-72-A - 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4112,
+  "fields": {
+    "page": 18,
+    "name": "HLF-72XT-A - 72\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4113,
+  "fields": {
+    "page": 18,
+    "name": "HLF-96-A - 96\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4114,
+  "fields": {
+    "page": 18,
+    "name": "HLF-96XT-A - 96\"W, extra tall legs, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4133,
+  "fields": {
+    "page": 12,
+    "name": "VLF-24-A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4134,
+  "fields": {
+    "page": 12,
+    "name": "VLF-36-A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4135,
+  "fields": {
+    "page": 12,
+    "name": "VLF-48-A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4136,
+  "fields": {
+    "page": 12,
+    "name": "VLF-60-A - 60\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4137,
+  "fields": {
+    "page": 12,
+    "name": "VLF-72-A - 72\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4138,
+  "fields": {
+    "page": 12,
+    "name": "VLF-96-A - 96\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4151,
+  "fields": {
+    "page": 19,
+    "name": "AS-AHA-103-CA-B - Biological Safety Cabinet, 3'W, 115VAC, 60Hz, 15A",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4152,
+  "fields": {
+    "page": 19,
+    "name": "AS-AHA-133-CA-B - NSF Biological Safety Cabinet, 4'W, 115VAC, 60Hz, 15A",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4153,
+  "fields": {
+    "page": 19,
+    "name": "AS-AHA-163-CA-B - Biological Safety Cabinet, 5'W, 115VAC, 60Hz, 15A",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4154,
+  "fields": {
+    "page": 19,
+    "name": "AS-AHA-193-CA-A - NSF Biological Safety Cabinet, 6'W, 115VAC, 60Hz, 15A",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4158,
+  "fields": {
+    "page": 20,
+    "name": "P5-36-XT (CAGEX)-A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4168,
+  "fields": {
+    "page": 21,
+    "name": "FLOW-24-A - 24\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4169,
+  "fields": {
+    "page": 21,
+    "name": "FLOW-36-A - 36\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+},
+{
+  "model": "base_site.equipmentmodel",
+  "pk": 4170,
+  "fields": {
+    "page": 21,
+    "name": "FLOW-48-A - 48\"W, 115VAC, 60Hz",
+    "model_number": ""
+  }
+}
+]

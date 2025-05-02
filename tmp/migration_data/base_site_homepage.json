@@ -1,0 +1,24 @@
+[
+{
+  "model": "base_site.homepage",
+  "pk": 5,
+  "fields": {
+    "hero_title": "Welcome to Triad Scientific",
+    "hero_subtitle": "Your trusted source for high-quality lab equipment and scientific supplies",
+    "about_title": "About Triad Scientific",
+    "about_content": "<p data-block-key=\"puhui\">Triad Scientific has been a leading provider of laboratory equipment for over 20 years. We offer a comprehensive range of high-quality scientific instruments, supplies, and accessories.</p>",
+    "about_image": null
+  }
+},
+{
+  "model": "base_site.homepage",
+  "pk": 6,
+  "fields": {
+    "hero_title": "Welcome to Triad Scientific",
+    "hero_subtitle": "Your trusted source for high-quality lab equipment and scientific supplies",
+    "about_title": "About Triad Scientific",
+    "about_content": "<p data-block-key=\"ol3h6\">Triad Scientific has been a leading provider of laboratory equipment for over 20 years. We offer a comprehensive range of high-quality scientific instruments, supplies, and accessories.</p>",
+    "about_image": null
+  }
+}
+]

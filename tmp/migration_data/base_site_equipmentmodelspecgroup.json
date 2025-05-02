@@ -1,0 +1,7436 @@
+[
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 1,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 2,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 3,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 4,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 5,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 6,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 7,
+  "fields": {
+    "equipment_model": 1
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 8,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 9,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 10,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 11,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 12,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 13,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 14,
+  "fields": {
+    "equipment_model": 2
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 15,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 16,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 17,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 18,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 19,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 20,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 21,
+  "fields": {
+    "equipment_model": 3
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 27,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 28,
+  "fields": {
+    "equipment_model": 4
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 29,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 30,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 31,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 32,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 33,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 34,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 35,
+  "fields": {
+    "equipment_model": 5
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 36,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 37,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 38,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 39,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 40,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 41,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 42,
+  "fields": {
+    "equipment_model": 6
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22538,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22539,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22540,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22541,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22542,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22543,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22544,
+  "fields": {
+    "equipment_model": 3570
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22545,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22546,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22547,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22548,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22549,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22550,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22551,
+  "fields": {
+    "equipment_model": 3571
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22552,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22553,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22554,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22555,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22556,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22557,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22558,
+  "fields": {
+    "equipment_model": 3572
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22559,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22560,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22561,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22562,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22563,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22564,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22565,
+  "fields": {
+    "equipment_model": 3573
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22566,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22567,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22568,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22569,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22570,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22571,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22572,
+  "fields": {
+    "equipment_model": 3574
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22573,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22574,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22575,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22576,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22577,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22578,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22579,
+  "fields": {
+    "equipment_model": 3575
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22580,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22581,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22582,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22583,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22584,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22585,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22586,
+  "fields": {
+    "equipment_model": 3576
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22587,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22588,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22589,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22590,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22591,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22592,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22593,
+  "fields": {
+    "equipment_model": 3577
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22594,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22595,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22596,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22597,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22598,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22599,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22600,
+  "fields": {
+    "equipment_model": 3578
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22685,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22686,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22687,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22688,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22689,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22690,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22691,
+  "fields": {
+    "equipment_model": 3591
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22692,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22693,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22694,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22695,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22696,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22697,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22698,
+  "fields": {
+    "equipment_model": 3592
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22699,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22700,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22701,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22702,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22703,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22704,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22705,
+  "fields": {
+    "equipment_model": 3593
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22706,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22707,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22708,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22709,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22710,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22711,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22712,
+  "fields": {
+    "equipment_model": 3594
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22821,
+  "fields": {
+    "equipment_model": 3613
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22822,
+  "fields": {
+    "equipment_model": 3613
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22823,
+  "fields": {
+    "equipment_model": 3613
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22824,
+  "fields": {
+    "equipment_model": 3613
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22825,
+  "fields": {
+    "equipment_model": 3613
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22826,
+  "fields": {
+    "equipment_model": 3613
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22827,
+  "fields": {
+    "equipment_model": 3614
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22828,
+  "fields": {
+    "equipment_model": 3614
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22829,
+  "fields": {
+    "equipment_model": 3614
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22830,
+  "fields": {
+    "equipment_model": 3614
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22831,
+  "fields": {
+    "equipment_model": 3614
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22832,
+  "fields": {
+    "equipment_model": 3614
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22833,
+  "fields": {
+    "equipment_model": 3615
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22834,
+  "fields": {
+    "equipment_model": 3615
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22835,
+  "fields": {
+    "equipment_model": 3615
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22836,
+  "fields": {
+    "equipment_model": 3615
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22837,
+  "fields": {
+    "equipment_model": 3615
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22838,
+  "fields": {
+    "equipment_model": 3615
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22839,
+  "fields": {
+    "equipment_model": 3616
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22840,
+  "fields": {
+    "equipment_model": 3616
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22841,
+  "fields": {
+    "equipment_model": 3616
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22842,
+  "fields": {
+    "equipment_model": 3616
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22843,
+  "fields": {
+    "equipment_model": 3616
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22844,
+  "fields": {
+    "equipment_model": 3616
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22845,
+  "fields": {
+    "equipment_model": 3617
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22846,
+  "fields": {
+    "equipment_model": 3617
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22847,
+  "fields": {
+    "equipment_model": 3617
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22848,
+  "fields": {
+    "equipment_model": 3617
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22849,
+  "fields": {
+    "equipment_model": 3617
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22850,
+  "fields": {
+    "equipment_model": 3617
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22851,
+  "fields": {
+    "equipment_model": 3618
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22852,
+  "fields": {
+    "equipment_model": 3618
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22853,
+  "fields": {
+    "equipment_model": 3618
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22854,
+  "fields": {
+    "equipment_model": 3618
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22855,
+  "fields": {
+    "equipment_model": 3618
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 22856,
+  "fields": {
+    "equipment_model": 3618
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23487,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23488,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23489,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23490,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23491,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23492,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23493,
+  "fields": {
+    "equipment_model": 3709
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23494,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23495,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23496,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23497,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23498,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23499,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23500,
+  "fields": {
+    "equipment_model": 3710
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23501,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23502,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23503,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23504,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23505,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23506,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23507,
+  "fields": {
+    "equipment_model": 3711
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23508,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23509,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23510,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23511,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23512,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23513,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23514,
+  "fields": {
+    "equipment_model": 3712
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23515,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23516,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23517,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23518,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23519,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23520,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23521,
+  "fields": {
+    "equipment_model": 3713
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23522,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23523,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23524,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23525,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23526,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23527,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23528,
+  "fields": {
+    "equipment_model": 3714
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23529,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23530,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23531,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23532,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23533,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23534,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23535,
+  "fields": {
+    "equipment_model": 3715
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23536,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23537,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23538,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23539,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23540,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23541,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23542,
+  "fields": {
+    "equipment_model": 3716
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23543,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23544,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23545,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23546,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23547,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23548,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23549,
+  "fields": {
+    "equipment_model": 3717
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23550,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23551,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23552,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23553,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23554,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23555,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23556,
+  "fields": {
+    "equipment_model": 3718
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23557,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23558,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23559,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23560,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23561,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23562,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23563,
+  "fields": {
+    "equipment_model": 3719
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23564,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23565,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23566,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23567,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23568,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23569,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23570,
+  "fields": {
+    "equipment_model": 3720
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23571,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23572,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23573,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23574,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23575,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23576,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23577,
+  "fields": {
+    "equipment_model": 3721
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23578,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23579,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23580,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23581,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23582,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23583,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23584,
+  "fields": {
+    "equipment_model": 3722
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23585,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23586,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23587,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23588,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23589,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23590,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23591,
+  "fields": {
+    "equipment_model": 3723
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23592,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23593,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23594,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23595,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23596,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23597,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23598,
+  "fields": {
+    "equipment_model": 3724
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23599,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23600,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23601,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23602,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23603,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23604,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23605,
+  "fields": {
+    "equipment_model": 3725
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23606,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23607,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23608,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23609,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23610,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23611,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23612,
+  "fields": {
+    "equipment_model": 3726
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23613,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23614,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23615,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23616,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23617,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23618,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23619,
+  "fields": {
+    "equipment_model": 3727
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23620,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23621,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23622,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23623,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23624,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23625,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23626,
+  "fields": {
+    "equipment_model": 3728
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23627,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23628,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23629,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23630,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23631,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23632,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23633,
+  "fields": {
+    "equipment_model": 3729
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23634,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23635,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23636,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23637,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23638,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23639,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23640,
+  "fields": {
+    "equipment_model": 3730
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23641,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23642,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23643,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23644,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23645,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23646,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23647,
+  "fields": {
+    "equipment_model": 3731
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23648,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23649,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23650,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23651,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23652,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23653,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23654,
+  "fields": {
+    "equipment_model": 3732
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23655,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23656,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23657,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23658,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23659,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23660,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23661,
+  "fields": {
+    "equipment_model": 3733
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23662,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23663,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23664,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23665,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23666,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23667,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23668,
+  "fields": {
+    "equipment_model": 3734
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23669,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23670,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23671,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23672,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23673,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23674,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23675,
+  "fields": {
+    "equipment_model": 3735
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23676,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23677,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23678,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23679,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23680,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23681,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23682,
+  "fields": {
+    "equipment_model": 3736
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23683,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23684,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23685,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23686,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23687,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23688,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23689,
+  "fields": {
+    "equipment_model": 3737
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23690,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23691,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23692,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23693,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23694,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23695,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23696,
+  "fields": {
+    "equipment_model": 3738
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23823,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23824,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23825,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23826,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23827,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23828,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23829,
+  "fields": {
+    "equipment_model": 3757
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23830,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23831,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23832,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23833,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23834,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23835,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23836,
+  "fields": {
+    "equipment_model": 3758
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23837,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23838,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23839,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23840,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23841,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23842,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23843,
+  "fields": {
+    "equipment_model": 3759
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23844,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23845,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23846,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23847,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23848,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23849,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23850,
+  "fields": {
+    "equipment_model": 3760
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23851,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23852,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23853,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23854,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23855,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23856,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23857,
+  "fields": {
+    "equipment_model": 3761
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23858,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23859,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23860,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23861,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23862,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23863,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23864,
+  "fields": {
+    "equipment_model": 3762
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23928,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23929,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23930,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23931,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23932,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23933,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23934,
+  "fields": {
+    "equipment_model": 3772
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23935,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23936,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23937,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23938,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23939,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23940,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23941,
+  "fields": {
+    "equipment_model": 3773
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23942,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23943,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23944,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23945,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23946,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23947,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 23948,
+  "fields": {
+    "equipment_model": 3774
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24075,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24076,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24077,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24078,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24079,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24080,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24081,
+  "fields": {
+    "equipment_model": 3793
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24082,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24083,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24084,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24085,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24086,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24087,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24088,
+  "fields": {
+    "equipment_model": 3794
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24089,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24090,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24091,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24092,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24093,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24094,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24095,
+  "fields": {
+    "equipment_model": 3795
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24096,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24097,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24098,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24099,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24100,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24101,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24102,
+  "fields": {
+    "equipment_model": 3796
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24103,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24104,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24105,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24106,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24107,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24108,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24109,
+  "fields": {
+    "equipment_model": 3797
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24110,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24111,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24112,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24113,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24114,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24115,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24116,
+  "fields": {
+    "equipment_model": 3798
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24180,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24181,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24182,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24183,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24184,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24185,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24186,
+  "fields": {
+    "equipment_model": 3808
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24187,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24188,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24189,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24190,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24191,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24192,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24193,
+  "fields": {
+    "equipment_model": 3809
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24194,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24195,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24196,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24197,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24198,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24199,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24200,
+  "fields": {
+    "equipment_model": 3810
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24204,
+  "fields": {
+    "equipment_model": 3814
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24229,
+  "fields": {
+    "equipment_model": 3821
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24230,
+  "fields": {
+    "equipment_model": 3821
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24231,
+  "fields": {
+    "equipment_model": 3821
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24232,
+  "fields": {
+    "equipment_model": 3821
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24233,
+  "fields": {
+    "equipment_model": 3822
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24234,
+  "fields": {
+    "equipment_model": 3822
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24235,
+  "fields": {
+    "equipment_model": 3822
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24236,
+  "fields": {
+    "equipment_model": 3822
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24339,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24340,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24341,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24342,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24343,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24344,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24345,
+  "fields": {
+    "equipment_model": 3838
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24346,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24347,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24348,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24349,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24350,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24351,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24352,
+  "fields": {
+    "equipment_model": 3839
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24353,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24354,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24355,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24356,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24357,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24358,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24359,
+  "fields": {
+    "equipment_model": 3840
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24360,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24361,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24362,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24363,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24364,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24365,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24366,
+  "fields": {
+    "equipment_model": 3841
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24367,
+  "fields": {
+    "equipment_model": 3842
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24368,
+  "fields": {
+    "equipment_model": 3842
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24369,
+  "fields": {
+    "equipment_model": 3842
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24370,
+  "fields": {
+    "equipment_model": 3842
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24371,
+  "fields": {
+    "equipment_model": 3842
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24372,
+  "fields": {
+    "equipment_model": 3842
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24559,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24560,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24561,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24562,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24563,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24564,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24565,
+  "fields": {
+    "equipment_model": 3873
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24566,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24567,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24568,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24569,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24570,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24571,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24572,
+  "fields": {
+    "equipment_model": 3874
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24573,
+  "fields": {
+    "equipment_model": 3875
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24574,
+  "fields": {
+    "equipment_model": 3875
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24575,
+  "fields": {
+    "equipment_model": 3875
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24576,
+  "fields": {
+    "equipment_model": 3875
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24577,
+  "fields": {
+    "equipment_model": 3875
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24578,
+  "fields": {
+    "equipment_model": 3875
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24579,
+  "fields": {
+    "equipment_model": 3876
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24580,
+  "fields": {
+    "equipment_model": 3876
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24581,
+  "fields": {
+    "equipment_model": 3876
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24582,
+  "fields": {
+    "equipment_model": 3876
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24583,
+  "fields": {
+    "equipment_model": 3876
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24584,
+  "fields": {
+    "equipment_model": 3876
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24585,
+  "fields": {
+    "equipment_model": 3877
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24586,
+  "fields": {
+    "equipment_model": 3877
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24587,
+  "fields": {
+    "equipment_model": 3877
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24588,
+  "fields": {
+    "equipment_model": 3877
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24589,
+  "fields": {
+    "equipment_model": 3877
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24590,
+  "fields": {
+    "equipment_model": 3877
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24591,
+  "fields": {
+    "equipment_model": 3878
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24592,
+  "fields": {
+    "equipment_model": 3878
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24593,
+  "fields": {
+    "equipment_model": 3878
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24594,
+  "fields": {
+    "equipment_model": 3878
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24595,
+  "fields": {
+    "equipment_model": 3878
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24596,
+  "fields": {
+    "equipment_model": 3878
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24597,
+  "fields": {
+    "equipment_model": 3879
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24598,
+  "fields": {
+    "equipment_model": 3879
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24599,
+  "fields": {
+    "equipment_model": 3879
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24600,
+  "fields": {
+    "equipment_model": 3879
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24601,
+  "fields": {
+    "equipment_model": 3879
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24602,
+  "fields": {
+    "equipment_model": 3879
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24603,
+  "fields": {
+    "equipment_model": 3880
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24604,
+  "fields": {
+    "equipment_model": 3880
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24605,
+  "fields": {
+    "equipment_model": 3880
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24606,
+  "fields": {
+    "equipment_model": 3880
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24607,
+  "fields": {
+    "equipment_model": 3880
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24608,
+  "fields": {
+    "equipment_model": 3880
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24609,
+  "fields": {
+    "equipment_model": 3881
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24610,
+  "fields": {
+    "equipment_model": 3881
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24611,
+  "fields": {
+    "equipment_model": 3881
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24612,
+  "fields": {
+    "equipment_model": 3881
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24613,
+  "fields": {
+    "equipment_model": 3881
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24614,
+  "fields": {
+    "equipment_model": 3881
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24615,
+  "fields": {
+    "equipment_model": 3882
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24616,
+  "fields": {
+    "equipment_model": 3882
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24617,
+  "fields": {
+    "equipment_model": 3882
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24618,
+  "fields": {
+    "equipment_model": 3882
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24619,
+  "fields": {
+    "equipment_model": 3882
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24620,
+  "fields": {
+    "equipment_model": 3882
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24684,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24685,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24686,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24687,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24688,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24689,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24690,
+  "fields": {
+    "equipment_model": 3892
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24691,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24692,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24693,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24694,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24695,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24696,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24697,
+  "fields": {
+    "equipment_model": 3893
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24698,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24699,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24700,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24701,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24702,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24703,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24704,
+  "fields": {
+    "equipment_model": 3894
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24750,
+  "fields": {
+    "equipment_model": 3904
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24751,
+  "fields": {
+    "equipment_model": 3904
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24752,
+  "fields": {
+    "equipment_model": 3904
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24753,
+  "fields": {
+    "equipment_model": 3904
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24754,
+  "fields": {
+    "equipment_model": 3904
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24755,
+  "fields": {
+    "equipment_model": 3905
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24756,
+  "fields": {
+    "equipment_model": 3905
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24757,
+  "fields": {
+    "equipment_model": 3905
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24758,
+  "fields": {
+    "equipment_model": 3905
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24759,
+  "fields": {
+    "equipment_model": 3905
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24760,
+  "fields": {
+    "equipment_model": 3906
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24761,
+  "fields": {
+    "equipment_model": 3906
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24762,
+  "fields": {
+    "equipment_model": 3906
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24763,
+  "fields": {
+    "equipment_model": 3906
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24764,
+  "fields": {
+    "equipment_model": 3906
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24780,
+  "fields": {
+    "equipment_model": 3910
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24781,
+  "fields": {
+    "equipment_model": 3910
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24782,
+  "fields": {
+    "equipment_model": 3910
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24783,
+  "fields": {
+    "equipment_model": 3910
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24784,
+  "fields": {
+    "equipment_model": 3910
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24878,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24879,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24880,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24881,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24882,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24883,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24884,
+  "fields": {
+    "equipment_model": 3926
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24885,
+  "fields": {
+    "equipment_model": 3927
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24886,
+  "fields": {
+    "equipment_model": 3927
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24887,
+  "fields": {
+    "equipment_model": 3927
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24888,
+  "fields": {
+    "equipment_model": 3927
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24889,
+  "fields": {
+    "equipment_model": 3927
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24890,
+  "fields": {
+    "equipment_model": 3927
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24891,
+  "fields": {
+    "equipment_model": 3928
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24892,
+  "fields": {
+    "equipment_model": 3928
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24893,
+  "fields": {
+    "equipment_model": 3928
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24894,
+  "fields": {
+    "equipment_model": 3928
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24895,
+  "fields": {
+    "equipment_model": 3928
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24896,
+  "fields": {
+    "equipment_model": 3928
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24897,
+  "fields": {
+    "equipment_model": 3929
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24898,
+  "fields": {
+    "equipment_model": 3929
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24899,
+  "fields": {
+    "equipment_model": 3929
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24900,
+  "fields": {
+    "equipment_model": 3929
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24901,
+  "fields": {
+    "equipment_model": 3929
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24902,
+  "fields": {
+    "equipment_model": 3929
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24903,
+  "fields": {
+    "equipment_model": 3930
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24904,
+  "fields": {
+    "equipment_model": 3930
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24905,
+  "fields": {
+    "equipment_model": 3930
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24906,
+  "fields": {
+    "equipment_model": 3930
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24907,
+  "fields": {
+    "equipment_model": 3930
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24908,
+  "fields": {
+    "equipment_model": 3930
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24927,
+  "fields": {
+    "equipment_model": 3934
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24928,
+  "fields": {
+    "equipment_model": 3934
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24929,
+  "fields": {
+    "equipment_model": 3934
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24930,
+  "fields": {
+    "equipment_model": 3934
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24931,
+  "fields": {
+    "equipment_model": 3934
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24932,
+  "fields": {
+    "equipment_model": 3934
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24951,
+  "fields": {
+    "equipment_model": 3938
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24952,
+  "fields": {
+    "equipment_model": 3938
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24953,
+  "fields": {
+    "equipment_model": 3938
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24954,
+  "fields": {
+    "equipment_model": 3938
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24955,
+  "fields": {
+    "equipment_model": 3938
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 24956,
+  "fields": {
+    "equipment_model": 3938
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25020,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25021,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25022,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25023,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25024,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25025,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25026,
+  "fields": {
+    "equipment_model": 3948
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25027,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25028,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25029,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25030,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25031,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25032,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25033,
+  "fields": {
+    "equipment_model": 3949
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25034,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25035,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25036,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25037,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25038,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25039,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25040,
+  "fields": {
+    "equipment_model": 3950
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25053,
+  "fields": {
+    "equipment_model": 3954
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25054,
+  "fields": {
+    "equipment_model": 3954
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25055,
+  "fields": {
+    "equipment_model": 3954
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25056,
+  "fields": {
+    "equipment_model": 3954
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25066,
+  "fields": {
+    "equipment_model": 3958
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25067,
+  "fields": {
+    "equipment_model": 3958
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25068,
+  "fields": {
+    "equipment_model": 3958
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25111,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25112,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25113,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25114,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25115,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25116,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25117,
+  "fields": {
+    "equipment_model": 3965
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25118,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25119,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25120,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25121,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25122,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25123,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25124,
+  "fields": {
+    "equipment_model": 3966
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25161,
+  "fields": {
+    "equipment_model": 3976
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25162,
+  "fields": {
+    "equipment_model": 3976
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25163,
+  "fields": {
+    "equipment_model": 3976
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25164,
+  "fields": {
+    "equipment_model": 3976
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25165,
+  "fields": {
+    "equipment_model": 3977
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25166,
+  "fields": {
+    "equipment_model": 3977
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25167,
+  "fields": {
+    "equipment_model": 3977
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25168,
+  "fields": {
+    "equipment_model": 3977
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25169,
+  "fields": {
+    "equipment_model": 3978
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25170,
+  "fields": {
+    "equipment_model": 3978
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25171,
+  "fields": {
+    "equipment_model": 3978
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25172,
+  "fields": {
+    "equipment_model": 3978
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25299,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25300,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25301,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25302,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25303,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25304,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25305,
+  "fields": {
+    "equipment_model": 3997
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25306,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25307,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25308,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25309,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25310,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25311,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25312,
+  "fields": {
+    "equipment_model": 3998
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25313,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25314,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25315,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25316,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25317,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25318,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25319,
+  "fields": {
+    "equipment_model": 3999
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25320,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25321,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25322,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25323,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25324,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25325,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25326,
+  "fields": {
+    "equipment_model": 4000
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25327,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25328,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25329,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25330,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25331,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25332,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25333,
+  "fields": {
+    "equipment_model": 4001
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25334,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25335,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25336,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25337,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25338,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25339,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25340,
+  "fields": {
+    "equipment_model": 4002
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25395,
+  "fields": {
+    "equipment_model": 4012
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25396,
+  "fields": {
+    "equipment_model": 4012
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25397,
+  "fields": {
+    "equipment_model": 4012
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25398,
+  "fields": {
+    "equipment_model": 4012
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25399,
+  "fields": {
+    "equipment_model": 4012
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25400,
+  "fields": {
+    "equipment_model": 4012
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25401,
+  "fields": {
+    "equipment_model": 4013
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25402,
+  "fields": {
+    "equipment_model": 4013
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25403,
+  "fields": {
+    "equipment_model": 4013
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25404,
+  "fields": {
+    "equipment_model": 4013
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25405,
+  "fields": {
+    "equipment_model": 4013
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25406,
+  "fields": {
+    "equipment_model": 4013
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25407,
+  "fields": {
+    "equipment_model": 4014
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25408,
+  "fields": {
+    "equipment_model": 4014
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25409,
+  "fields": {
+    "equipment_model": 4014
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25410,
+  "fields": {
+    "equipment_model": 4014
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25411,
+  "fields": {
+    "equipment_model": 4014
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25412,
+  "fields": {
+    "equipment_model": 4014
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25560,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25561,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25562,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25563,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25564,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25565,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25566,
+  "fields": {
+    "equipment_model": 4036
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25567,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25568,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25569,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25570,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25571,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25572,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25573,
+  "fields": {
+    "equipment_model": 4037
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25574,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25575,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25576,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25577,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25578,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25579,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25580,
+  "fields": {
+    "equipment_model": 4038
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25581,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25582,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25583,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25584,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25585,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25586,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25587,
+  "fields": {
+    "equipment_model": 4039
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25588,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25589,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25590,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25591,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25592,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25593,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25594,
+  "fields": {
+    "equipment_model": 4040
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25595,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25596,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25597,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25598,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25599,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25600,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25601,
+  "fields": {
+    "equipment_model": 4041
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25602,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25603,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25604,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25605,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25606,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25607,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25608,
+  "fields": {
+    "equipment_model": 4042
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25735,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25736,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25737,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25738,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25739,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25740,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25741,
+  "fields": {
+    "equipment_model": 4061
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25742,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25743,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25744,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25745,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25746,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25747,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25748,
+  "fields": {
+    "equipment_model": 4062
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25749,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25750,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25751,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25752,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25753,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25754,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25755,
+  "fields": {
+    "equipment_model": 4063
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25756,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25757,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25758,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25759,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25760,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25761,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25762,
+  "fields": {
+    "equipment_model": 4064
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25763,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25764,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25765,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25766,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25767,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25768,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25769,
+  "fields": {
+    "equipment_model": 4065
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25770,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25771,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25772,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25773,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25774,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25775,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25776,
+  "fields": {
+    "equipment_model": 4066
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25993,
+  "fields": {
+    "equipment_model": 4103
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25994,
+  "fields": {
+    "equipment_model": 4103
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25995,
+  "fields": {
+    "equipment_model": 4103
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25996,
+  "fields": {
+    "equipment_model": 4103
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25997,
+  "fields": {
+    "equipment_model": 4103
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25998,
+  "fields": {
+    "equipment_model": 4103
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 25999,
+  "fields": {
+    "equipment_model": 4104
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26000,
+  "fields": {
+    "equipment_model": 4104
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26001,
+  "fields": {
+    "equipment_model": 4104
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26002,
+  "fields": {
+    "equipment_model": 4104
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26003,
+  "fields": {
+    "equipment_model": 4104
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26004,
+  "fields": {
+    "equipment_model": 4104
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26005,
+  "fields": {
+    "equipment_model": 4105
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26006,
+  "fields": {
+    "equipment_model": 4105
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26007,
+  "fields": {
+    "equipment_model": 4105
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26008,
+  "fields": {
+    "equipment_model": 4105
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26009,
+  "fields": {
+    "equipment_model": 4105
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26010,
+  "fields": {
+    "equipment_model": 4105
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26011,
+  "fields": {
+    "equipment_model": 4106
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26012,
+  "fields": {
+    "equipment_model": 4106
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26013,
+  "fields": {
+    "equipment_model": 4106
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26014,
+  "fields": {
+    "equipment_model": 4106
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26015,
+  "fields": {
+    "equipment_model": 4106
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26016,
+  "fields": {
+    "equipment_model": 4106
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26017,
+  "fields": {
+    "equipment_model": 4107
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26018,
+  "fields": {
+    "equipment_model": 4107
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26019,
+  "fields": {
+    "equipment_model": 4107
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26020,
+  "fields": {
+    "equipment_model": 4107
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26021,
+  "fields": {
+    "equipment_model": 4107
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26022,
+  "fields": {
+    "equipment_model": 4107
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26023,
+  "fields": {
+    "equipment_model": 4108
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26024,
+  "fields": {
+    "equipment_model": 4108
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26025,
+  "fields": {
+    "equipment_model": 4108
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26026,
+  "fields": {
+    "equipment_model": 4108
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26027,
+  "fields": {
+    "equipment_model": 4108
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26028,
+  "fields": {
+    "equipment_model": 4108
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26029,
+  "fields": {
+    "equipment_model": 4109
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26030,
+  "fields": {
+    "equipment_model": 4109
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26031,
+  "fields": {
+    "equipment_model": 4109
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26032,
+  "fields": {
+    "equipment_model": 4109
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26033,
+  "fields": {
+    "equipment_model": 4109
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26034,
+  "fields": {
+    "equipment_model": 4109
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26035,
+  "fields": {
+    "equipment_model": 4110
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26036,
+  "fields": {
+    "equipment_model": 4110
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26037,
+  "fields": {
+    "equipment_model": 4110
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26038,
+  "fields": {
+    "equipment_model": 4110
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26039,
+  "fields": {
+    "equipment_model": 4110
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26040,
+  "fields": {
+    "equipment_model": 4110
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26041,
+  "fields": {
+    "equipment_model": 4111
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26042,
+  "fields": {
+    "equipment_model": 4111
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26043,
+  "fields": {
+    "equipment_model": 4111
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26044,
+  "fields": {
+    "equipment_model": 4111
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26045,
+  "fields": {
+    "equipment_model": 4111
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26046,
+  "fields": {
+    "equipment_model": 4111
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26047,
+  "fields": {
+    "equipment_model": 4112
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26048,
+  "fields": {
+    "equipment_model": 4112
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26049,
+  "fields": {
+    "equipment_model": 4112
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26050,
+  "fields": {
+    "equipment_model": 4112
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26051,
+  "fields": {
+    "equipment_model": 4112
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26052,
+  "fields": {
+    "equipment_model": 4112
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26053,
+  "fields": {
+    "equipment_model": 4113
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26054,
+  "fields": {
+    "equipment_model": 4113
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26055,
+  "fields": {
+    "equipment_model": 4113
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26056,
+  "fields": {
+    "equipment_model": 4113
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26057,
+  "fields": {
+    "equipment_model": 4113
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26058,
+  "fields": {
+    "equipment_model": 4113
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26059,
+  "fields": {
+    "equipment_model": 4114
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26060,
+  "fields": {
+    "equipment_model": 4114
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26061,
+  "fields": {
+    "equipment_model": 4114
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26062,
+  "fields": {
+    "equipment_model": 4114
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26063,
+  "fields": {
+    "equipment_model": 4114
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26064,
+  "fields": {
+    "equipment_model": 4114
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26173,
+  "fields": {
+    "equipment_model": 4133
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26174,
+  "fields": {
+    "equipment_model": 4133
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26175,
+  "fields": {
+    "equipment_model": 4133
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26176,
+  "fields": {
+    "equipment_model": 4133
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26177,
+  "fields": {
+    "equipment_model": 4133
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26178,
+  "fields": {
+    "equipment_model": 4133
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26179,
+  "fields": {
+    "equipment_model": 4134
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26180,
+  "fields": {
+    "equipment_model": 4134
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26181,
+  "fields": {
+    "equipment_model": 4134
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26182,
+  "fields": {
+    "equipment_model": 4134
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26183,
+  "fields": {
+    "equipment_model": 4134
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26184,
+  "fields": {
+    "equipment_model": 4134
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26185,
+  "fields": {
+    "equipment_model": 4135
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26186,
+  "fields": {
+    "equipment_model": 4135
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26187,
+  "fields": {
+    "equipment_model": 4135
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26188,
+  "fields": {
+    "equipment_model": 4135
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26189,
+  "fields": {
+    "equipment_model": 4135
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26190,
+  "fields": {
+    "equipment_model": 4135
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26191,
+  "fields": {
+    "equipment_model": 4136
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26192,
+  "fields": {
+    "equipment_model": 4136
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26193,
+  "fields": {
+    "equipment_model": 4136
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26194,
+  "fields": {
+    "equipment_model": 4136
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26195,
+  "fields": {
+    "equipment_model": 4136
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26196,
+  "fields": {
+    "equipment_model": 4136
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26197,
+  "fields": {
+    "equipment_model": 4137
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26198,
+  "fields": {
+    "equipment_model": 4137
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26199,
+  "fields": {
+    "equipment_model": 4137
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26200,
+  "fields": {
+    "equipment_model": 4137
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26201,
+  "fields": {
+    "equipment_model": 4137
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26202,
+  "fields": {
+    "equipment_model": 4137
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26203,
+  "fields": {
+    "equipment_model": 4138
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26204,
+  "fields": {
+    "equipment_model": 4138
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26205,
+  "fields": {
+    "equipment_model": 4138
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26206,
+  "fields": {
+    "equipment_model": 4138
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26207,
+  "fields": {
+    "equipment_model": 4138
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26208,
+  "fields": {
+    "equipment_model": 4138
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26293,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26294,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26295,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26296,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26297,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26298,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26299,
+  "fields": {
+    "equipment_model": 4151
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26300,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26301,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26302,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26303,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26304,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26305,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26306,
+  "fields": {
+    "equipment_model": 4152
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26307,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26308,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26309,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26310,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26311,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26312,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26313,
+  "fields": {
+    "equipment_model": 4153
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26314,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26315,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26316,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26317,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26318,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26319,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26320,
+  "fields": {
+    "equipment_model": 4154
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26339,
+  "fields": {
+    "equipment_model": 4158
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26340,
+  "fields": {
+    "equipment_model": 4158
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26341,
+  "fields": {
+    "equipment_model": 4158
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26342,
+  "fields": {
+    "equipment_model": 4158
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26343,
+  "fields": {
+    "equipment_model": 4158
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26344,
+  "fields": {
+    "equipment_model": 4158
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26408,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26409,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26410,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26411,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26412,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26413,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26414,
+  "fields": {
+    "equipment_model": 4168
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26415,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26416,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26417,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26418,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26419,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26420,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26421,
+  "fields": {
+    "equipment_model": 4169
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26422,
+  "fields": {
+    "equipment_model": 4170
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26423,
+  "fields": {
+    "equipment_model": 4170
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26424,
+  "fields": {
+    "equipment_model": 4170
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26425,
+  "fields": {
+    "equipment_model": 4170
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26426,
+  "fields": {
+    "equipment_model": 4170
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26427,
+  "fields": {
+    "equipment_model": 4170
+  }
+},
+{
+  "model": "base_site.equipmentmodelspecgroup",
+  "pk": 26428,
+  "fields": {
+    "equipment_model": 4170
+  }
+}
+]
