@@ -69,7 +69,9 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 
 # Static files configuration
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'  # Use standard storage
+STATIC_URL = os.getenv('STATIC_URL', '/static/')
+STATICFILES_STORAGE = os.getenv('STATICFILES_STORAGE', 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Logging
 LOGGING = {

@@ -8,8 +8,8 @@ from .base import *
 DEBUG = True
 
 # Database settings - using SQLite by default
-db_engine = os.getenv('DB_ENGINE', 'django.db.backends.sqlite3')
-db_name = os.getenv('DB_NAME', 'db.sqlite3')
+db_engine = os.getenv('DATABASE_ENGINE', 'django.db.backends.sqlite3')
+db_name = os.getenv('DATABASE_NAME', 'db.sqlite3')
 
 # For SQLite, use full path; for others like PostgreSQL, just use the name
 if db_engine == 'django.db.backends.sqlite3':
@@ -21,10 +21,10 @@ DATABASES = {
     'default': {
         'ENGINE': db_engine,
         'NAME': db_path,
-        'USER': os.getenv('DB_USER', ''),
-        'PASSWORD': os.getenv('DB_PASSWORD', ''),
-        'HOST': os.getenv('DB_HOST', ''),
-        'PORT': os.getenv('DB_PORT', ''),
+        'USER': os.getenv('DATABASE_USER', ''),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD', ''),
+        'HOST': os.getenv('DATABASE_HOST', ''),
+        'PORT': os.getenv('DATABASE_PORT', ''),
     }
 }
 
@@ -45,6 +45,11 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = False
 SECURE_HSTS_PRELOAD = False
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
+
+# Static files configuration
+STATIC_URL = os.getenv('STATIC_URL', '/static/')
+STATICFILES_STORAGE = os.getenv('STATICFILES_STORAGE', 'django.contrib.staticfiles.storage.StaticFilesStorage')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Disable password validation in development
 AUTH_PASSWORD_VALIDATORS = []
