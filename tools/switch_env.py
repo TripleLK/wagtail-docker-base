@@ -6,7 +6,7 @@ This script allows easy switching between different database environments
 by creating a symlink to the appropriate .env file.
 
 Usage:
-    python tools/migrations/switch_env.py [dev|prod|safari] [mac|ec2]
+    python tools/switch_env.py [dev|prod|safari] [mac|ec2]
 """
 import os
 import sys
@@ -21,7 +21,7 @@ def switch_environment(env_type, platform):
         env_type: 'dev', 'prod', or 'safari'
         platform: 'mac' or 'ec2'
     """
-    base_dir = Path(__file__).resolve().parent.parent.parent
+    base_dir = Path(__file__).resolve().parent.parent
     envs_dir = base_dir / "envs"
     
     # Map environment types to their files
@@ -56,6 +56,12 @@ def switch_environment(env_type, platform):
         print("Using SQLite database")
     else:
         print("Using PostgreSQL database - make sure PostgreSQL is running")
+    
+    # Clear instructions
+    print("\nIMPORTANT: If you have set DJANGO_ENV or DJANGO_SETTINGS_MODULE in your")
+    print("shell environment, they will override the .env file. To ensure the changes")
+    print("take effect, unset these variables before running Django commands:")
+    print("  unset DJANGO_ENV DJANGO_SETTINGS_MODULE")
     
     return True
 
