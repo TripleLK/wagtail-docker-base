@@ -1,5 +1,5 @@
 == STATIC FILES DIAGNOSTIC REPORT ==
-Sat May  3 01:49:17 UTC 2025
+Sat May  3 01:55:50 UTC 2025
 
 == ENVIRONMENT ==
 Python version:
@@ -67,32 +67,4 @@ Connected to PostgreSQL database: triad_db
 Testing direct HTTP access to static files:
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-curl: (7) Failed to connect to localhost port 7000 after 0 ms: Couldn't connect to server
-
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-curl: (7) Failed to connect to localhost port 7000 after 1 ms: Couldn't connect to server
-
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-curl: (7) Failed to connect to localhost port 7000 after 0 ms: Couldn't connect to server
-
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-curl: (7) Failed to connect to localhost port 7000 after 0 ms: Couldn't connect to server
-
-== TEMPLATE DEBUGGING ==
-Setting up a test view to verify static files:
-Created test script at /tmp/debug/test_static.py
-Run with: python /tmp/debug/test_static.py
-
-== FINAL NOTES ==
-Diagnosis completed. Please run:
-1. python /tmp/debug/test_static.py
-2. Access http://localhost:8765/tmp/debug/test.html in your browser
-3. Check the results on the page
-
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0

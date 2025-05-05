@@ -48,7 +48,7 @@ CSRF_COOKIE_SECURE = False
 
 # Static files configuration
 STATIC_URL = os.getenv('STATIC_URL', '/static/')
-STATICFILES_STORAGE = os.getenv('STATICFILES_STORAGE', 'django.contrib.staticfiles.storage.StaticFilesStorage')
+STATICFILES_STORAGE = os.getenv('STATICFILES_STORAGE', 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Disable password validation in development
