@@ -1,33 +1,47 @@
 ---
-- zip_selector:
-    keys:
-      - soup_selector:
-          attrs:
-            class: expandable-text
-      - for_each_selector:
-          selector:
-            text_selector
+# Extract specs by splitting content on <br/> tags using our custom selector
+mapping_selector:
+  mapping:
+    section_title:
+      # Extract the section title from the expandable-text element
+      - css_selector:
+          css_selector: "p.expandable-text"
+          required: false
+          index: 0
+          log_level: "DEBUG"
+      - text_selector:
+          log_level: "DEBUG"
     vals:
-      - soup_selector:
-          attrs:
-            class: expandable-content
+      # Select paragraphs that aren't expandable-text (section headers)
+      - css_selector:
+          css_selector: "p:not(.expandable-text)"
+          required: false
+          log_level: "DEBUG"
+      # Process each paragraph by splitting on BR tags
       - for_each_selector:
           selector:
-            - split_selector:
-                delimiter: <br/>
+            # Use our custom selector to split by <br/> tags
+            - br_split_selector:
+                log_level: "DEBUG"
+            # Process each segment for spec name and value
             - for_each_selector:
                 selector:
                   - mapping_selector:
-                      spec_name:
-                        - soup_selector:
-                            attrs:
-                              tag_name: strong
-                            index: 0
-                        - text_selector
-                      spec_value:
-                        - split_selector:
-                            delimiter: </strong>
-                        - indexed_selector:
-                            index: 1
-                        - html_selector
+                      mapping:
+                        spec_name:
+                          - regex_selector:
+                              pattern: "<strong>(.*?)</strong>"
+                              group: 1
+                              log_level: "DEBUG"
+                        spec_value:
+                          - regex_selector:
+                              # Updated pattern to better capture spec values
+                              pattern: "</strong>:?\\s*([^<]+)"
+                              group: 1
+                              log_level: "DEBUG"
+                # Skip segments without specs
                 skip_on_fail: true
+                log_level: "DEBUG"
+          # Skip paragraphs that can't be split
+          skip_on_fail: true
+          log_level: "DEBUG"

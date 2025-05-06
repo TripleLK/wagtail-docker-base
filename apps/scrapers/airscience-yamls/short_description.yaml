@@ -1,10 +1,6 @@
 ---
-- soup_selector:
-    attrs:
-      class: descriptioncontainer
-    index: 0
-- soup_selector:
-    attrs:
-      tag_name: div
+# Select the product description paragraph
+- css_selector:
+    css_selector: "div.descriptioncontainer p"
     index: 0
 - text_selector
