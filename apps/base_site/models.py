@@ -307,18 +307,12 @@ class EquipmentModel(ClusterableModel):
     )
 
     name = models.CharField(
-        max_length=128,
+        max_length=255,
         help_text="The name of the model"
-    )
-
-    model_number = models.CharField(
-        max_length=32,
-        help_text="The identification number of the model"
     )
 
     panels = [
         FieldPanel('name'),
-        FieldPanel('model_number'),
         InlinePanel('spec_groups', label="Specification Groups"),
     ]
 
@@ -392,6 +386,13 @@ class LabEquipmentPage(Page):
     full_description = RichTextField(
         blank=True,
         help_text="Detailed description of the equipment."
+    )
+    
+    airscience_url = models.URLField(
+        verbose_name="AirScience URL",
+        blank=True, 
+        null=True,
+        help_text="Original URL from the AirScience website"
     )
 
     # This field will store our custom tags
