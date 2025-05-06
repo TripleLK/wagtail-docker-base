@@ -1,11 +1,6 @@
 ---
-- soup_selector:
-    attrs:
-      id: image-wrapper
-    index: 0
-- soup_selector:
-    attrs:
-      tag_name: img
+- css_selector:
+    css_selector: "img[src*='PDT_']"
 - for_each_selector:
     selector:
       - concat_selector:

@@ -87,3 +87,68 @@ wagtail-docker-base
 ```
 
 This repo should contain all code that is necessary for the running of wagtail in our base web setup, but that is not needed by either the host computer or the running of grapes.js. Code required by both the wagtail container and either of those should be contained within lllk-web-base.
+
+## AirScience Web Scraper Integration
+
+The AirScience Web Scraper is integrated with the Django models to automate the process of importing product data from the AirScience website.
+
+### Running the Scraper
+
+The scraper is implemented as a Django management command and can be run using the following command:
+
+```bash
+python manage.py import_airscience [options]
+```
+
+Or using the convenience script:
+
+```bash
+./scripts/import_airscience_products.sh [options]
+```
+
+### Command Options
+
+- `--parent-page=ID`: ID of the parent page to add equipment pages under (required for new pages)
+- `--update-existing`: Update existing pages instead of creating new ones
+- `--skip-images`: Skip downloading images
+- `--dry-run`: Perform a dry run without committing changes
+- `--url=URL`: URL to scrape (default: Purair Advanced Ductless Fume Hoods)
+
+### Example Usage
+
+Run a dry run to see what would be imported:
+
+```bash
+python manage.py import_airscience --parent-page=2 --dry-run
+```
+
+Import new products:
+
+```bash
+python manage.py import_airscience --parent-page=2
+```
+
+Update existing products:
+
+```bash
+python manage.py import_airscience --update-existing
+```
+
+### Data Extraction
+
+The scraper extracts the following data from the AirScience website:
+
+- Product name
+- Short and full descriptions
+- Model specifications organized by sections
+- Product images
+
+### Database Integration
+
+The scraper integrates with the following Django models:
+
+- `LabEquipmentPage`: Stores the product information
+- `EquipmentModel`: Stores model variants for each product
+- `EquipmentModelSpecGroup`: Organizes specifications by sections
+- `Spec`: Stores individual specifications
+- `LabEquipmentGalleryImage`: Stores product images
