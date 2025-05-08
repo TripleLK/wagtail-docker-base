@@ -145,6 +145,7 @@ class Selector(ABC):
         from apps.scrapers.selectors.concat_selector import ConcatSelector
         from apps.scrapers.selectors.attr_selector import AttrSelector
         from apps.scrapers.selectors.categorized_tag_page_selector import CategorizedTagPageSelector
+        from apps.scrapers.selectors.print_selector import PrintSelector
 
         if yaml_dict is None:
             return None
@@ -190,6 +191,8 @@ class Selector(ABC):
                 return FileSelector.fromYamlDict(value)
             elif key == "concat_selector":
                 return ConcatSelector.fromYamlDict(value)
+            elif key == "print_selector":
+                return PrintSelector.fromYamlDict(value)
             elif key == "attr_selector":
                 return AttrSelector.fromYamlDict(value)
             elif key == "categorized_tag_page_selector":

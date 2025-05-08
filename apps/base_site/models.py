@@ -388,11 +388,11 @@ class LabEquipmentPage(Page):
         help_text="Detailed description of the equipment."
     )
     
-    airscience_url = models.URLField(
-        verbose_name="AirScience URL",
+    source_url = models.URLField(
+        verbose_name="Source URL",
         blank=True, 
         null=True,
-        help_text="Original URL from the AirScience website"
+        help_text="Original URL where this product information was sourced from"
     )
 
     # This field will store our custom tags
@@ -402,6 +402,7 @@ class LabEquipmentPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('short_description', classname="full"),
         FieldPanel('full_description', classname="full"),
+        FieldPanel('source_url'),
         FieldPanel('categorized_tags'),
         InlinePanel('gallery_images', label='Images'),
         InlinePanel(
