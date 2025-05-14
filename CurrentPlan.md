@@ -366,21 +366,17 @@ The implementation was thoroughly tested with both single-product imports and ba
 
 **Expected Output:** A production-ready scraper system with complete Django model integration and optimization [COMPLETED]
 
-## Step 5: Implement management command
+## Step 5: Implement Management Command Enhancements and Tagging [PENDING]
 **Tasks:**
-- Create a Django management command for triadscientific.com scraping
-- Implement URL discovery process
-- Implement product information extraction
-- Add command-line options for:
-  - Scraping specific categories
-  - Limiting number of products
-  - Dry run mode
-  - Update existing products vs. create new ones
-  - Controlling verbosity
-- Implement progress reporting
-- Add error logging and recovery mechanisms
+- Integrate URL discovery with the import process in a single command
+- Implement category-specific URL discovery options
+- Add product categorization using the tagging system
+- Implement automatic manufacturer tagging
+- Create a unified workflow for complete site scraping
+- Add advanced options for controlling the scraping process
+- Enhance progress reporting with estimated time remaining and statistics
 
-**Expected Output:** Django management command for scraping triadscientific.com
+**Expected Output:** An enhanced management command with URL discovery and tagging capabilities
 
 ## Step 6: Develop data import functionality
 **Tasks:**

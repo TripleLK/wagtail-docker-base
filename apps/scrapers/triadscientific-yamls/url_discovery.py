@@ -17,7 +17,7 @@ logger = logging.getLogger('triad_url_discovery')
 BASE_URL = "http://www.triadscientific.com"
 YAML_DIR = Path(__file__).parent
 
-# Rate limiting (to avoid overloading the website)
+# Default rate limiting (can be overridden in constructor)
 REQUEST_DELAY = 1  # seconds between requests
 
 
@@ -26,9 +26,10 @@ class TriadUrlDiscoverer:
     Class for discovering URLs on the Triad Scientific website using YAML selectors.
     """
     
-    def __init__(self, base_url=BASE_URL, yaml_dir=YAML_DIR):
+    def __init__(self, base_url=BASE_URL, yaml_dir=YAML_DIR, request_delay=REQUEST_DELAY):
         self.base_url = base_url
         self.yaml_dir = yaml_dir
+        self.request_delay = request_delay
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -67,7 +68,7 @@ class TriadUrlDiscoverer:
         logger.info(f"Fetching URL: {url}")
         
         try:
-            time.sleep(REQUEST_DELAY)  # Rate limiting
+            time.sleep(self.request_delay)  # Use instance-specific rate limiting
             response = self.session.get(url)
             response.raise_for_status()
             return response.text
