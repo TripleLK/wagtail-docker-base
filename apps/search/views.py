@@ -1,5 +1,6 @@
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.template.response import TemplateResponse
+
 from django.db.models import Count, Q
 from django.http import Http404
 from django.contrib.contenttypes.models import ContentType
@@ -7,6 +8,7 @@ from django.contrib.contenttypes.models import ContentType
 from wagtail.models import Page
 from apps.base_site.models import LabEquipmentPage, MultiProductPage
 from apps.categorized_tags.models import CategorizedTag, TagCategory
+
 
 # To enable logging of search queries for use with the "Promoted search results" module
 # <https://docs.wagtail.org/en/stable/reference/contrib/searchpromotions.html>
@@ -18,6 +20,7 @@ from apps.categorized_tags.models import CategorizedTag, TagCategory
 
 def search(request):
     search_query = request.GET.get("query", None)
+
     page_num = request.GET.get("page", 1)
     
     # Start with all live equipment pages - get the base Page objects
@@ -130,10 +133,12 @@ def search(request):
     paginator = Paginator(specific_pages, 12)  # Show 12 products per page
     try:
         search_results = paginator.page(page_num)
+
     except PageNotAnInteger:
         search_results = paginator.page(1)
     except EmptyPage:
         search_results = paginator.page(paginator.num_pages)
+
 
     # Get the MultiProductPage to use its template
     try:

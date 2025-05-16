@@ -1,4 +1,5 @@
 from django.db import models
+
 from wagtail.models import Page, Orderable, ClusterableModel
 from wagtail.admin.panels import FieldRowPanel, FieldPanel, InlinePanel
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
@@ -11,6 +12,7 @@ from apps.categorized_tags.forms import CategoryTagForm
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 import uuid
 
+
 class BasicPage(Page):
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
@@ -19,6 +21,7 @@ class BasicPage(Page):
         index.SearchField('intro'),
         index.SearchField('body')
     ]
+
 
     content_panels = Page.content_panels + [
         FieldPanel("intro"),
@@ -608,3 +611,5 @@ class APIToken(models.Model):
         if not self.token:
             self.token = uuid.uuid4().hex
         super().save(*args, **kwargs)
+
+

@@ -4,6 +4,7 @@ import django
 
 # Set the default settings module
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "apps.base_site.settings.dev")
+
 django.setup()
 
 User = get_user_model()
