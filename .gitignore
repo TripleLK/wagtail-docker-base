@@ -109,3 +109,8 @@ collected-static/
 # Frontend build artifacts
 frontend/build/
 frontend/dist/
+
+# Sensitive environment files
+envs/*.env
+*.env
+.env*
