@@ -59,24 +59,61 @@ def register_ai_processing_menu():
     # Create a submenu for AI Processing
     submenu = Menu(items=[
         MenuItem('URL Processing', '/admin/ai-processing/', icon_name='doc-empty', order=100),
-        # Add back the Selector Configuration menu item with the correct URL path
+        # Add the Selector Configuration menu item under AI Processing
         MenuItem(
             'Selector Configurations',
             '/admin/ai_processing/selectorconfiguration/',
             icon_name='snippet',
             order=200
         ),
-        # Get the ID of the home page (root) as the starting point for page explorer
+        # Move AI-Generated Pages to the bottom and rename to All Pages
         MenuItem(
-            'AI-Generated Pages',
+            'All Pages',
             reverse('wagtailadmin_explore', args=[get_homepage_id()]) + '?p_type=ai_generated',
             icon_name='doc-empty',
-            order=300
+            order=900
         ),
     ])
     
     # Return the menu as a submenu item
     return SubmenuMenuItem('AI Processing', submenu, icon_name='cogs', order=800)
+
+
+# Add a separate top-level menu item for Lab Equipment
+@hooks.register('register_admin_menu_item')
+def register_lab_equipment_menu():
+    # Get the home page ID
+    homepage_id = get_homepage_id()
+    
+    # Return a top-level menu item for Lab Equipment that links to the children of home page
+    return MenuItem(
+        'Lab Equipment', 
+        reverse('wagtailadmin_explore', args=[homepage_id]),
+        icon_name='view', # Using 'view' icon which looks like a microscope/lens
+        order=200,
+        classnames='lab-equipment-menu'
+    )
+
+
+# Add custom JavaScript to handle active state for the Lab Equipment menu
+@hooks.register('insert_global_admin_js')
+def lab_equipment_menu_js():
+    # This script will mark the Lab Equipment menu item as active when viewing the homepage children
+    return format_html(
+        '<script>'
+        'document.addEventListener("DOMContentLoaded", function() {{'
+        '    // Check if we\'re in the page explorer for the home page'
+        '    if (window.location.pathname.includes("/admin/pages/") && '
+        '        window.location.href.includes("/explore/")) {{'
+        '        // Mark the Lab Equipment menu as active'
+        '        const menuItem = document.querySelector(".lab-equipment-menu");'
+        '        if (menuItem) {{'
+        '            menuItem.classList.add("menu-active");'
+        '        }}'
+        '    }}'
+        '}});'
+        '</script>'
+    )
 
 
 # Helper function to get the home page ID
@@ -136,4 +173,67 @@ def page_listing_ai_indicator(page, page_perms, is_parent=False, next_url=None):
             },
             classname='button-small button-secondary',
             priority=30
-        ) 
+        )
+
+
+# Reorder and rename the main menu items
+@hooks.register('construct_main_menu')
+def reorder_main_menu(request, menu_items):
+    """
+    Modify the main menu:
+    1. Move Pages to the bottom and rename to All Pages
+    2. Remove Reports
+    3. Hide SelectorConfiguration from top level menu
+    4. Remove Documents
+    5. Move Images down
+    """
+    # Find the menu items
+    pages_item = None
+    reports_item = None
+    selector_config_item = None
+    documents_item = None
+    images_item = None
+    
+    # Identify items to modify
+    for item in menu_items:
+        if item.name == 'explorer':  # 'explorer' is the name of the Pages menu item
+            pages_item = item
+        elif item.name == 'reports':  # Remove reports menu
+            reports_item = item
+        elif getattr(item, 'label', '') == 'Selector Configurations':  # Remove Selector Configurations from top level
+            selector_config_item = item
+        elif item.name == 'documents':  # Remove documents menu
+            documents_item = item
+        elif item.name == 'images':  # Move images menu down
+            images_item = item
+    
+    # Remove Pages from its current position
+    if pages_item:
+        menu_items.remove(pages_item)
+        # Rename it to "All Pages"
+        pages_item.label = "All Pages"
+        # Add it back at the end with a high order value
+        pages_item.order = 9000
+        menu_items.append(pages_item)
+    
+    # Remove Reports menu item
+    if reports_item:
+        menu_items.remove(reports_item)
+    
+    # Remove Selector Configurations from top level menu
+    if selector_config_item:
+        menu_items.remove(selector_config_item)
+    
+    # Remove Documents menu item
+    if documents_item:
+        menu_items.remove(documents_item)
+    
+    # Move Images down
+    if images_item:
+        menu_items.remove(images_item)
+        # Add it back with a higher order value
+        images_item.order = 8000
+        menu_items.append(images_item)
+    
+    # Sort the menu items by order
+    menu_items.sort(key=lambda x: x.order) 

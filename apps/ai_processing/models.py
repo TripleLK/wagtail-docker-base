@@ -11,6 +11,14 @@ class BatchURLProcessingRequest(models.Model):
         null=True,
         help_text="Optional CSS selectors to filter HTML content (comma-separated)"
     )
+    selector_configuration = models.ForeignKey(
+        'SelectorConfiguration',
+        on_delete=models.SET_NULL,
+        related_name='batch_requests',
+        null=True,
+        blank=True,
+        help_text="Selected selector configuration for HTML processing"
+    )
     created_at = models.DateTimeField(default=timezone.now)
     completed_at = models.DateTimeField(null=True, blank=True)
     status = models.CharField(
@@ -82,6 +90,7 @@ class BatchURLProcessingRequest(models.Model):
 class URLProcessingRequest(models.Model):
     """Model to track URL processing requests sent to AWS Bedrock."""
     url = models.URLField(verbose_name="URL to process")
+    name = models.CharField(max_length=255, verbose_name="Name", blank=True, null=True, help_text="Name of the processed entity")
     css_selectors = models.TextField(
         verbose_name="CSS Selectors",
         blank=True,

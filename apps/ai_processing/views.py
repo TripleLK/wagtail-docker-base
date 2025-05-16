@@ -15,6 +15,7 @@ from django.db.models import Q
 from django.utils import timezone
 from django.conf import settings
 from django.utils.html import format_html
+import time
 
 from .models import URLProcessingRequest, BatchURLProcessingRequest, SelectorConfiguration
 from .forms import URLProcessingForm, BatchURLProcessingForm
@@ -423,6 +424,11 @@ def process_url_request(request_id):
             url_request.mark_as_completed(structured_data)
             logger.info(f"Request {request_id} marked as completed")
             
+            # Set the name field based on response title
+            if 'title' in structured_data and structured_data['title']:
+                url_request.name = structured_data['title']
+                url_request.save(update_fields=['name'])
+            
             # Automatically create a draft page from the extracted data
             try:
                 # Transform the Bedrock data to API format
@@ -631,17 +637,24 @@ def batch_process_view(request):
             # Get the validated data
             batch_name = form.cleaned_data['name']
             urls = form.cleaned_data['urls']
+            
+            # Get the selector choice and related data
+            selector_choice = form.cleaned_data['selector_choice']
+            selector_configuration = form.cleaned_data.get('selector_configuration')
             css_selectors = form.cleaned_data.get('css_selectors', '')
             
             # Create a new batch
             batch = BatchURLProcessingRequest.objects.create(
                 name=batch_name,
-                css_selectors=css_selectors,
+                css_selectors=css_selectors if selector_choice == BatchURLProcessingForm.SELECTOR_CHOICE_MANUAL else '',
+                selector_configuration=selector_configuration if selector_choice == BatchURLProcessingForm.SELECTOR_CHOICE_CONFIG else None,
                 total_urls=len(urls)
             )
             
-            # Log if CSS selectors are provided
-            if css_selectors:
+            # Log information about the processing mode
+            if selector_choice == BatchURLProcessingForm.SELECTOR_CHOICE_CONFIG and selector_configuration:
+                logger.info(f"Batch created with selector configuration: {selector_configuration.name} (ID: {selector_configuration.id})")
+            elif css_selectors:
                 logger.info(f"Batch created with CSS selectors: {css_selectors}")
             
             # Create URL processing requests for each URL
@@ -652,7 +665,8 @@ def batch_process_view(request):
                     URLProcessingRequest.objects.create(
                         url=url,
                         batch=batch,
-                        css_selectors=css_selectors  # Pass the CSS selectors to each URL request
+                        css_selectors=css_selectors if selector_choice == BatchURLProcessingForm.SELECTOR_CHOICE_MANUAL else '',
+                        selector_configuration=selector_configuration if selector_choice == BatchURLProcessingForm.SELECTOR_CHOICE_CONFIG else None
                     )
                 else:
                     logger.warning(f"Skipping invalid URL in batch: {url} - {error_message}")
@@ -711,17 +725,16 @@ def batch_status_view(request, batch_id):
     
     return render(request, 'wagtailadmin/ai_processing/batch_status.html', context)
 
-def process_batch_urls(batch_id, concurrent_limit=3, rate_limit_delay=1):
+def process_batch_urls(batch_id, rate_limit_delay=2):
     """
-    Process all URLs in a batch with rate limiting.
+    Process all URLs in a batch sequentially (one at a time).
     This function is designed to be run in a background thread.
     
     Args:
         batch_id: ID of the BatchURLProcessingRequest
-        concurrent_limit: Maximum number of concurrent requests
-        rate_limit_delay: Delay between starting new requests (in seconds)
+        rate_limit_delay: Delay between processing requests (in seconds)
     """
-    logger.info(f"Starting batch processing for batch ID: {batch_id}")
+    logger.info(f"Starting sequential batch processing for batch ID: {batch_id}")
     
     try:
         batch = BatchURLProcessingRequest.objects.get(id=batch_id)
@@ -737,35 +750,23 @@ def process_batch_urls(batch_id, concurrent_limit=3, rate_limit_delay=1):
     pending_requests = URLProcessingRequest.objects.filter(
         batch_id=batch_id,
         status='pending'
-    )
+    ).order_by('created_at')  # Process in order of creation
     
     logger.info(f"Found {pending_requests.count()} pending requests in batch {batch_id}")
     
-    # Use threading to process URLs concurrently with rate limiting
-    active_threads = []
-    
-    # Process all pending requests
+    # Process each URL one at a time
     for request in pending_requests:
-        # Wait until we have fewer than the concurrent limit
-        while len(active_threads) >= concurrent_limit:
-            # Clean up finished threads
-            active_threads = [t for t in active_threads if t.is_alive()]
-            time.sleep(0.5)
+        logger.info(f"Processing URL: {request.url} (Request ID: {request.id})")
         
-        # Start a new thread to process this URL
-        thread = threading.Thread(target=process_url_request, args=(request.id,))
-        thread.daemon = True
-        thread.start()
+        # Process this URL
+        process_url_request(request.id)
         
-        # Add to active threads
-        active_threads.append(thread)
+        # Update batch status after each request
+        batch.refresh_from_db()
+        batch.update_status()
         
-        # Rate limiting delay
+        # Rate limiting delay between requests
         time.sleep(rate_limit_delay)
-    
-    # Wait for all threads to finish
-    for thread in active_threads:
-        thread.join()
     
     # Auto-create pages for completed requests that don't have pages yet
     completed_requests = URLProcessingRequest.objects.filter(

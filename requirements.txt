@@ -8,3 +8,4 @@ tqdm>=4.62.0
 boto3>=1.33.0
 requests>=2.31.0
 django-filter>=24.1
+beautifulsoup4>=4.12.0

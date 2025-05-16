@@ -9,8 +9,9 @@ def register_scrape_url():
         path('scrape/', scrape_view, name='scrape'),
     ]
 
-@hooks.register('construct_main_menu')
-def add_scrape_menu_item(request, menu_items):
-    menu_items.append(
-        MenuItem('Scrape a URL', reverse('scrape'), classnames='icon icon-site', order=10000)
-    )
+# Commented out to remove the Scrape URL button from the main menu
+# @hooks.register('construct_main_menu')
+# def add_scrape_menu_item(request, menu_items):
+#     menu_items.append(
+#         MenuItem('Scrape a URL', reverse('scrape'), classnames='icon icon-site', order=10000)
+#     )
