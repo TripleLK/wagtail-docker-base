@@ -171,6 +171,13 @@ def category_view(request, category_slug, value_slug):
     # Look up the category and value from the slugs
     try:
         tag = CategorizedTag.objects.get(slug__iexact=f"{category_slug}-{value_slug}")
+        
+        # Add additional check to prevent errors with empty category
+        if not tag.category:
+            # Fix the tag by adding a generic category if it's missing
+            tag.category = "General"
+            tag.save()
+            
     except CategorizedTag.DoesNotExist:
         raise Http404(f"No tag found for {category_slug}: {value_slug}")
     

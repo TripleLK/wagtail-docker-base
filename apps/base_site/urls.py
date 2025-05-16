@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from . import api
 
 urlpatterns = [
     # Cart URLs
@@ -15,4 +16,11 @@ urlpatterns = [
     path('quote/success/', views.quote_request_success, name='quote_request_success'),
     path('quote/request/<int:equipment_page_id>/', views.request_single_quote, name='request_single_quote'),
     path('quote/request/<int:equipment_page_id>/<int:equipment_model_id>/', views.request_single_quote, name='request_single_quote_with_model'),
+    
+    # Admin/Review URLs
+    path('admin/review/', views.human_review_queue, name='human_review_queue'),
+    
+    # API URLs
+    path('api/lab-equipment/', api.create_or_update_lab_equipment, name='api_lab_equipment'),
+    path('api/approve-review-item/', api.approve_review_item, name='approve_review_item'),
 ] 

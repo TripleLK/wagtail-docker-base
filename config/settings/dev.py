@@ -37,6 +37,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-dev-key-change-this-in-pro
 # Allow all hosts in development
 ALLOWED_HOSTS = ['*']
 
+# CORS settings for development
+CORS_ALLOW_ALL_ORIGINS = True
+
 # Disable HTTPS/SSL settings
 SECURE_SSL_REDIRECT = False
 SECURE_PROXY_SSL_HEADER = None

@@ -102,7 +102,9 @@
             <a href="{% pageurl product %}" class="product-link">
                 {% with main_image=product.main_image %}
                     {% if main_image %}
-                        <img src="{{ main_image }}" alt="{{ product.title }}" class="product-image" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                        <div class="product-image">
+                            <img src="{{ main_image }}" alt="{{ product.title }}" style="max-height: 100%; max-width: 100%;" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                        </div>
                     {% else %}
                         <div class="product-image no-image">
                             <span>No image available</span>
@@ -110,21 +112,21 @@
                     {% endif %}
                 {% endwith %}
                 <div class="product-text-container">
+                    <!-- Product Tags -->
+                    <div class="product-tags">
+                        {% for tag in product.categorized_tags.all|slice:":3" %}
+                            <span class="product-tag" 
+                                  style="background-color: {{ tag.category_color }}">
+                                {{ tag.name }}
+                            </span>
+                        {% endfor %}
+                    </div>
                     <h3 class="product-title">{{ product.title }}</h3>
                     {% if product.short_description %}
                         <p class="description">
                             {{ product.short_description|richtext|striptags|truncatewords:20 }}
                         </p>
                     {% endif %}
-                    <div class="product-tags">
-                        {% for tag in product.categorized_tags.all|slice:":3" %}
-                            <a href="{% url 'category_view' category_slug=tag.category|slugify value_slug=tag.name|slugify %}" 
-                               class="product-tag" 
-                               style="background-color: {{ tag.category_color }}">
-                                {{ tag.name }}
-                            </a>
-                        {% endfor %}
-                    </div>
                 </div>
             </a>
         </article>

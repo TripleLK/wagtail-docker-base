@@ -9,6 +9,7 @@ from modelcluster.contrib.taggit import ClusterTaggableManager
 from apps.categorized_tags.models import CategorizedPageTag
 from apps.categorized_tags.forms import CategoryTagForm
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+import uuid
 
 class BasicPage(Page):
     intro = models.CharField(max_length=250)
@@ -378,6 +379,13 @@ class LabEquipmentPage(Page):
     """
     A page model for a single lab equipment item.
     """
+    SOURCE_TYPES = (
+        ('new', 'New Equipment'),
+        ('used', 'Used Equipment'),
+        ('refurbished', 'Refurbished Equipment'),
+        ('unknown', 'Unknown'),
+    )
+
     short_description = RichTextField(
         blank=True,
         help_text="A brief summary of the equipment."
@@ -395,6 +403,30 @@ class LabEquipmentPage(Page):
         help_text="Original URL where this product information was sourced from"
     )
 
+    source_type = models.CharField(
+        max_length=20,
+        choices=SOURCE_TYPES,
+        default='unknown',
+        help_text="Indicates whether this is new, used, or refurbished equipment"
+    )
+
+    data_completeness = models.FloatField(
+        default=1.0,
+        help_text="Score from 0.0 to 1.0 indicating how complete the product data is"
+    )
+
+    specification_confidence = models.CharField(
+        max_length=10,
+        choices=[('low', 'Low'), ('medium', 'Medium'), ('high', 'High')],
+        default='high',
+        help_text="Confidence level in the accuracy of the specifications"
+    )
+
+    needs_review = models.BooleanField(
+        default=False,
+        help_text="Flag indicating this listing needs manual review"
+    )
+
     # This field will store our custom tags
     # tags = ClusterTaggableManager(through=CategoryPageTag, blank=True)
     categorized_tags = ClusterTaggableManager(through=CategorizedPageTag, blank=True)
@@ -403,6 +435,10 @@ class LabEquipmentPage(Page):
         FieldPanel('short_description', classname="full"),
         FieldPanel('full_description', classname="full"),
         FieldPanel('source_url'),
+        FieldPanel('source_type'),
+        FieldPanel('data_completeness'),
+        FieldPanel('specification_confidence'),
+        FieldPanel('needs_review'),
         FieldPanel('categorized_tags'),
         InlinePanel('gallery_images', label='Images'),
         InlinePanel(
@@ -502,7 +538,6 @@ class QuoteCartItem(models.Model):
     equipment_page_id = models.IntegerField()
     equipment_model_id = models.IntegerField(null=True, blank=True)  # Can be null for items without specific models
     model_name = models.CharField(max_length=128)
-    model_number = models.CharField(max_length=32)
     quantity = models.PositiveIntegerField(default=1)
     date_added = models.DateTimeField(auto_now_add=True)
 
@@ -510,7 +545,7 @@ class QuoteCartItem(models.Model):
         ordering = ['-date_added']
 
     def __str__(self):
-        return f"{self.model_name} ({self.model_number}) - Qty: {self.quantity}"
+        return f"{self.model_name} - Qty: {self.quantity}"
 
     @property
     def equipment_page(self):
@@ -552,3 +587,24 @@ class QuoteRequest(models.Model):
     @property
     def cart_items(self):
         return QuoteCartItem.objects.filter(session_key=self.session_key)
+
+# Add the APIToken model at the end of the file
+class APIToken(models.Model):
+    """
+    Model for API authentication tokens with name, description, and token value.
+    """
+    name = models.CharField(max_length=100, help_text="Friendly name for this token")
+    token = models.CharField(max_length=64, unique=True, editable=False, help_text="Authentication token")
+    description = models.TextField(blank=True, help_text="Description of what this token is used for")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_active = models.BooleanField(default=True, help_text="Whether this token is active and can be used")
+    
+    def __str__(self):
+        return f"{self.name} ({self.created_at.strftime('%Y-%m-%d')})"
+    
+    def save(self, *args, **kwargs):
+        # Generate a new token if one doesn't exist
+        if not self.token:
+            self.token = uuid.uuid4().hex
+        super().save(*args, **kwargs)

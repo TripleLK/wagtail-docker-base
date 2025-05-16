@@ -10,6 +10,9 @@ unset DJANGO_SETTINGS_MODULE
 export DJANGO_ENV="development"
 export DJANGO_SETTINGS_MODULE="config.settings.dev"
 
+# Note: AWS Bedrock environment variables moved to env files in /envs directory
+
 echo "Environment variables set:"
 echo "  DJANGO_ENV=development"
 echo "  DJANGO_SETTINGS_MODULE=config.settings.dev"
+echo "  AWS environment variables should be set via env files in /envs directory"
