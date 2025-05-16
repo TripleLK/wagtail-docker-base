@@ -9,6 +9,7 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from apps.search import views as search_views
+from apps.categorized_tags import views as tag_views
 
 urlpatterns = [
     path("django-admin/", admin.site.urls),
@@ -16,6 +17,7 @@ urlpatterns = [
     path("documents/", include(wagtaildocs_urls)),
     path('', include('apps.search.urls')),
     path("git-reload", include('apps.reload_from_git.urls')),
+    path("api/tags/", tag_views.get_tags_api, name='api_tags'),
     path("", include('apps.base_site.urls')),
 ]
 

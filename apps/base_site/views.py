@@ -6,6 +6,8 @@ from django.views.decorators.http import require_POST
 from .models import LabEquipmentPage, EquipmentModel, QuoteCartItem, QuoteRequest
 import json
 from django.db.models import Sum
+from django.contrib.auth.decorators import login_required
+from django.contrib.admin.views.decorators import staff_member_required
 
 def get_session_key(request):
     """Helper to get or create a session key."""
@@ -314,4 +316,20 @@ def cart_remove_item(request):
             'cart_count': cart_count
         })
     
-    return JsonResponse({'success': False, 'error': 'Invalid request method'}) 
+    return JsonResponse({'success': False, 'error': 'Invalid request method'})
+
+@login_required
+@staff_member_required
+def human_review_queue(request):
+    """
+    Display a queue of lab equipment pages that need human review.
+    Only accessible to staff members.
+    """
+    items_to_review = LabEquipmentPage.objects.filter(needs_review=True).order_by('-last_published_at')
+    
+    context = {
+        'items': items_to_review,
+        'page_title': 'Human Review Queue',
+    }
+    
+    return render(request, 'base_site/human_review_queue.html', context) 

@@ -111,7 +111,9 @@
                 <a href="{% pageurl result %}" class="product-link">
                     {% if is_search_results %}
                         {% if result.main_image_url %}
-                            <img src="{{ result.main_image_url }}" alt="{{ result.title }}" class="product-image" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                            <div class="product-image">
+                                <img src="{{ result.main_image_url }}" alt="{{ result.title }}" style="max-height: 100%; max-width: 100%;" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                            </div>
                         {% else %}
                             <div class="product-image no-image">
                                 <span>No image available</span>
@@ -120,7 +122,9 @@
                     {% else %}
                         {% with main_image=result.main_image %}
                             {% if main_image %}
-                                <img src="{{ main_image }}" alt="{{ result.title }}" class="product-image" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                                <div class="product-image">
+                                    <img src="{{ main_image }}" alt="{{ result.title }}" style="max-height: 100%; max-width: 100%;" onerror="this.src='{% static 'img/default-image.jpg' %}'">
+                                </div>
                             {% else %}
                                 <div class="product-image no-image">
                                     <span>No image available</span>
@@ -129,21 +133,23 @@
                         {% endwith %}
                     {% endif %}
                     <div class="product-text-container">
+                        <!-- Product Tags -->
+                        <div class="product-tags">
+                            {% for tag in result.categorized_tags.all|slice:":3" %}
+                                <span class="product-tag" 
+                                      style="background-color: {{ tag.category_color }}">
+                                    {{ tag.name }}
+                                </span>
+                            {% endfor %}
+                        </div>
                         <h3 class="product-title">{{ result.title }}</h3>
+                        
+                        
                         {% if result.short_description %}
                             <p class="description">
                                 {{ result.short_description|richtext|striptags|truncatewords:20 }}
                             </p>
                         {% endif %}
-                        <div class="product-tags">
-                            {% for tag in result.categorized_tags.all|slice:":3" %}
-                                <a href="{% url 'category_view' category_slug=tag.category|slugify value_slug=tag.name|slugify %}" 
-                                   class="product-tag" 
-                                   style="background-color: {{ tag.category_color }}">
-                                    {{ tag.name }}
-                                </a>
-                            {% endfor %}
-                        </div>
                     </div>
                 </a>
             </article>
